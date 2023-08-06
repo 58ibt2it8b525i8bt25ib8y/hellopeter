@@ -2,8 +2,6 @@ local Modl = Instance.new("Model")
 
 Modl.Name = "Shocker"
 
-Modl.Parent = workspace
-
 			local Eyes = Instance.new("Part", Modl)
 
 			Modl.PrimaryPart = Eyes
@@ -443,3 +441,5 @@ tremolo.Depth = 1
 tremolo.Duty = 1
 
 tremolo.Frequency = 20
+
+return Modl
