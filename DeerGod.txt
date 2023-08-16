@@ -53,10 +53,10 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 0.378, 0),
 				NumberSequenceKeypoint.new(1, 0.38, 0),
 			}
-Face1.ZOffset = 2
-Face1.Rate = 65
+Face1.ZOffset = 0
+Face1.Rate = 40
 Face1.Name = "Body"
-Face1.Lifetime = NumberRange.new(0.5)
+Face1.Lifetime = NumberRange.new(1)
 Face1.Rotation = NumberRange.new(-2,2)
 Face1.Speed = NumberRange.new(0.1)
 Face1.RotSpeed = NumberRange.new(-5,5)
@@ -66,11 +66,19 @@ Face1.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 1, 0),
 				NumberSequenceKeypoint.new(0.10, 0, 0),
 				NumberSequenceKeypoint.new(0.4, 0, 0),
-				NumberSequenceKeypoint.new(0.5, 1, 0),
+				NumberSequenceKeypoint.new(0.75, 0.7, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face1.Drag = 1100
 Face1.Orientation = "FacingCameraWorldUp"
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.34, Color3.fromRGB(118,80,141)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(132,25,88)),
+    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(129,4,2)),
+    ColorSequenceKeypoint.new(0.84, Color3.fromRGB(132,25,88)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
 
 local Face1 = Particle("rbxassetid://14292936245", true, 0)
 Face1.Parent = Attach
@@ -86,10 +94,10 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 0.0918, 0),
 				NumberSequenceKeypoint.new(1, 0.28, 0),
 			}
-Face1.ZOffset = 9
-Face1.Rate = 65
+Face1.ZOffset = 2
+Face1.Rate = 40
 Face1.Name = "Head"
-Face1.Lifetime = NumberRange.new(0.5)
+Face1.Lifetime = NumberRange.new(1)
 Face1.Rotation = NumberRange.new(-2,2)
 Face1.Speed = NumberRange.new(0.1)
 Face1.RotSpeed = NumberRange.new(-5,5)
@@ -99,10 +107,18 @@ Face1.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 1, 0),
 				NumberSequenceKeypoint.new(0.10, 0, 0),
 				NumberSequenceKeypoint.new(0.4, 0, 0),
-				NumberSequenceKeypoint.new(0.5, 1, 0),
+				NumberSequenceKeypoint.new(0.75, 0.7, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face1.Drag = 1100
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.34, Color3.fromRGB(118,80,141)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(132,25,88)),
+    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(129,4,2)),
+    ColorSequenceKeypoint.new(0.84, Color3.fromRGB(132,25,88)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
 
 local Face1 = Particle("rbxassetid://14427471076", true, 0)
 Face1.Parent = Attachment
@@ -118,10 +134,10 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 0.378, 0),
 				NumberSequenceKeypoint.new(1, 0.38, 0),
 			}
-Face1.ZOffset = 6
-Face1.Rate = 65
+Face1.ZOffset = 1
+Face1.Rate = 40
 Face1.Name = "Hand"
-Face1.Lifetime = NumberRange.new(0.5)
+Face1.Lifetime = NumberRange.new(1)
 Face1.Rotation = NumberRange.new(-2,2)
 Face1.Speed = NumberRange.new(0.1)
 Face1.RotSpeed = NumberRange.new(-5,5)
@@ -131,11 +147,19 @@ Face1.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 1, 0),
 				NumberSequenceKeypoint.new(0.10, 0, 0),
 				NumberSequenceKeypoint.new(0.4, 0, 0),
-				NumberSequenceKeypoint.new(0.5, 1, 0),
+				NumberSequenceKeypoint.new(0.75, 0.7, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face1.Drag = 1100
 Face1.Orientation = "FacingCameraWorldUp"
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.34, Color3.fromRGB(118,80,141)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(132,25,88)),
+    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(129,4,2)),
+    ColorSequenceKeypoint.new(0.84, Color3.fromRGB(132,25,88)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
 
 -- Particle Emitter Eyes
 
@@ -153,8 +177,8 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 0.0918, 0),
 				NumberSequenceKeypoint.new(1, 0.28, 0),
 			}
-Face1.ZOffset = 12
-Face1.Rate = 35
+Face1.ZOffset = 3
+Face1.Rate = 65
 Face1.Name = "Eyes"
 Face1.Lifetime = NumberRange.new(0.7)
 Face1.Rotation = NumberRange.new(-2,2)
@@ -185,8 +209,8 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 0.0918, 0),
 				NumberSequenceKeypoint.new(1, 0.28, 0),
 			}
-Face1.ZOffset = 12
-Face1.Rate = 0.6
+Face1.ZOffset = 3
+Face1.Rate = 1
 Face1.Name = "GlowingEyes"
 Face1.Lifetime = NumberRange.new(0.7)
 Face1.Rotation = NumberRange.new(-2,2)
