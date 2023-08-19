@@ -44,7 +44,7 @@ EyesParticle.LockedToPart = LockedToPart
 return EyesParticle
 end
 
-local Face1 = Particle("rbxassetid://14287001852", true, 0)
+local Face1 = Particle("rbxassetid://14489058221", true, 0)
 Face1.Parent = Attachment
 Face1.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 4.6, 0),
@@ -72,7 +72,7 @@ Face1.Brightness = 5
 --Face1.LightInfluence = 0.05
 --Face1.LightEmission = 0.2
 
-local Face2 = Particle("rbxassetid://13992763797", true, 10)
+local Face2 = Particle("rbxassetid://14489058221", true, 10)
 Face2.Parent = Attachment
 Face2.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 4.6, 0),

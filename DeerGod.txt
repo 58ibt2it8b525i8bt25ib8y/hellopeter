@@ -54,7 +54,7 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 0.38, 0),
 			}
 Face1.ZOffset = 0
-Face1.Rate = 40
+Face1.Rate = 30
 Face1.Name = "Body"
 Face1.Lifetime = NumberRange.new(1)
 Face1.Rotation = NumberRange.new(-2,2)
@@ -75,7 +75,7 @@ Face1.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
     ColorSequenceKeypoint.new(0.34, Color3.fromRGB(118,80,141)),
     ColorSequenceKeypoint.new(0.44, Color3.fromRGB(132,25,88)),
-    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(129,4,2)),
+    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(119,12,72)),
     ColorSequenceKeypoint.new(0.84, Color3.fromRGB(132,25,88)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
@@ -95,7 +95,7 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 0.28, 0),
 			}
 Face1.ZOffset = 2
-Face1.Rate = 40
+Face1.Rate = 30
 Face1.Name = "Head"
 Face1.Lifetime = NumberRange.new(1)
 Face1.Rotation = NumberRange.new(-2,2)
@@ -115,7 +115,7 @@ Face1.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
     ColorSequenceKeypoint.new(0.34, Color3.fromRGB(118,80,141)),
     ColorSequenceKeypoint.new(0.44, Color3.fromRGB(132,25,88)),
-    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(129,4,2)),
+    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(119,12,72)),
     ColorSequenceKeypoint.new(0.84, Color3.fromRGB(132,25,88)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
@@ -135,7 +135,7 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 0.38, 0),
 			}
 Face1.ZOffset = 1
-Face1.Rate = 40
+Face1.Rate = 30
 Face1.Name = "Hand"
 Face1.Lifetime = NumberRange.new(1)
 Face1.Rotation = NumberRange.new(-2,2)
@@ -156,7 +156,7 @@ Face1.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
     ColorSequenceKeypoint.new(0.34, Color3.fromRGB(118,80,141)),
     ColorSequenceKeypoint.new(0.44, Color3.fromRGB(132,25,88)),
-    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(129,4,2)),
+    ColorSequenceKeypoint.new(0.64, Color3.fromRGB(119,12,72)),
     ColorSequenceKeypoint.new(0.84, Color3.fromRGB(132,25,88)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
@@ -263,7 +263,7 @@ Face1.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 0, 0),
 				NumberSequenceKeypoint.new(1, 20, 0),
 			}
-Face1.ZOffset = 0.5
+Face1.ZOffset = -0.1
 Face1.Rate = 2
 Face1.Name = "Aura1"
 Face1.Lifetime = NumberRange.new(1)
@@ -294,7 +294,7 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 1.228, 0),
 				NumberSequenceKeypoint.new(1, 0.98, 0),
 			}
-Face1.ZOffset = 0
+Face1.ZOffset = -2
 Face1.Rate = 130
 Face1.Name = "Aura2"
 Face1.Lifetime = NumberRange.new(1)
@@ -332,7 +332,7 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.5, 1.228, 0),
 				NumberSequenceKeypoint.new(1, 0.98, 0),
 			}
-Face1.ZOffset = 0.3
+Face1.ZOffset = -2.3
 Face1.Rate = 130
 Face1.Name = "Aura3"
 Face1.Lifetime = NumberRange.new(1)
