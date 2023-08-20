@@ -1,0 +1,434 @@
+
+local Modl = Instance.new("Model")
+Modl.Name = "Frostbite"
+			local Eyes = Instance.new("Part", Modl)
+			Modl.PrimaryPart = Eyes
+			Eyes.Transparency = 1
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(5, 5, 5)
+			local yes = Instance.new("Part", Eyes)
+			yes.Transparency = 1
+			yes.Name = "SnowParticle"
+			yes.Anchored = true
+			yes.CanCollide = false
+			yes.Size = Vector3.new(35,1,35)
+			yes.CFrame = Eyes.CFrame + Vector3.new(0,-5,0)
+			local Attachment = Instance.new("Attachment", Eyes)
+			local Attach = Instance.new("Attachment", Attachment)
+			Attach.Name = "Head"
+            Attach.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
+
+-- Lights
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 20
+			Light1.Color = Color3.fromRGB(0,125,255)
+			Light1.Enabled = true
+			Light1.Range = 25
+			Light1.Shadows = true
+			Light1.Name = "LightClose"
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 4
+			Light1.Color = Color3.fromRGB(0,50,255)
+			Light1.Enabled = true
+			Light1.Range = 45
+		    Light1.Shadows = true
+		    Light1.Name = "LightFar"
+
+-- Particle Emitters: Face
+
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+local Face1 = Particle("rbxassetid://13992769844", true, 0)
+Face1.Parent = Attach
+Face1.Size = NumberSequence.new(3.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.3, 0),
+				NumberSequenceKeypoint.new(0.05, 0.1, 0),
+				NumberSequenceKeypoint.new(0.1, 0.3, 0),
+				NumberSequenceKeypoint.new(0.15, 0.1, 0),
+				NumberSequenceKeypoint.new(0.2, 0.3, 0),
+				NumberSequenceKeypoint.new(0.25, 0.1, 0),
+				NumberSequenceKeypoint.new(0.3, 0.3, 0),
+				NumberSequenceKeypoint.new(0.35, 0.1, 0),
+				NumberSequenceKeypoint.new(0.40, 0.3, 0),
+				NumberSequenceKeypoint.new(0.45, 0.1, 0),
+				NumberSequenceKeypoint.new(0.5, 0.3, 0),
+				NumberSequenceKeypoint.new(0.55, 0.1, 0),
+				NumberSequenceKeypoint.new(0.6, 0.38, 0),
+				NumberSequenceKeypoint.new(1, 0.3, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face1"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Brightness = 5
+Face1.LightInfluence = 1000
+Face1.LightEmission = 0.2
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(10,30)
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(175,175,255)),
+    ColorSequenceKeypoint.new(0.0234, Color3.fromRGB(9,32,72)),
+    ColorSequenceKeypoint.new(0.04, Color3.fromRGB(110,175,255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face2.Enabled = false
+
+local Face2 = Particle("rbxassetid://13992769844", true, 10)
+Face2.Parent = Attach
+Face2.Size = NumberSequence.new(3.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.3, 0),
+				NumberSequenceKeypoint.new(0.05, 0.1, 0),
+				NumberSequenceKeypoint.new(0.1, 0.3, 0),
+				NumberSequenceKeypoint.new(0.15, 0.1, 0),
+				NumberSequenceKeypoint.new(0.2, 0.3, 0),
+				NumberSequenceKeypoint.new(0.25, 0.1, 0),
+				NumberSequenceKeypoint.new(0.3, 0.3, 0),
+				NumberSequenceKeypoint.new(0.35, 0.1, 0),
+				NumberSequenceKeypoint.new(0.40, 0.3, 0),
+				NumberSequenceKeypoint.new(0.45, 0.1, 0),
+				NumberSequenceKeypoint.new(0.5, 0.3, 0),
+				NumberSequenceKeypoint.new(0.55, 0.1, 0),
+				NumberSequenceKeypoint.new(0.6, 0.38, 0),
+				NumberSequenceKeypoint.new(1, 0.3, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 50
+Face2.Name = "Face2"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.Brightness = 5
+Face2.LightInfluence = 1000
+Face2.VelocitySpread = 360
+Face2.LightEmission = 0.2
+Face2.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(35,75,155)),
+    ColorSequenceKeypoint.new(0.34, Color3.fromRGB(9,32,72)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(0,45,88)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face2.Enabled = false
+
+-- Particle Emitters
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+emitter.Rate = 40
+emitter.Lifetime = NumberRange.new(2)
+emitter.Texture = "rbxassetid://1302869033" 
+emitter.Color = ColorSequence.new(Color3.fromRGB(150,195,255))
+emitter.Speed = NumberRange.new(15)
+emitter.Drag = -2
+emitter.VelocitySpread = 180
+emitter.Enabled = false
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = true
+emitter.SpreadAngle = Vector2.new(120,120)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.LightEmission = 0.2
+emitter.LightInfluence = 1
+emitter.Size = NumberSequence.new(2)
+emitter.ZOffset = -3
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Name = "RushTrail"
+emitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .87),
+				NumberSequenceKeypoint.new(0.76, .77),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+emitter.Rate = 130
+emitter.Lifetime = NumberRange.new(0.5)
+emitter.Texture = "rbxassetid://269613979" 
+--emitter.Color = ColorSequence.new(Color3.fromRGB(0,55,75))
+emitter.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(130,255,175)),
+    ColorSequenceKeypoint.new(0.35, Color3.fromRGB(130,255,175)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+emitter.Speed = NumberRange.new(10)
+emitter.Drag = -2
+emitter.VelocitySpread = 180
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = true
+emitter.SpreadAngle = Vector2.new(120,120)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.Size = NumberSequence.new(3)
+emitter.ZOffset = -3
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Name = "RushTrail2"
+emitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .37),
+				NumberSequenceKeypoint.new(0.76, .37),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+emitter.Rate = 150
+emitter.Lifetime = NumberRange.new(0.4)
+emitter.Texture = "rbxassetid://8510586199" 
+--emitter.Color = ColorSequence.new(Color3.fromRGB(0,55,75))
+emitter.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0,255,175)),
+    ColorSequenceKeypoint.new(0.15, Color3.fromRGB(0,255,175)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+emitter.Speed = NumberRange.new(15)
+emitter.Drag = -2
+emitter.VelocitySpread = 180
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = true
+emitter.SpreadAngle = Vector2.new(120,120)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.Size = NumberSequence.new(4)
+emitter.ZOffset = -3
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Name = "RushTrail3"
+emitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .1),
+				NumberSequenceKeypoint.new(0.356, .37),
+				NumberSequenceKeypoint.new(0.76, .37),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+local ParticleEmitter = Instance.new("ParticleEmitter", Attachment)
+ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds"
+ParticleEmitter.Lifetime = NumberRange.new(1)
+ParticleEmitter.Rate = 10
+ParticleEmitter.Speed = NumberRange.new(0,5)
+ParticleEmitter.VelocitySpread = 50
+ParticleEmitter.Rotation = NumberRange.new(-360, 360)
+ParticleEmitter.RotSpeed = NumberRange.new(-50,50)
+ParticleEmitter.Size = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 6),
+    NumberSequenceKeypoint.new(1, 6.6)
+})
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(13,11,55))
+ParticleEmitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .37),
+				NumberSequenceKeypoint.new(0.76, .37),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+ParticleEmitter.ZOffset = -3
+ParticleEmitter.LightInfluence = 0.1
+ParticleEmitter.LightEmission = 0.3
+ParticleEmitter.Name = "Smoke"
+ParticleEmitter.SpreadAngle = Vector2.new(-180,180)
+local smoke2 = ParticleEmitter:Clone()
+smoke2.Parent = Attachment
+smoke2.LockedToPart = true
+
+			local Spark = Instance.new("ParticleEmitter", Attachment)
+			Spark.Texture = "rbxassetid://2581223252"
+			Spark.Color = ColorSequence.new(Color3.fromRGB(0,20,55))
+			Spark.Size = NumberSequence.new(15)
+			Spark.Squash = NumberSequence.new(-0.05)
+			Spark.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .175),
+				NumberSequenceKeypoint.new(0.247, 0.375),
+				NumberSequenceKeypoint.new(0.5, 1),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+			Spark.Drag = 15
+			Spark.LockedToPart = true
+			Spark.VelocityInheritance = 0.5
+
+			Spark.Lifetime = NumberRange.new(0.5)
+			Spark.Rate = 350
+			Spark.Rotation = NumberRange.new(-360,360)
+			Spark.RotSpeed = NumberRange.new(-360,360)
+			Spark.Speed = NumberRange.new(0)
+			Spark.SpreadAngle = Vector2.new(180, 180)
+            --Spark.LightInfluence = 0.4
+            Spark.ZOffset = -4
+            Spark.LightEmission = 5
+            Spark.Name = "Sparkles"
+            
+local h = Instance.new("ParticleEmitter", yes)
+h.Texture = "rbxassetid://99851851"
+h.Lifetime = NumberRange.new(3,6)
+h.VelocitySpread = 50
+h.SpreadAngle = Vector2.new(50,50)
+h.LightEmission = 0.5
+h.Brightness = 1
+h.Rate = 1000
+h.Color = ColorSequence.new(Color3.fromRGB(255,255,255))
+h.Size = NumberSequence.new(0.35)
+h.Transparency = NumberSequence.new{
+   NumberSequenceKeypoint.new(0, 1),
+   NumberSequenceKeypoint.new(0.247, 0.375),
+   NumberSequenceKeypoint.new(0.8, 1),
+   NumberSequenceKeypoint.new(1, 1),
+}
+h.Enabled = false
+
+local h = Instance.new("ParticleEmitter", Attachment)
+h.Texture = "rbxassetid://8945404215"
+h.Lifetime = NumberRange.new(0.5)
+h.VelocitySpread = 50
+h.SpreadAngle = Vector2.new(50,50)
+h.LightEmission = 0.5
+h.Brightness = 1
+h.Rate = 1000
+h.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0,35,155)),
+    ColorSequenceKeypoint.new(0.14, Color3.fromRGB(9,32,72)),
+    ColorSequenceKeypoint.new(0.24, Color3.fromRGB(0,45,88)),
+    ColorSequenceKeypoint.new(0.34, Color3.fromRGB(9,32,72)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(0,45,88)),
+    ColorSequenceKeypoint.new(0.54, Color3.fromRGB(9,32,72)),
+    ColorSequenceKeypoint.new(0.75, Color3.fromRGB(0,45,88)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+--h.Color = ColorSequence.new(Color3.fromRGB(0,125,255))
+h.Size = NumberSequence.new(5.5)
+h.Squash = NumberSequence.new{
+   NumberSequenceKeypoint.new(0, 0.7),
+   NumberSequenceKeypoint.new(0.147, 0.755),
+   NumberSequenceKeypoint.new(0.18, 0.641),
+   NumberSequenceKeypoint.new(0.21, -0.431),
+   NumberSequenceKeypoint.new(0.247, 0.755),
+   NumberSequenceKeypoint.new(0.58, 0.641),
+   NumberSequenceKeypoint.new(0.75, 0.31),
+   NumberSequenceKeypoint.new(0.847, -0.6),
+   NumberSequenceKeypoint.new(0.88, 0.641),
+   NumberSequenceKeypoint.new(1, 1),
+}
+h.ZOffset = -3.5
+h.Orientation = "VelocityPerpendicular"
+h.Name = "Sparkles2"
+
+-- Ambience
+local s = Instance.new("Sound", Modl)
+s.SoundId = "rbxassetid://8011939545"
+s.Pitch = 1.3
+s.Volume = 1
+s.Name = "Wind"
+local s = Instance.new("Sound", Modl)
+s.SoundId = "rbxassetid://9125402735"
+s.Pitch = 0.7
+s.Name = "Boom"
+s.Volume = 5
+
+--Sounds
+local s = Instance.new("Sound", Eyes)
+s.Name = "AmbFar"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 250
+s.Volume = 1
+s.TimePosition = 66.53
+s.Pitch = 1.2
+s.Looped = true
+s.SoundId = "rbxassetid://167123203"
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 1
+fl.Rate = 0.25
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 0.73
+fl.Rate = 0.75
+local eq = Instance.new("EqualizerSoundEffect", s)
+eq.HighGain = -47.6
+eq.LowGain = -3.5
+eq.MidGain = -80
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "AmbClose"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 120
+s.Volume = 2
+s.TimePosition = 66.53
+s.Looped = true
+s.Pitch = 1.2
+s.SoundId = "rbxassetid://167123203"
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 1
+fl.Rate = 0.25
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 0.73
+fl.Rate = 0.75
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Spawn"
+s.Looped = true
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 1000
+s.Volume = 1
+s.Pitch = 0.11
+s.SoundId = "rbxassetid://372770465"
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 1
+fl.Rate = 0.25
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 0.73
+fl.Rate = 0.75
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Despawn"
+s.MaxDistance = 500
+s.Pitch = 0.24
+s.RollOffMode = "InverseTapered"
+s.SoundId = "rbxassetid://6305809364"
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Rate = 0.75
+fl.Depth = 1
+fl.Mix = 0.73
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Rate = 0.25
+fl.Depth = 1
+fl.Mix = 1
+
+return Modl
