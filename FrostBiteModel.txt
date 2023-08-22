@@ -13,7 +13,7 @@ Modl.Name = "Frostbite"
 			yes.Name = "SnowParticle"
 			yes.Anchored = true
 			yes.CanCollide = false
-			yes.Size = Vector3.new(35,1,35)
+			yes.Size = Vector3.new(65,1,65)
 			yes.CFrame = Eyes.CFrame + Vector3.new(0,-5,0)
 			local Attachment = Instance.new("Attachment", Eyes)
 			local Attach = Instance.new("Attachment", Attachment)
@@ -27,7 +27,7 @@ Modl.Name = "Frostbite"
 			Light1.Brightness = 20
 			Light1.Color = Color3.fromRGB(0,125,255)
 			Light1.Enabled = true
-			Light1.Range = 25
+			Light1.Range = 15
 			Light1.Shadows = true
 			Light1.Name = "LightClose"
 
@@ -36,7 +36,7 @@ Modl.Name = "Frostbite"
 			Light1.Brightness = 4
 			Light1.Color = Color3.fromRGB(0,50,255)
 			Light1.Enabled = true
-			Light1.Range = 45
+			Light1.Range = 30
 		    Light1.Shadows = true
 		    Light1.Name = "LightFar"
 
@@ -52,7 +52,7 @@ EyesParticle.LockedToPart = LockedToPart
 return EyesParticle
 end
 
-local Face1 = Particle("rbxassetid://13992769844", true, 0)
+local Face1 = Particle("rbxassetid://14516740496", true, 0)
 Face1.Parent = Attach
 Face1.Size = NumberSequence.new(3.5)
 Face1.Transparency = NumberSequence.new{
@@ -83,20 +83,20 @@ Face1.Name = "Face1"
 Face1.Lifetime = NumberRange.new(0.05)
 Face1.Rotation = NumberRange.new(-13,13)
 Face1.RotSpeed = NumberRange.new(0,0)
-Face1.Brightness = 5
+Face1.Brightness = 12
 Face1.LightInfluence = 1000
-Face1.LightEmission = 0.2
+--Face1.LightEmission = 0.2
 Face1.Drag = 10
 Face1.Speed = NumberRange.new(10,30)
 Face1.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(175,175,255)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(115,175,255)),
     ColorSequenceKeypoint.new(0.0234, Color3.fromRGB(9,32,72)),
     ColorSequenceKeypoint.new(0.04, Color3.fromRGB(110,175,255)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
 Face1.Enabled = false
 
-local Face2 = Particle("rbxassetid://13992769844", true, 10)
+local Face2 = Particle("rbxassetid://14516740496", true, 10)
 Face2.Parent = Attach
 Face2.Size = NumberSequence.new(3.5)
 Face2.Transparency = NumberSequence.new{
@@ -127,10 +127,10 @@ Face2.Lifetime = NumberRange.new(0.5)
 Face2.Speed = NumberRange.new(6)
 Face2.Rotation = NumberRange.new(-13,13)
 Face2.RotSpeed = NumberRange.new(0,0)
-Face2.Brightness = 5
-Face2.LightInfluence = 1000
+Face2.Brightness = 12
+Face2.LightInfluence = 0.8
 Face2.VelocitySpread = 360
-Face2.LightEmission = 0.2
+--Face2.LightEmission = 0.2
 Face2.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(35,75,155)),
     ColorSequenceKeypoint.new(0.34, Color3.fromRGB(9,32,72)),
