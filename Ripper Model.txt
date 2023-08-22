@@ -16,21 +16,19 @@ Modl.Name = "Ripper"
 -- Lights
 			local Light1 = Instance.new("PointLight", Eyes)
 
-			Light1.Brightness = 20
+			Light1.Brightness = 15
 			Light1.Color = Color3.fromRGB(255,0,0)
 			Light1.Enabled = true
 			Light1.Range = 20
 			Light1.Shadows = true
-Light1.Name = "Light_Far"
 
 			local Light2 = Instance.new("PointLight", Eyes)
 
-			Light2.Brightness = 15
+			Light2.Brightness = 10
 			Light2.Color = Color3.fromRGB(155,0,0)
 			Light2.Enabled = true
 			Light2.Range = 50
 			Light2.Shadows = true
-Light2.Name = "Light_Far"
 
 -- Particle Emitters: Face
 
@@ -47,7 +45,7 @@ end
 local Face1 = Particle("rbxassetid://14489058221", true, 0)
 Face1.Parent = Attachment
 Face1.Size = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 4.6, 0),
+				NumberSequenceKeypoint.new(0, 6, 0),
 				NumberSequenceKeypoint.new(0.6, 6.37, 0),
 				NumberSequenceKeypoint.new(1, 7.95, 0),
 			}
@@ -63,14 +61,17 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, -0.12, 0),
 			}
 Face1.ZOffset = 1
-Face1.Rate = 25
+Face1.Rate = 35
 Face1.Name = "Face1"
 Face1.Lifetime = NumberRange.new(0.3)
 Face1.Rotation = NumberRange.new(-4,4)
 Face1.RotSpeed = NumberRange.new(0,0)
 Face1.Brightness = 5
---Face1.LightInfluence = 0.05
---Face1.LightEmission = 0.2
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(200,0,0)),
+    ColorSequenceKeypoint.new(0.123, Color3.fromRGB(110,0,0)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(250,0,0))
+})
 
 local Face2 = Particle("rbxassetid://14489058221", true, 10)
 Face2.Parent = Attachment
@@ -96,7 +97,12 @@ Face2.Name = "Face2"
 Face2.Lifetime = NumberRange.new(0.05)
 Face2.Rotation = NumberRange.new(-4,4)
 Face2.RotSpeed = NumberRange.new(0,0)
---Face2.LightInfluence = 0
+Face2.Brightness = 5
+Face2.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(200,0,0)),
+    ColorSequenceKeypoint.new(0.123, Color3.fromRGB(110,0,0)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(250,0,0))
+})
 
 -- Particle Emitters
 

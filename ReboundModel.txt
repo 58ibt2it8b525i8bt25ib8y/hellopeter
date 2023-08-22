@@ -30,36 +30,32 @@ Modl.Parent = workspace
 			EyesParticle.Brightness = 1.26
 
 EyesParticle.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 1),
-				NumberSequenceKeypoint.new(0.1, .134),
-				NumberSequenceKeypoint.new(0.596, .134),
-				NumberSequenceKeypoint.new(0.696, .237),
+				NumberSequenceKeypoint.new(0, 0.15),
+				NumberSequenceKeypoint.new(0.1, 0.05),
+				NumberSequenceKeypoint.new(0.76, 0.05),
 				NumberSequenceKeypoint.new(1, 1),
 			}
 
 local squashKeypoints = {
 	-- API: NumberSequenceKeypoint.new(time, size, envelop)
 	NumberSequenceKeypoint.new(0, 0.35), -- At t=0, fully transparent
-	NumberSequenceKeypoint.new(0.4, 0.25), -- At t=0, fully transparent
-	NumberSequenceKeypoint.new(0.6, 0.203), -- At t=.1, fully opaque
-	NumberSequenceKeypoint.new(0.8, 0.312), -- At t=.5, mostly opaque
+	NumberSequenceKeypoint.new(0.1, 0.25), -- At t=0, fully transparent
+	NumberSequenceKeypoint.new(0.6, 0.25), -- At t=.1, fully opaque
 	NumberSequenceKeypoint.new(1, 0.15), -- At t=1, fully transparent
 }
 
 EyesParticle.Size = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0),
+				NumberSequenceKeypoint.new(0, 4.7),
 				NumberSequenceKeypoint.new(0.1, 5),
-				NumberSequenceKeypoint.new(0.15, 4.5),
-				NumberSequenceKeypoint.new(0.696, 5.47),
+				NumberSequenceKeypoint.new(0.7, 5),
 				NumberSequenceKeypoint.new(1, 5.2),
 			}
 
 			EyesParticle.Texture = "rbxassetid://14072836214"
 
-			EyesParticle.Lifetime = NumberRange.new(1)
-			EyesParticle.Rate = 10
-			EyesParticle.Rotation = NumberRange.new(-5,5)
-			--EyesParticle.RotSpeed = NumberRange.new(-55,35)
+			EyesParticle.Lifetime = NumberRange.new(0.65)
+			EyesParticle.Rate = 30
+			EyesParticle.Rotation = NumberRange.new(-7,7)
 			EyesParticle.Speed = NumberRange.new(0.5)
 EyesParticle.ZOffset = 0.5
 EyesParticle.Name = "Face"
@@ -70,7 +66,7 @@ EyesParticle.Drag = 5
 			EyesParticle.LockedToPart = true
 			EyesParticle.VelocityInheritance = 2
 
-			local EyesParticle = Instance.new("ParticleEmitter", Attachment)
+			local EyesParticle = Instance.new("ParticleEmitter", nil)
 			EyesParticle.LightInfluence = 0
 			EyesParticle.Brightness = 1.26
 
