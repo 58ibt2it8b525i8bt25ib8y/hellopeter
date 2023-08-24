@@ -2,6 +2,8 @@ local Modl = Instance.new("Model")
 
 Modl.Name = "Shocker"
 
+Modl.Parent = workspace
+
 			local Eyes = Instance.new("Part", Modl)
 
 			Modl.PrimaryPart = Eyes
@@ -84,7 +86,7 @@ Light1.Name = "LightFar"
 
 			Light2.Brightness = 2
 
-			Light2.Color = Color3.fromRGB(-255,-55,0)
+			Light2.Color = Color3.fromRGB(0,55,0)
 
 			Light2.Enabled = true
 
@@ -441,5 +443,3 @@ tremolo.Depth = 1
 tremolo.Duty = 1
 
 tremolo.Frequency = 20
-
-return Modl
