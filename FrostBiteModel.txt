@@ -121,7 +121,7 @@ Face2.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 0.3, 0),
 			}
 Face2.ZOffset = -0.5
-Face2.Rate = 50
+Face2.Rate = 150
 Face2.Name = "Face2"
 Face2.Lifetime = NumberRange.new(0.5)
 Face2.Speed = NumberRange.new(6)

@@ -68,7 +68,7 @@ Face1.Rotation = NumberRange.new(-4,4)
 Face1.RotSpeed = NumberRange.new(0,0)
 Face1.Brightness = 5
 Face1.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(200,0,0)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(150,0,0)),
     ColorSequenceKeypoint.new(0.123, Color3.fromRGB(110,0,0)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(250,0,0))
 })
@@ -99,7 +99,7 @@ Face2.Rotation = NumberRange.new(-4,4)
 Face2.RotSpeed = NumberRange.new(0,0)
 Face2.Brightness = 5
 Face2.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(200,0,0)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(70,0,0)),
     ColorSequenceKeypoint.new(0.123, Color3.fromRGB(110,0,0)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(250,0,0))
 })
