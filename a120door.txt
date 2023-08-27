@@ -1,0 +1,420 @@
+
+local Modl = Instance.new("Model")
+Modl.Name = "A-120"
+			local Eyes = Instance.new("Part", Modl)
+			Modl.PrimaryPart = Eyes
+			Eyes.Transparency = 1
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(5, 5, 5)
+			local Attachment = Instance.new("Attachment", Eyes)
+             Attachment.Position = Attachment.Position+Vector3.new(0, 0, 0)
+			local Attacht = Instance.new("Attachment", Attachment)
+             Attacht.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
+             Attacht.Name = "FaceMain"
+
+-- Lights
+			local Light2 = Instance.new("PointLight", Attacht)
+
+			Light2.Brightness = 0.05
+			Light2.Color = Color3.fromRGB(0,50,255)
+			Light2.Enabled = true
+			Light2.Range = 65
+			Light2.Shadows = true
+
+-- Particle Emitters: Face
+
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+local Face1 = Particle("rbxassetid://14591876839", true, 0)
+Face1.Parent = Attacht
+Face1.Size = NumberSequence.new(3)
+Face1.ZOffset = 1
+Face1.Rate = 25
+Face1.Name = "Face1"
+Face1.Lifetime = NumberRange.new(0.05,0.1)
+Face1.Rotation = NumberRange.new(-1,1)
+Face1.Speed = NumberRange.new(1,5)
+Face1.SpreadAngle = Vector2.new(360,360)
+Face1.VelocitySpread = 360
+Face1.Brightness = 7
+Face1.Transparency = NumberSequence.new(0.65)
+Face1.Drag = 25
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,155,158)),
+    ColorSequenceKeypoint.new(0.06, Color3.fromRGB(155,155,155)),
+    ColorSequenceKeypoint.new(0.065, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.07, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(50,70,128)),
+    ColorSequenceKeypoint.new(0.085, Color3.fromRGB(150,66,60)),
+    ColorSequenceKeypoint.new(0.9, Color3.fromRGB(155,155,178)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+
+local Face1 = Particle("rbxassetid://14592194362", true, 0)
+Face1.Parent = Attacht
+Face1.Size = NumberSequence.new(3.35)
+Face1.ZOffset = 0
+Face1.Rate = 15
+Face1.Name = "Face2"
+Face1.Lifetime = NumberRange.new(0.08)
+Face1.Rotation = NumberRange.new(-1,1)
+Face1.Speed = NumberRange.new(1,5)
+Face1.SpreadAngle = Vector2.new(360,360)
+Face1.VelocitySpread = 360
+Face1.Brightness = 7
+Face1.Transparency = NumberSequence.new(0.85)
+Face1.Drag = 25
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,155,158)),
+    ColorSequenceKeypoint.new(0.06, Color3.fromRGB(155,155,155)),
+    ColorSequenceKeypoint.new(0.065, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.07, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(50,70,128)),
+    ColorSequenceKeypoint.new(0.085, Color3.fromRGB(150,66,60)),
+    ColorSequenceKeypoint.new(0.9, Color3.fromRGB(155,155,178)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+
+local Face1 = Particle("rbxassetid://14592201903", true, 0)
+Face1.Parent = Attacht
+Face1.Size = NumberSequence.new(3)
+Face1.ZOffset = 2
+Face1.Rate = 5
+Face1.Name = "Face3"
+Face1.Lifetime = NumberRange.new(0,0.1)
+Face1.Rotation = NumberRange.new(-1,1)
+Face1.Speed = NumberRange.new(1,5)
+Face1.SpreadAngle = Vector2.new(360,360)
+Face1.VelocitySpread = 360
+Face1.Brightness = 7
+Face1.Transparency = NumberSequence.new(0.45)
+Face1.Drag = 25
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,155,158)),
+    ColorSequenceKeypoint.new(0.06, Color3.fromRGB(155,155,155)),
+    ColorSequenceKeypoint.new(0.065, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.07, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(50,70,128)),
+    ColorSequenceKeypoint.new(0.085, Color3.fromRGB(150,66,60)),
+    ColorSequenceKeypoint.new(0.9, Color3.fromRGB(155,155,178)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+
+-- Particle Emitters
+local Face1 = Particle("rbxassetid://14592201903", true, 0)
+Face1.Parent = Eyes
+Face1.Size = NumberSequence.new(0.5)
+Face1.ZOffset = -1
+Face1.Rate = 5
+Face1.Name = "hiiii"
+Face1.Lifetime = NumberRange.new(0,0.1)
+Face1.Rotation = NumberRange.new(-1,1)
+Face1.Speed = NumberRange.new(1,5)
+Face1.SpreadAngle = Vector2.new(360,360)
+Face1.VelocitySpread = 360
+Face1.Brightness = 7
+Face1.LightInfluence = 0.05
+Face1.LightEmission = 0.7
+Face1.Transparency = NumberSequence.new(0.2)
+Face1.Drag = 25
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,155,158)),
+    ColorSequenceKeypoint.new(0.06, Color3.fromRGB(155,155,155)),
+    ColorSequenceKeypoint.new(0.065, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.07, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(50,70,128)),
+    ColorSequenceKeypoint.new(0.085, Color3.fromRGB(150,66,60)),
+    ColorSequenceKeypoint.new(0.9, Color3.fromRGB(155,155,178)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+
+local glitch = Instance.new("ParticleEmitter", Eyes)
+glitch.Texture = "rbxassetid://7948622114"
+glitch.Lifetime = NumberRange.new(0.05)
+glitch.Rate = 50 -- Hello Again, Dumbbell.
+glitch.Speed = NumberRange.new(20)
+glitch.Size = NumberSequence.new(1)
+glitch.LightEmission = 10
+glitch.LightInfluence = 1
+glitch.LockedToPart = true
+glitch.SpreadAngle = Vector2.new(0,0)
+glitch.ZOffset = 5
+glitch.Transparency = NumberSequence.new(0.6)
+glitch.Brightness = 2
+
+-- Ambience
+local a = Instance.new("Sound", Modl)
+a.Name = "End"
+a.PlayOnRemove = true
+a.Volume = 0.6
+a.Pitch = 0.3
+a.SoundId = "rbxassetid://1848358976"
+local d = Instance.new("DistortionSoundEffect", a)
+d.Priority = 3
+d.Level = 0.37
+local e = Instance.new("EqualizerSoundEffect", a)
+e.HighGain = 10
+e.LowGain = 1.9
+e.MidGain = -46.7
+
+local a = Instance.new("Sound", Modl)
+a.Name = "Ambience"
+a.Volume = 2
+a.Pitch = 0.3
+a.SoundId = "rbxassetid://1846267674"
+local d = Instance.new("DistortionSoundEffect", a)
+d.Priority = 3
+d.Level = 0.37
+local e = Instance.new("EqualizerSoundEffect", a)
+e.HighGain = 10
+e.LowGain = 1.9
+e.MidGain = -46.7
+
+--Sounds
+
+local arrival = Instance.new("Sound")
+arrival.Parent = Eyes
+arrival.Name = "HeartBeat"
+arrival.SoundId = "rbxassetid://176554627"
+arrival.Volume = 1
+arrival.Pitch = 1.05
+arrival.Looped = true
+arrival.RollOffMaxDistance = 450
+arrival.RollOffMinDistance = 50
+arrival.RollOffMode = Enum.RollOffMode.InverseTapered
+arrival:Play()
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 0.5
+foot.SoundId = "rbxassetid://9114250368"
+foot.Pitch = 0.17
+foot.EmitterSize = 1
+foot.RollOffMaxDistance = 200
+foot.RollOffMode = "LinearSquare"
+foot.Name = "Footsteps"
+foot.Looped = true
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 5
+distort.Level = 0.56
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = 3
+eq.LowGain = 3
+eq.Priority = 15
+local echo = Instance.new("EchoSoundEffect", foot)
+echo.WetLevel = 0
+echo.DryLevel = 0
+echo.Delay = 0.25
+echo.Feedback = 0.5
+echo.Priority = 0
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 0.5
+foot.SoundId = "rbxassetid://9114250368"
+foot.Pitch = 0.17
+foot.EmitterSize = 5
+foot.RollOffMaxDistance = 400
+foot.RollOffMode = "LinearSquare"
+foot.Name = "Footsteps"
+foot.Looped = true
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 5
+distort.Level = 0.56
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = 3
+eq.LowGain = 3
+eq.Priority = 15
+local echo = Instance.new("EchoSoundEffect", foot)
+echo.WetLevel = 0
+echo.DryLevel = 0
+echo.Delay = 0.25
+echo.Feedback = 0.5
+echo.Priority = 0
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 1.2
+foot.SoundId = "rbxassetid://9114248541"
+foot.Pitch = 0.17
+foot.EmitterSize = 1
+foot.RollOffMaxDistance = 200
+foot.RollOffMode = "LinearSquare"
+foot.Name = "Spawn"
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 5
+distort.Level = 0.56
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = 3
+eq.LowGain = 3
+eq.Priority = 15
+local echo = Instance.new("EchoSoundEffect", foot)
+echo.WetLevel = 0
+echo.DryLevel = 0
+echo.Delay = 0.25
+echo.Feedback = 0.5
+echo.Priority = 0
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 1.2
+foot.SoundId = "rbxassetid://9114248541"
+foot.Pitch = 0.17
+foot.EmitterSize = 5
+foot.RollOffMaxDistance = 600
+foot.RollOffMode = "LinearSquare"
+foot.Name = "SpawnFar"
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 5
+distort.Level = 0.56
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = 3
+eq.LowGain = 3
+eq.Priority = 15
+local echo = Instance.new("EchoSoundEffect", foot)
+echo.WetLevel = 0
+echo.DryLevel = 0
+echo.Delay = 0.25
+echo.Feedback = 0.5
+echo.Priority = 0
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 0.5
+foot.SoundId = "rbxassetid://9114250687"
+foot.Pitch = 0.17
+foot.EmitterSize = 1
+foot.RollOffMaxDistance = 200
+foot.RollOffMode = "LinearSquare"
+foot.Name = "Footsteps"
+foot.Looped = true
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 5
+distort.Level = 0.56
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = 3
+eq.LowGain = 3
+eq.Priority = 15
+local echo = Instance.new("EchoSoundEffect", foot)
+echo.WetLevel = 0
+echo.DryLevel = 0
+echo.Delay = 0.25
+echo.Feedback = 0.5
+echo.Priority = 0
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 0.5
+foot.SoundId = "rbxassetid://9114250687"
+foot.Pitch = 0.17
+foot.EmitterSize = 5
+foot.RollOffMaxDistance = 400
+foot.RollOffMode = "LinearSquare"
+foot.Name = "Footsteps"
+foot.Looped = true
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 5
+distort.Level = 0.56
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = 3
+eq.LowGain = 3
+eq.Priority = 15
+local echo = Instance.new("EchoSoundEffect", foot)
+echo.WetLevel = 0
+echo.DryLevel = 0
+echo.Delay = 0.25
+echo.Feedback = 0.5
+echo.Priority = 0
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 0.6
+foot.SoundId = "rbxassetid://9114766586"
+foot.Pitch = 0.3
+foot.EmitterSize = 5
+foot.RollOffMaxDistance = 400
+foot.RollOffMode = "LinearSquare"
+foot.Name = "BangLocker"
+foot.Looped = true
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 3
+distort.Level = 0.37
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = -46.7
+eq.LowGain = 1.9
+eq.Priority = 3
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 0.6
+foot.SoundId = "rbxassetid://9125719822"
+foot.Pitch = 0.3
+foot.EmitterSize = 5
+foot.RollOffMaxDistance = 400
+foot.RollOffMode = "LinearSquare"
+foot.Name = "BangLocker"
+foot.Looped = true
+local distort = Instance.new("DistortionSoundEffect", foot)
+distort.Priority = 3
+distort.Level = 0.37
+local eq = Instance.new("EqualizerSoundEffect", foot)
+eq.HighGain = 10
+eq.MidGain = -46.7
+eq.LowGain = 1.9
+eq.Priority = 3
+
+local foot = Instance.new("Sound", Eyes)
+foot:Play()
+foot.Volume = 5
+foot.SoundId = "rbxassetid://9114228918"
+foot.EmitterSize = 10
+foot.RollOffMaxDistance = 300
+foot.RollOffMode = "LinearSquare"
+foot.Name = "windrrrr"
+foot.Looped = true
+
+return Modl
