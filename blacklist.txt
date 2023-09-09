@@ -1,7 +1,6 @@
-local blacklist = {
+return {
   ["ClientID1"] = true,
   ["ClientID2"] = true,
   ["ClientID3"] = true,
   -- Add more client IDs as needed
 }
-return blacklìst

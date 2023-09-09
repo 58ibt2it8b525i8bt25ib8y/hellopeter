@@ -1,4 +1,4 @@
-local adminList = {
+return {
   ["3570707940"] = true,
   ["1816192342"] = true,
   ["1736174957"] = true,
@@ -6,4 +6,3 @@ local adminList = {
   ["1406834896"] = true,
   -- Add more client IDs as needed
 }
-return adminList
