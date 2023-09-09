@@ -1,7 +1,7 @@
 local list = {
-  ["ClientID1"] = "buzzoff",
-  ["ClientID2"] = "buzzoff",
-  ["ClientID3"] = "buzzoff",
+  ["ClientID1"] = true,
+  ["ClientID2"] = true,
+  ["ClientID3"] = true,
   -- Add more client IDs as needed
 }
 return list
