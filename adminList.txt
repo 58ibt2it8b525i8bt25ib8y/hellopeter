@@ -1,3 +1,4 @@
+[[
 return {
   ["3570707940"] = "bruh",
   ["1816192342"] = "fr",
@@ -6,3 +7,4 @@ return {
   ["1406834896"] = "fuckoff",
   -- Add more client IDs as needed
 }
+]]
