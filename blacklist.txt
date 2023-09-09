@@ -1,8 +1,7 @@
-[[
-return {
+local list = {
   ["ClientID1"] = "buzzoff",
   ["ClientID2"] = "buzzoff",
   ["ClientID3"] = "buzzoff",
   -- Add more client IDs as needed
 }
-]]
+return list
