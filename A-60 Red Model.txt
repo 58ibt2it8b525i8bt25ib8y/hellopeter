@@ -1,6 +1,6 @@
 local Modl = Instance.new("Model")
 
-Modl.Name = "A-60'"
+Modl.Name = "A-60"
 
 			local Eyes = Instance.new("Part", Modl)
 
