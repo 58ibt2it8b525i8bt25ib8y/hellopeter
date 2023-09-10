@@ -45,7 +45,7 @@ Modl.Name = "A-60"
 
 			Light1.Brightness = 25
 
-			Light1.Color = Color3.fromRGB(155,0,0)
+			Light1.Color = Color3.fromRGB(255,0,0)
 
 			Light1.Enabled = true
 
@@ -61,13 +61,13 @@ Light1.Name = "LightFar"
 
 
 
-			Light2.Brightness = 30
+			Light2.Brightness = 25
 
 			Light2.Color = Color3.fromRGB(255,0,0)
 
 			Light2.Enabled = true
 
-			Light2.Range = 16
+			Light2.Range = 35
 
 			Light2.Shadows = true
 
@@ -79,13 +79,13 @@ Light2.Name = "LightClose"
 
 
 
-			Light2.Brightness = 40
+			Light2.Brightness = 20
 
-			Light2.Color = Color3.fromRGB(-255,-55,0)
+			Light2.Color = Color3.fromRGB(-1,1,0)
 
 			Light2.Enabled = true
 
-			Light2.Range = 10
+			Light2.Range = 20
 
 			Light2.Shadows = true
 
@@ -699,10 +699,11 @@ Static2.SoundId = "rbxassetid://8028069841"
 Static2.Pitch = 1
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 Static2.EmitterSize = 10
-Static2.RollOffMaxDistance = 130
+Static2.RollOffMaxDistance = 957
 Static2.Volume = 1
 Static2.Looped = true
 Static2.Parent = Eyes
+Static2.PlayOnRemove = true
 Static2:Play()
     local shift2 = Instance.new("PitchShiftSoundEffect")
     shift2.Octave = 0.5
@@ -874,19 +875,11 @@ cream.TimePosition = 19.82
 
 local eq = Instance.new("EqualizerSoundEffect", cream)
 
-eq.HighGain = 10
+eq.HighGain = 0
 
-eq.MidGain = -6.45
+eq.MidGain = -10
 
-eq.LowGain = 0.5
-
-local eq = Instance.new("EqualizerSoundEffect", cream)
-
-eq.HighGain = 10
-
-eq.MidGain = 10
-
-eq.LowGain = 8
+eq.LowGain = -20
 
 cream:Play()
 
@@ -901,6 +894,10 @@ rev.Diffusion = 1
 rev.Density = 1
 
 rev.DryLevel = -6
+
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+
+distort2.Level = 0.5
 
 
 
@@ -964,22 +961,6 @@ cream.RollOffMaxDistance = 120
 
 cream.TimePosition = 6.07
 
-local eq = Instance.new("EqualizerSoundEffect", cream)
-
-eq.HighGain = 10
-
-eq.MidGain = -6.45
-
-eq.LowGain = 0.5
-
-local eq = Instance.new("EqualizerSoundEffect", cream)
-
-eq.HighGain = 10
-
-eq.MidGain = 10
-
-eq.LowGain = 8
-
 cream:Play()
 
 cream.Looped = true
@@ -994,6 +975,10 @@ rev.Density = 1
 
 rev.DryLevel = -6
 
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+
+distort2.Level = 0.3
+
 
 
 local Static2 = Instance.new("Sound", Eyes)
@@ -1006,9 +991,9 @@ Static2.Pitch = 1.6
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 15
+Static2.EmitterSize = 5
 
-Static2.RollOffMaxDistance = 1000
+Static2.RollOffMaxDistance = 1462
 
 Static2.Volume = 10
 
@@ -1020,11 +1005,95 @@ Static2.Looped = true
 
 local distort2 = Instance.new("DistortionSoundEffect", Static2)
 
-distort2.Level = 0.5
+distort2.Level = 0.45
+
+distort2.Priority = 10
+
+local echo = Instance.new("EchoSoundEffect", Static2)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", Static2)
+rev.DecayTime = 1.5
+rev.Density = 1
+rev.Diffusion = 1
+rev.DryLevel = -6
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "Static"
+
+Static2.SoundId = "rbxassetid://4903742660"
+
+Static2.Pitch = 1.6
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 1
+
+Static2.RollOffMaxDistance = 843
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+    local shift2 = Instance.new("PitchShiftSoundEffect", Static2)
+
+    shift2.Octave = 0.5
+    
+    local shift2 = Instance.new("PitchShiftSoundEffect", Static2)
+
+    shift2.Octave = 0.5
 
 local distort2 = Instance.new("DistortionSoundEffect", Static2)
 
-distort2.Level = 0.5
+distort2.Level = 0.45
+
+distort2.Priority = 10
+
+local echo = Instance.new("EchoSoundEffect", Static2)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", Static2)
+rev.DecayTime = 1.5
+rev.Density = 1
+rev.Diffusion = 1
+rev.DryLevel = -6
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "Static"
+
+Static2.SoundId = "rbxassetid://9125712561"
+
+Static2.Pitch = 0.5
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 20
+
+Static2.RollOffMaxDistance = 85
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+local eq = Instance.new("EqualizerSoundEffect", Static2)
+
+eq.HighGain = -30.5
+
+eq.MidGain = -6.2
+
+eq.LowGain = 0.1
+
+eq.Priority = 3
+
+Static2:Play()
 
 local roast = Instance.new("Sound", Eyes)
 
@@ -1057,6 +1126,146 @@ roast.RollOffMinDistance = 5
 roast.RollOffMode = Enum.RollOffMode.InverseTapered
 
 roast:Play()
+
+-- break break break saxton h axton h axton hale
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "break"
+
+Static2.SoundId = "rbxassetid://2174790942"
+
+Static2.Pitch = 0.4
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 5
+
+Static2.RollOffMaxDistance = 1000
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "break"
+
+Static2.SoundId = "rbxassetid://2612674531"
+
+Static2.Pitch = 1
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 5
+
+Static2.RollOffMaxDistance = 1000
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "break"
+
+Static2.SoundId = "rbxassetid://7142843615"
+
+Static2.Pitch = 0.5
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 5
+
+Static2.RollOffMaxDistance = 1000
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "break"
+
+Static2.SoundId = "rbxassetid://7142857558"
+
+Static2.Pitch = 0.4
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 5
+
+Static2.RollOffMaxDistance = 1000
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "break"
+
+Static2.SoundId = "rbxassetid://4004052860"
+
+Static2.Pitch = 0.5
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 5
+
+Static2.RollOffMaxDistance = 1000
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "break"
+
+Static2.SoundId = "rbxassetid://9125992545"
+
+Static2.Pitch = 0.5
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 5
+
+Static2.RollOffMaxDistance = 1000
+
+Static2.Volume = 10
+
+Static2.Looped = true
+
+Static2:Play()
+
+local Static2 = Instance.new("Sound", Eyes)
+
+Static2.Name = "heartbeat"
+
+Static2.SoundId = "rbxassetid://594809748"
+
+Static2.Pitch = 2.1
+
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+
+Static2.EmitterSize = 30
+
+Static2.RollOffMaxDistance = 465
+
+Static2.Volume = 7
+
+Static2.Looped = true
 
 Static2:Play()
 

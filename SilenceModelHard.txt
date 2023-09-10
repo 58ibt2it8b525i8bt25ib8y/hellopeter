@@ -28,7 +28,7 @@ local Face1 = Particle("rbxassetid://14017101027", true, 0)
 Face1.Parent = Attachment1
 Face1.Size = NumberSequence.new(4)
 Face1.Squash = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.19, 0),
+				NumberSequenceKeypoint.new(0, 0.212, 0),
 				NumberSequenceKeypoint.new(0.02, 0.21, 0),
 				NumberSequenceKeypoint.new(0.10, 0.22, 0),
 				NumberSequenceKeypoint.new(0.24, 0.27, 0),
@@ -180,15 +180,6 @@ cave.MaxDistance = 50
 cave.Volume = 2
 cave.Pitch = 5
 cave.Name = "Close"
-local echo = Instance.new("EchoSoundEffect", cave)
-echo.Delay = 1
-echo.DryLevel = 0
-echo.Feedback = 0.5
-local rev = Instance.new("ReverbSoundEffect", cave)
-rev.DecayTime = 1.5
-rev.Density = 1
-rev.Diffusion = 1
-rev.DryLevel = -6
 cave:Play()
 cave.Looped = true
 
@@ -202,15 +193,6 @@ cave.Pitch = 5
 cave.Name = "Far"
 local shift = Instance.new("PitchShiftSoundEffect", cave)
 shift.Octave = 1.25
-local echo = Instance.new("EchoSoundEffect", cave)
-echo.Delay = 1
-echo.DryLevel = 0
-echo.Feedback = 0.5
-local rev = Instance.new("ReverbSoundEffect", cave)
-rev.DecayTime = 1.5
-rev.Density = 1
-rev.Diffusion = 1
-rev.DryLevel = -6
 cave:Play()
 cave.Looped = true
 
@@ -224,15 +206,6 @@ cave.Pitch = 5
 cave.Name = "VeryFar"
 local shift = Instance.new("PitchShiftSoundEffect", cave)
 shift.Octave = 0.5
-local echo = Instance.new("EchoSoundEffect", cave)
-echo.Delay = 1
-echo.DryLevel = 0
-echo.Feedback = 0.5
-local rev = Instance.new("ReverbSoundEffect", cave)
-rev.DecayTime = 1.5
-rev.Density = 1
-rev.Diffusion = 1
-rev.DryLevel = -6
 cave:Play()
 cave.Looped = true
 
