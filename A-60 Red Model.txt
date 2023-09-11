@@ -1139,7 +1139,7 @@ Static2.Pitch = 0.4
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 5
+Static2.EmitterSize = 2.5
 
 Static2.RollOffMaxDistance = 1000
 
@@ -1159,7 +1159,7 @@ Static2.Pitch = 1
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 5
+Static2.EmitterSize = 2.5
 
 Static2.RollOffMaxDistance = 1000
 
@@ -1179,7 +1179,7 @@ Static2.Pitch = 0.5
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 5
+Static2.EmitterSize = 2.5
 
 Static2.RollOffMaxDistance = 1000
 
@@ -1199,7 +1199,7 @@ Static2.Pitch = 0.4
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 5
+Static2.EmitterSize = 2.5
 
 Static2.RollOffMaxDistance = 1000
 
@@ -1219,7 +1219,7 @@ Static2.Pitch = 0.5
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 5
+Static2.EmitterSize = 2.5
 
 Static2.RollOffMaxDistance = 1000
 
@@ -1239,31 +1239,11 @@ Static2.Pitch = 0.5
 
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 
-Static2.EmitterSize = 5
+Static2.EmitterSize = 2.5
 
 Static2.RollOffMaxDistance = 1000
 
 Static2.Volume = 10
-
-Static2.Looped = true
-
-Static2:Play()
-
-local Static2 = Instance.new("Sound", Eyes)
-
-Static2.Name = "heartbeat"
-
-Static2.SoundId = "rbxassetid://594809748"
-
-Static2.Pitch = 2.1
-
-Static2.RollOffMode = Enum.RollOffMode.InverseTapered
-
-Static2.EmitterSize = 30
-
-Static2.RollOffMaxDistance = 465
-
-Static2.Volume = 7
 
 Static2.Looped = true
 
