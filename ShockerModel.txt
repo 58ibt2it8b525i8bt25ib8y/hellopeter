@@ -48,9 +48,9 @@ Modl.Name = "Shocker"
 
 
 
-			Light1.Brightness = 2.2
+			Light1.Brightness = 5
 
-			Light1.Color = Color3.fromRGB(155,0,0)
+			Light1.Color = Color3.fromRGB(0,155,93)
 
 			Light1.Enabled = true
 
@@ -58,17 +58,15 @@ Modl.Name = "Shocker"
 
 			Light1.Shadows = true
 
-Light1.Name = "LightFar"
-
 
 
 			local Light2 = Instance.new("PointLight", Eyes)
 
 
 
-			Light2.Brightness = 4
+			Light2.Brightness = 5
 
-			Light2.Color = Color3.fromRGB(10,255,70)
+			Light2.Color = Color3.fromRGB(10,255,120)
 
 			Light2.Enabled = true
 
@@ -82,9 +80,9 @@ Light1.Name = "LightFar"
 
 
 
-			Light2.Brightness = 2
+			Light2.Brightness = 7
 
-			Light2.Color = Color3.fromRGB(0,55,0)
+			Light2.Color = Color3.fromRGB(0,55,30)
 
 			Light2.Enabled = true
 
@@ -158,7 +156,7 @@ Face1.SpreadAngle = Vector2.new(20,20)
 
 Face1.Brightness = 5
 
-Face1.Color = ColorSequence.new(Color3.fromRGB(70,255,125))
+Face1.Color = ColorSequence.new(Color3.fromRGB(70,255,175))
 
 Face1.Transparency = NumberSequence.new{
 
@@ -268,7 +266,7 @@ glitch.Speed = NumberRange.new(20)
 
 glitch.Size = NumberSequence.new(7)
 
-glitch.Color = ColorSequence.new(Color3.fromRGB(5,255,125))
+glitch.Color = ColorSequence.new(Color3.fromRGB(5,255,175))
 
 glitch.LightEmission = 1
 
@@ -298,7 +296,7 @@ aura.Speed = NumberRange.new(0)
 
 aura.Size = NumberSequence.new({NumberSequenceKeypoint.new(0, 13), NumberSequenceKeypoint.new(0.4, 0), NumberSequenceKeypoint.new(1, 0)})
 
-aura.Color = ColorSequence.new(Color3.fromRGB(10,255,120))
+aura.Color = ColorSequence.new(Color3.fromRGB(10,255,170))
 
 aura.LightEmission = 1
 
@@ -338,7 +336,7 @@ aura.Speed = NumberRange.new(0)
 
 aura.Size = NumberSequence.new(10)
 
-aura.Color = ColorSequence.new(Color3.fromRGB(10,255,120))
+aura.Color = ColorSequence.new(Color3.fromRGB(10,255,170))
 
 aura.LightEmission = 1
 
@@ -441,5 +439,7 @@ tremolo.Depth = 1
 tremolo.Duty = 1
 
 tremolo.Frequency = 20
+
+Eyes.CFrame = Eyes.CFrame + Vector3.new(0,5,0)
 
 return Modl

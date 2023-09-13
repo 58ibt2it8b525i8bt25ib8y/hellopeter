@@ -42,7 +42,7 @@ EyesParticle.LockedToPart = LockedToPart
 return EyesParticle
 end
 
-local Face1 = Particle("rbxassetid://14489058221", true, 0)
+local Face1 = Particle("rbxassetid://14759661452", true, 0)
 Face1.Parent = Attachment
 Face1.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 6, 0),
@@ -56,8 +56,8 @@ Face1.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face1.Squash = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.1, 0),
-				NumberSequenceKeypoint.new(0.45, 0.3, 0),
+				NumberSequenceKeypoint.new(0, 0.2, 0),
+				NumberSequenceKeypoint.new(0.45, 0.43, 0),
 				NumberSequenceKeypoint.new(1, -0.12, 0),
 			}
 Face1.ZOffset = 1
@@ -73,7 +73,7 @@ Face1.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(1, Color3.fromRGB(250,0,0))
 })
 
-local Face2 = Particle("rbxassetid://14489058221", true, 10)
+local Face2 = Particle("rbxassetid://14759661452", true, 10)
 Face2.Parent = Attachment
 Face2.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 4.6, 0),
@@ -87,9 +87,9 @@ Face2.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face2.Squash = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.3, 0),
-				NumberSequenceKeypoint.new(0.45, 0.38, 0),
-				NumberSequenceKeypoint.new(1, 0.3, 0),
+				NumberSequenceKeypoint.new(0, 0.38, 0),
+				NumberSequenceKeypoint.new(0.45, 0.42, 0),
+				NumberSequenceKeypoint.new(1, 0.38, 0),
 			}
 Face2.ZOffset = 0.5
 Face2.Rate = 300
@@ -115,14 +115,15 @@ emitter.Color = ColorSequence.new(Color3.fromRGB(255, 0, 0))
 
 emitter.Speed = NumberRange.new(40)
 emitter.Drag = -10
-emitter.VelocitySpread = 180
+emitter.VelocitySpread = 360
 emitter.VelocityInheritance = 7
 emitter.Acceleration = Vector3.new(0, -1, 0)
 emitter.LockedToPart = false
 emitter.SpreadAngle = Vector2.new(120,120)
 emitter.RotSpeed = NumberRange.new(335833,32323232)
-emitter.LightEmission = 0.57
-emitter.Size = NumberSequence.new({NumberSequenceKeypoint.new(0,5,0),NumberSequenceKeypoint.new(1,9,0)})
+emitter.LightEmission = 0.2
+emitter.Brightness = 3
+emitter.Size = NumberSequence.new(6)
 emitter.ZOffset = 0.2
 emitter.Rotation = NumberRange.new(360, 360)
 emitter.Squash = NumberSequence.new(0.2)
@@ -139,7 +140,7 @@ glitch.Color = ColorSequence.new(Color3.fromRGB(255, 0, 0))
 glitch.LightEmission = 1
 glitch.LockedToPart = false
 glitch.SpreadAngle = Vector2.new(580,580)
-glitch.ZOffset = 0.4
+glitch.ZOffset = 1
 glitch.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(0.6, 1), NumberSequenceKeypoint.new(1, 1)})
 glitch.Rotation = NumberRange.new(-360,360)
 glitch.RotSpeed = NumberRange.new(-450,450)
@@ -150,10 +151,6 @@ local Slam = Instance.new("Sound", Eyes)
 Slam.SoundId = "rbxassetid://1837829565"
 Slam.Volume = 10
 Slam.Looped = false
-local Equalizer = Instance.new("EqualizerSoundEffect", Slam)
-Equalizer.HighGain = 10
-Equalizer.MidGain = 10
-Equalizer.LowGain = 10
 Slam.Name = "Despawn1"
 Slam.RollOffMode = "InverseTapered"
 Slam.RollOffMaxDistance = 100
@@ -163,10 +160,6 @@ local Slam1 = Instance.new("Sound", Eyes)
 Slam1.SoundId = "rbxassetid://1837829565"
 Slam1.Volume = 10
 Slam1.Looped = false
-local Equalizer = Instance.new("EqualizerSoundEffect", Slam1)
-Equalizer.HighGain = 10
-Equalizer.MidGain = 10
-Equalizer.LowGain = 10
 local Reverb = Instance.new("ReverbSoundEffect", Slam1)
 Reverb.DecayTime = 1
 Reverb.Density = 1
@@ -184,10 +177,6 @@ Slam1.RollOffMinDistance = 60
 local Slam2 = Instance.new("Sound", Eyes)
 Slam2.SoundId = "rbxassetid://6657340839"
 Slam2.Volume = 10
-local Equalizer = Instance.new("EqualizerSoundEffect", Slam2)
-Equalizer.HighGain = 10
-Equalizer.MidGain = 10
-Equalizer.LowGain = 10
 local Reverb = Instance.new("ReverbSoundEffect", Slam2)
 Reverb.DecayTime = 1
 Reverb.Density = 1
@@ -373,4 +362,5 @@ Moving4.Looped = true
 Moving4.Pitch = 0.4
 Moving4:Play()
 Moving4.Name = "CloseScreaming3"
+Eyes.CFrame = Eyes.CFrame + Vector3.new(0,10,0)
 return Modl
