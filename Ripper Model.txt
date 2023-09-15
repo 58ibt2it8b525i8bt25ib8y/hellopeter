@@ -8,7 +8,7 @@ Modl.Name = "Ripper"
                Modl.PrimaryPart = Eyes
 			Eyes.Name = "RushNew"
 			Eyes.Anchored = true
-			Eyes.CanCollide = false
+			Eyes.CanCollide = true
 			Eyes.Size = Vector3.new(5, 5, 5)
 			local Attachment = Instance.new("Attachment", Eyes)
              Attachment.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
@@ -16,7 +16,7 @@ Modl.Name = "Ripper"
 -- Lights
 			local Light1 = Instance.new("PointLight", Eyes)
 
-			Light1.Brightness = 15
+			Light1.Brightness = 7
 			Light1.Color = Color3.fromRGB(255,0,0)
 			Light1.Enabled = true
 			Light1.Range = 20
@@ -24,7 +24,7 @@ Modl.Name = "Ripper"
 
 			local Light2 = Instance.new("PointLight", Eyes)
 
-			Light2.Brightness = 10
+			Light2.Brightness = 5
 			Light2.Color = Color3.fromRGB(155,0,0)
 			Light2.Enabled = true
 			Light2.Range = 50

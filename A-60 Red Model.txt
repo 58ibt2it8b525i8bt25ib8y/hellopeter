@@ -12,7 +12,7 @@ Modl.Name = "A-60"
 
 			Eyes.Anchored = true
 
-			Eyes.CanCollide = false
+			Eyes.CanCollide = true
 
 			Eyes.Size = Vector3.new(4,4,4)
 

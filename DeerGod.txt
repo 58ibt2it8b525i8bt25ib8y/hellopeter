@@ -427,16 +427,6 @@ glitch1.LockedToPart = false
 
 -- Ambience
 local End = Instance.new("Sound", Modl)
-End.Volume = 2
-End.PlayOnRemove = true
-End.SoundId = "rbxassetid://9043357758"
-End.Name = "Escape1"
-End.Pitch = 1
-local eq = Instance.new("EqualizerSoundEffect", End)
-eq.HighGain = 10
-eq.LowGain = 10
-eq.MidGain = 10
-local End = Instance.new("Sound", Modl)
 End.Volume = 2.4
 End.PlayOnRemove = true
 End.SoundId = "rbxassetid://8258601891"
@@ -446,18 +436,6 @@ local eq = Instance.new("EqualizerSoundEffect", End)
 eq.HighGain = 10
 eq.LowGain = 10
 eq.MidGain = 10
-local End = Instance.new("Sound", Modl)
-End.Volume = 2
-End.Pitch = 0.8
-End.PlayOnRemove = true
-End.SoundId = "rbxassetid://635822826"
-End.Name = "Escape2"
-local eq = Instance.new("EqualizerSoundEffect", End)
-eq.HighGain = 10
-eq.LowGain = 10
-eq.MidGain = 10
-local shift = Instance.new("PitchShiftSoundEffect", End)
-shift.Octave = 0.7
 
 --Sounds
 local Kill = Instance.new("Sound", Eyes)

@@ -19,6 +19,8 @@ Modl.Name = "Rebound"
 			local Eyes = Instance.new("Part", Modl)
 			Eyes.Transparency = 1
                Modl.PrimaryPart = Eyes
+          Eyes.CanCollide = true
+          Eyes.Anchored = true
 			local Attachment = Instance.new("Attachment", Eyes)
              Attachment.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
 

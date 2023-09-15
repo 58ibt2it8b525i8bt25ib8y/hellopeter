@@ -14,7 +14,7 @@ Modl.Name = "Shocker"
 
 			Eyes.CanCollide = false
 
-			Eyes.Size = Vector3.new(6,6,6)
+			Eyes.Size = Vector3.new(4.5,4.5,4.5)
 
 			local Attachment = Instance.new("Attachment", Eyes)
 
@@ -214,7 +214,7 @@ emitter.Color = ColorSequence.new(Color3.fromRGB(0,125,75))
 
 
 
-emitter.Speed = NumberRange.new(40)
+emitter.Speed = NumberRange.new(60)
 
 emitter.Drag = -10
 
