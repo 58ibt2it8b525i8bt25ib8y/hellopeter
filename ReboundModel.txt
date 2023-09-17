@@ -308,24 +308,42 @@ local pitch = Instance.new("PitchShiftSoundEffect", roast)
 pitch.Octave = 0.5
 local pitch2 = Instance.new("PitchShiftSoundEffect", roast)
 pitch2.Octave = 0.5
-local toast = roast:Clone()
-toast.Parent = Eyes
-toast.Pitch = 1
-toast.RollOffMaxDistance = 20
-toast.RollOffMinDistance = 5
-toast.Volume = 5
-toast.Name = "veryclose"
-local eq = Instance.new("EqualizerSoundEffect", toast)
-eq.HighGain = 10
-eq.MidGain = 10
-eq.LowGain = 10
-local distort = Instance.new("DistortionSoundEffect", toast)
-distort.Level = 0.9
-local distort = Instance.new("DistortionSoundEffect", roast)
-distort.Level = 1
-local eq = Instance.new("EqualizerSoundEffect", roast)
-eq.HighGain = -80
-eq.MidGain = -80
+local toast = roast:Clone()
+
+toast.Parent = Eyes
+
+toast.Pitch = 1
+
+toast.RollOffMaxDistance = 20
+
+toast.RollOffMinDistance = 5
+
+toast.Volume = 5
+
+toast.Name = "veryclose"
+
+local eq = Instance.new("EqualizerSoundEffect", toast)
+
+eq.HighGain = 10
+
+eq.MidGain = 10
+
+eq.LowGain = 10
+
+local distort = Instance.new("DistortionSoundEffect", toast)
+
+distort.Level = 0.9
+
+local distort = Instance.new("DistortionSoundEffect", roast)
+
+distort.Level = 1
+
+local eq = Instance.new("EqualizerSoundEffect", roast)
+
+eq.HighGain = -80
+
+eq.MidGain = -80
+
 eq.LowGain = -60
 
 local arrival = Instance.new("Sound")
