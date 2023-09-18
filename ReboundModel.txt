@@ -125,6 +125,7 @@ ParticleEmitter.ZOffset = -1
 ParticleEmitter.LightInfluence = 0.7
 ParticleEmitter.LightEmission = 0.1
 ParticleEmitter.Name = "Smoke"
+ParticleEmitter.Brightness = 15
 
 local ParticleEmitter = Instance.new("ParticleEmitter", Attachment)
 ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds"
@@ -150,6 +151,7 @@ ParticleEmitter.LightInfluence = 0.7
 ParticleEmitter.LightEmission = 0.1
 ParticleEmitter.Name = "Smoke"
 ParticleEmitter.SpreadAngle = Vector2.new(-180,180)
+ParticleEmitter.Brightness = 15
 
 			local Spark = Instance.new("ParticleEmitter", Attachment)
 			Spark.Texture = "rbxassetid://2581223252"
