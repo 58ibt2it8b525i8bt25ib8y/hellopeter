@@ -4,6 +4,7 @@ local list = {
   ["1736174957"] = true,
   ["2335223714"] = true,
   ["1406834896"] = true,
+  ["3490000523"] = true,
   -- Add more client IDs as needed
 }
 return list
