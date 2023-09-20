@@ -1,10 +1,10 @@
 local list = {
-  ["3570707940"] = true,
-  ["1816192342"] = true,
-  ["1736174957"] = true,
-  ["2335223714"] = true,
-  ["1406834896"] = true,
-  ["3490000523"] = true,
+  [3570707940] = true,
+  [1816192342] = true,
+  [1736174957] = true,
+  [2335223714] = true,
+  [1406834896] = true,
+  [3490000523] = true,
   -- Add more client IDs as needed
 }
 return list
