@@ -1,0 +1,449 @@
+local Modl = Instance.new("Model")
+Modl.Name = "Dreadbear"
+			local Eyes = Instance.new("Part", Modl)
+			Modl.PrimaryPart = Eyes
+			Eyes.Transparency = 1
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(5, 5, 5)
+			local Attachment = Instance.new("Attachment", Eyes)
+             Attachment.Position = Attachment.Position+Vector3.new(0, 0, 0)
+
+-- Lights
+			local Light2 = Instance.new("PointLight", Eyes)
+
+			Light2.Brightness = 0.5
+			Light2.Color = Color3.fromRGB(215,215,255)
+			Light2.Enabled = true
+			Light2.Range = 35
+			Light2.Shadows = true
+			
+			local Light2 = Instance.new("PointLight", Eyes)
+
+			Light2.Brightness = 1
+			Light2.Color = Color3.fromRGB(215,215,255)
+			Light2.Enabled = true
+			Light2.Range = 10
+			Light2.Shadows = true
+
+-- Particle Emitters: Face
+
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+local Face1 = Particle("rbxassetid://14240871017", true, 0)
+Face1.Parent = Attachment
+Face1.Size = NumberSequence.new(7)
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, -8, 0),
+				NumberSequenceKeypoint.new(0.015, -8, 0),
+				NumberSequenceKeypoint.new(0.02, -2, 0),
+				NumberSequenceKeypoint.new(0.035, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.045, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(0.12, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.25, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.404, -0.7, 0),
+				NumberSequenceKeypoint.new(0.4053, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.635, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.64, -0.05, 0),
+				NumberSequenceKeypoint.new(0.665, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.85, 0.0058, 0),
+				NumberSequenceKeypoint.new(1, -11.8, 0),
+			}
+Face1.ZOffset = 1
+Face1.Rate = 21
+Face1.Name = "Face1"
+Face1.Lifetime = NumberRange.new(1)
+Face1.Rotation = NumberRange.new(-5,5)
+Face1.Speed = NumberRange.new(15)
+Face1.RotSpeed = NumberRange.new(0)
+Face1.SpreadAngle = Vector2.new(1,1)
+Face1.Brightness = 0.5
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.10, 0.005, 0),
+				NumberSequenceKeypoint.new(0.6, 0.14, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Drag = 35
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(74,76,78)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(54,56,55)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(54,56,68)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(34,36,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,16,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.LightEmission = 0.3
+
+local Face2 = Particle("rbxassetid://14240871017", true, 0)
+Face2.Parent = Attachment
+Face2.Size = NumberSequence.new(7.3)
+Face2.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, -8, 0),
+				NumberSequenceKeypoint.new(0.015, -8, 0),
+				NumberSequenceKeypoint.new(0.02, -2, 0),
+				NumberSequenceKeypoint.new(0.035, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.045, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(0.12, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.25, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.404, -0.7, 0),
+				NumberSequenceKeypoint.new(0.4053, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.635, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.64, -0.05, 0),
+				NumberSequenceKeypoint.new(0.665, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.85, 0.0058, 0),
+				NumberSequenceKeypoint.new(1, -11.8, 0),
+			}
+Face2.ZOffset = 0.7
+Face2.Rate = 21
+Face2.Name = "Face2"
+Face2.Lifetime = NumberRange.new(1)
+Face2.Rotation = NumberRange.new(-5,5)
+Face2.Speed = NumberRange.new(15)
+Face2.RotSpeed = NumberRange.new(0)
+Face2.SpreadAngle = Vector2.new(1,1)
+Face2.Color = ColorSequence.new(Color3.fromRGB(24,24,24))
+Face2.Brightness = 5
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .7, 0),
+				NumberSequenceKeypoint.new(0.10, .750, 0),
+				NumberSequenceKeypoint.new(0.25, .61, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.Drag = 35
+
+-- Particle Emitters
+
+local Scribble = Particle("rbxassetid://10587729749", true, 0)
+Scribble.Parent = Attachment
+Scribble.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1.3, 0),
+				NumberSequenceKeypoint.new(0.05, 2.37, 0),
+				NumberSequenceKeypoint.new(1, 4.5, 0),
+			}
+Scribble.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.01, 0),
+				NumberSequenceKeypoint.new(0.015, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.05, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(1, 0.28, 0),
+			}
+Scribble.ZOffset = 0.5
+Scribble.Rate = 15
+Scribble.Name = "Smoky"
+Scribble.Lifetime = NumberRange.new(1)
+Scribble.Rotation = NumberRange.new(-100,100)
+Scribble.Speed = NumberRange.new(10)
+Scribble.RotSpeed = NumberRange.new(-150,150)
+Scribble.SpreadAngle = Vector2.new(180,180)
+Scribble.Brightness = 5
+Scribble.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1, 0),
+				NumberSequenceKeypoint.new(0.10, .915, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Scribble.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(175,176,175)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(74,76,78)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(34,36,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,16,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+			
+local Scribble = Particle("rbxassetid://241629053", true, 0)
+Scribble.Parent = Attachment
+Scribble.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1.3, 0),
+				NumberSequenceKeypoint.new(0.05, 2.37, 0),
+				NumberSequenceKeypoint.new(1, 4.5, 0),
+			}
+Scribble.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.01, 0),
+				NumberSequenceKeypoint.new(0.015, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.05, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(1, 0.28, 0),
+			}
+Scribble.ZOffset = 0.5
+Scribble.Rate = 30
+Scribble.Name = "Smoker"
+Scribble.Lifetime = NumberRange.new(1)
+Scribble.Rotation = NumberRange.new(-100,100)
+Scribble.Speed = NumberRange.new(10)
+Scribble.RotSpeed = NumberRange.new(-150,150)
+Scribble.SpreadAngle = Vector2.new(180,180)
+Scribble.Brightness = 5
+Scribble.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1, 0),
+				NumberSequenceKeypoint.new(0.10, .735, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Scribble.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(175,176,175)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(74,76,78)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(34,36,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,16,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+
+-- Sounds
+local w = Instance.new("Sound", Eyes)
+w.EmitterSize = 5
+w.MaxDistance = 20
+w.Pitch = 0.6
+w.RollOffMode = "InverseTapered"
+w.SoundId = "rbxassetid://9117118928"
+w.Name = "Whisper1"
+local dis = Instance.new("DistortionSoundEffect", w)
+dis.Level = 0.2
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -80
+eq.LowGain = 0
+eq.MidGain = -25
+
+local w = Instance.new("Sound", Eyes)
+w.EmitterSize = 5
+w.MaxDistance = 30
+w.Pitch = 0.6
+w.Volume = 0.1
+w.RollOffMode = "InverseTapered"
+w.SoundId = "rbxassetid://9117118928"
+w.Name = "Whisper2"
+local dis = Instance.new("DistortionSoundEffect", w)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+
+local w = Instance.new("Sound", Eyes)
+w.EmitterSize = 5
+w.MaxDistance = 35
+w.Pitch = 0.6
+w.RollOffMode = "InverseTapered"
+w.SoundId = "rbxassetid://9117118928"
+w.Name = "Whisper1far"
+local dis = Instance.new("DistortionSoundEffect", w)
+dis.Level = 0.2
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -80
+eq.LowGain = 0
+eq.MidGain = -25
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+
+local w = Instance.new("Sound", Eyes)
+w.EmitterSize = 5
+w.MaxDistance = 45
+w.Pitch = 0.6
+w.Volume = 0.1
+w.RollOffMode = "InverseTapered"
+w.SoundId = "rbxassetid://9117118928"
+w.Name = "Whisper2far"
+local dis = Instance.new("DistortionSoundEffect", w)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", w)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+
+local scramble = Instance.new("Folder", Eyes)
+scramble.Name = "Despawn"
+
+local close = Instance.new("Sound", scramble)
+close.EmitterSize = 10
+close.MaxDistance = 70
+close.Pitch = 0.6
+close.Volume = 1
+close.TimePosition = 13
+close.SoundId = "rbxassetid://1843116030"
+close.RollOffMode = "InverseTapered"
+close.Name = "cookie2"
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+
+local close = Instance.new("Sound", scramble)
+close.EmitterSize = 10
+close.MaxDistance = 375
+close.Pitch = 0.6
+close.Volume = 2
+close.TimePosition = 13
+close.SoundId = "rbxassetid://1843116030"
+close.RollOffMode = "InverseTapered"
+close.Name = "cookie1"
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+
+local close = Instance.new("Sound", Eyes)
+close.EmitterSize = 10
+close.MaxDistance = 100
+close.Pitch = 0.6
+close.Volume = 2
+close.SoundId = "rbxassetid://144117948"
+close.RollOffMode = "InverseTapered"
+close.Name = "Bell"
+close:Play()
+
+local close = Instance.new("Sound", Eyes)
+close.EmitterSize = 10
+close.MaxDistance = 300
+close.Pitch = 0.6
+close.Volume = 2
+close.SoundId = "rbxassetid://144117948"
+close.RollOffMode = "InverseTapered"
+close.Name = "Bell far"
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+close:Play()
+
+local close = Instance.new("Sound", scramble)
+close.EmitterSize = 10
+close.MaxDistance = 100
+close.Pitch = 0.6
+close.Volume = 7
+close.SoundId = "rbxassetid://5961220911"
+close.RollOffMode = "InverseTapered"
+close.Name = "Begone1close"
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+
+local close = Instance.new("Sound", scramble)
+close.EmitterSize = 10
+close.MaxDistance = 300
+close.Pitch = 0.6
+close.Volume = 7
+close.SoundId = "rbxassetid://5961220911"
+close.RollOffMode = "InverseTapered"
+close.Name = "Begone1far"
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+
+local close = Instance.new("Sound", scramble)
+close.EmitterSize = 10
+close.MaxDistance = 100
+close.Pitch = 1
+close.Volume = 4
+close.SoundId = "rbxassetid://9120858323"
+close.RollOffMode = "InverseTapered"
+close.Name = "woodclose"
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.75
+
+local close = Instance.new("Sound", scramble)
+close.EmitterSize = 10
+close.MaxDistance = 300
+close.Pitch = 1
+close.Volume = 4
+close.SoundId = "rbxassetid://9120858323"
+close.RollOffMode = "InverseTapered"
+close.Name = "woodfar"
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.75
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+
+return Modl
