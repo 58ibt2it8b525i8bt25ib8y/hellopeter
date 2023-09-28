@@ -425,18 +425,6 @@ local glitch1 = glitch:Clone()
 glitch1.Parent = Eyes
 glitch1.LockedToPart = false
 
--- Ambience
-local End = Instance.new("Sound", Modl)
-End.Volume = 2.4
-End.PlayOnRemove = true
-End.SoundId = "rbxassetid://8258601891"
-End.Name = "Breathing"
-End.Pitch = 0.97
-local eq = Instance.new("EqualizerSoundEffect", End)
-eq.HighGain = 10
-eq.LowGain = 10
-eq.MidGain = 10
-
 --Sounds
 local Kill = Instance.new("Sound", Eyes)
 Kill.Volume = 0.2
