@@ -67,7 +67,7 @@ Face1.Rotation = NumberRange.new(-5,5)
 Face1.Speed = NumberRange.new(15)
 Face1.RotSpeed = NumberRange.new(0)
 Face1.SpreadAngle = Vector2.new(1,1)
-Face1.Brightness = 3
+Face1.Brightness = 2.5
 Face1.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 0, 0),
 				NumberSequenceKeypoint.new(0.10, 0.005, 0),
@@ -88,7 +88,7 @@ Face1.LightEmission = 0.3
 
 local Face2 = Particle("rbxassetid://14240871017", true, 0)
 Face2.Parent = Attachment
-Face2.Size = NumberSequence.new(7.3)
+Face2.Size = NumberSequence.new(7.5)
 Face2.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, -8, 0),
 				NumberSequenceKeypoint.new(0.015, -8, 0),
