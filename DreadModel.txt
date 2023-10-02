@@ -41,7 +41,18 @@ end
 
 local Face1 = Particle("rbxassetid://14240871017", true, 0)
 Face1.Parent = Attachment
-Face1.Size = NumberSequence.new(7)
+--Face1.Size = NumberSequence.new(7)
+Face1.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 7, 0),
+				NumberSequenceKeypoint.new(0.12, 7, 0),
+				NumberSequenceKeypoint.new(0.25, 6.5, 0),
+				NumberSequenceKeypoint.new(0.404, 6, 0),
+				NumberSequenceKeypoint.new(0.4053, 7, 0),
+				NumberSequenceKeypoint.new(0.635, 7, 0),
+				NumberSequenceKeypoint.new(0.64, 6.5, 0),
+				NumberSequenceKeypoint.new(0.665, 7, 0),
+				NumberSequenceKeypoint.new(1, 7, 0),
+			}
 Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, -8, 0),
 				NumberSequenceKeypoint.new(0.015, -8, 0),
@@ -85,44 +96,6 @@ Face1.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
 Face1.LightEmission = 0.3
-
-local Face2 = Particle("rbxassetid://14240871017", true, 0)
-Face2.Parent = Attachment
-Face2.Size = NumberSequence.new(7.5)
-Face2.Squash = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, -8, 0),
-				NumberSequenceKeypoint.new(0.015, -8, 0),
-				NumberSequenceKeypoint.new(0.02, -2, 0),
-				NumberSequenceKeypoint.new(0.035, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.045, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
-				NumberSequenceKeypoint.new(0.12, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.25, -0.0058, 0),
-				NumberSequenceKeypoint.new(0.404, -0.7, 0),
-				NumberSequenceKeypoint.new(0.4053, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.635, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.64, -0.05, 0),
-				NumberSequenceKeypoint.new(0.665, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.85, 0.0058, 0),
-				NumberSequenceKeypoint.new(1, -11.8, 0),
-			}
-Face2.ZOffset = 0.7
-Face2.Rate = 100
-Face2.Name = "Face2"
-Face2.Lifetime = NumberRange.new(1)
-Face2.Rotation = NumberRange.new(-5,5)
-Face2.Speed = NumberRange.new(15)
-Face2.RotSpeed = NumberRange.new(0)
-Face2.SpreadAngle = Vector2.new(1,1)
-Face2.Color = ColorSequence.new(Color3.fromRGB(24,24,24))
-Face2.Brightness = 5
-Face2.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, .7, 0),
-				NumberSequenceKeypoint.new(0.10, .750, 0),
-				NumberSequenceKeypoint.new(0.25, .61, 0),
-				NumberSequenceKeypoint.new(1, 1, 0),
-			}
-Face2.Drag = 35
 
 -- Particle Emitters
 
@@ -450,5 +423,5 @@ local eq = Instance.new("EqualizerSoundEffect", close)
 eq.HighGain = -20.6
 eq.LowGain = 4.6
 eq.MidGain = -14.3
-
+--Modl.Parent = workspace
 return Modl
