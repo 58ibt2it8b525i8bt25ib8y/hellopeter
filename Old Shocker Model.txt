@@ -1,0 +1,379 @@
+local Modl = Instance.new("Model")
+
+Modl.Name = "Shocker"
+
+			local Eyes = Instance.new("Part", Modl)
+
+			Modl.PrimaryPart = Eyes
+
+			Eyes.Transparency = 1
+
+			Eyes.Name = "RushNew"
+
+			Eyes.Anchored = true
+
+			Eyes.CanCollide = false
+
+			Eyes.Size = Vector3.new(4.5,4.5,4.5)
+
+			local Attachment = Instance.new("Attachment", Eyes)
+
+			Attachment.Name = "Others"
+
+			local beautiful = Attachment.Position
+
+			local morning = beautiful+Vector3.new(0,5555,0)
+
+			local Attachment1 = Instance.new("Attachment", Attachment)
+
+	        Attachment1.Name = "Face1"
+
+
+
+-- Lights
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+
+
+			Light1.Brightness = 5
+
+			Light1.Color = Color3.fromRGB(0,155,93)
+
+			Light1.Enabled = true
+
+			Light1.Range = 7
+
+			Light1.Shadows = true
+
+
+
+			local Light2 = Instance.new("PointLight", Eyes)
+
+
+
+			Light2.Brightness = 5
+
+			Light2.Color = Color3.fromRGB(10,255,120)
+
+			Light2.Enabled = true
+
+			Light2.Range = 3
+
+			Light2.Shadows = true
+
+
+
+			local Light2 = Instance.new("PointLight", Eyes)
+
+
+
+			Light2.Brightness = 7
+
+			Light2.Color = Color3.fromRGB(0,55,30)
+
+			Light2.Enabled = true
+
+			Light2.Range = 10
+
+			Light2.Shadows = true
+
+
+
+-- Particle Emitters: Face
+
+
+
+local function Particle(Texture, LockedToPart, Speed)
+
+
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+
+
+			EyesParticle.Texture = Texture
+
+			EyesParticle.Speed = NumberRange.new(Speed)
+
+EyesParticle.LockedToPart = LockedToPart
+
+return EyesParticle
+
+end
+
+
+
+local function bike(Text)
+
+local Face1 = Particle(Text, true, 0)
+
+Face1.Size = NumberSequence.new(3.5)
+
+Face1.Squash = NumberSequence.new{
+
+				NumberSequenceKeypoint.new(0, -32.8, 0),
+
+				NumberSequenceKeypoint.new(0.01, 0.018, 0),
+
+				NumberSequenceKeypoint.new(0.20, -0.0158, 0),
+
+				NumberSequenceKeypoint.new(0.25, 0.0128, 0),
+
+				NumberSequenceKeypoint.new(0.32, -0.0058, 0),
+
+				NumberSequenceKeypoint.new(0.49, 0.0128, 0),
+
+				NumberSequenceKeypoint.new(0.5, 18, 0),
+
+				NumberSequenceKeypoint.new(1, -3.8, 0),
+
+			}
+
+Face1.ZOffset = 1
+
+Face1.Drag = 1000
+
+Face1.Lifetime = NumberRange.new(0.5)
+
+Face1.Rotation = NumberRange.new(-2,2)
+
+Face1.Speed = NumberRange.new(20)
+
+Face1.SpreadAngle = Vector2.new(20,20)
+
+Face1.Brightness = 5
+
+Face1.Color = ColorSequence.new(Color3.fromRGB(70,255,175))
+
+Face1.Transparency = NumberSequence.new{
+
+				NumberSequenceKeypoint.new(0, 0.35, 0),
+
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+
+				NumberSequenceKeypoint.new(1, 1, 0),
+
+			}
+
+Face1.LightEmission = 1
+
+Face1.LightInfluence = 0.7
+
+return Face1
+
+end
+
+
+
+local wahn = bike("rbxassetid://14999018129")
+
+wahn.Rate = 30
+
+wahn.Parent = Attachment1
+
+-- Particle Emitters
+
+
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+
+emitter.Rate = 120
+
+emitter.Lifetime = NumberRange.new(0.5)
+
+emitter.Texture = "rbxassetid://84277811" 
+
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,125,75))
+
+
+
+emitter.Speed = NumberRange.new(60)
+
+emitter.Drag = -10
+
+emitter.VelocitySpread = 180
+
+emitter.VelocityInheritance = 7
+
+emitter.Acceleration = Vector3.new(0, -1, 0)
+
+emitter.LockedToPart = true
+
+emitter.SpreadAngle = Vector2.new(180,180)
+
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+
+emitter.LightEmission = 0
+
+emitter.Size = NumberSequence.new({NumberSequenceKeypoint.new(0,5,0),NumberSequenceKeypoint.new(1,9,0)})
+
+emitter.ZOffset = -1
+
+emitter.Rotation = NumberRange.new(360, 360)
+
+emitter.Squash = NumberSequence.new(0.2)
+
+emitter.Name = "RushTrail"
+
+emitter.Transparency = NumberSequence.new{
+
+				NumberSequenceKeypoint.new(0, 0.47, 0),
+
+				NumberSequenceKeypoint.new(0.35, 1, 0),
+
+				NumberSequenceKeypoint.new(1, 1, 0),
+
+			}
+
+
+
+local glitch = Instance.new("ParticleEmitter", Eyes)
+
+glitch.Texture = "rbxassetid://7948622114"
+
+glitch.Lifetime = NumberRange.new(0.07)
+
+glitch.Rate = 50 --forsomething
+
+glitch.Speed = NumberRange.new(20)
+
+glitch.Size = NumberSequence.new(7)
+
+glitch.Color = ColorSequence.new(Color3.fromRGB(5,255,175))
+
+glitch.LightEmission = 1
+
+glitch.LockedToPart = true
+
+glitch.SpreadAngle = Vector2.new(0,0)
+
+glitch.ZOffset = 0.9
+
+glitch.Squash = NumberSequence.new(-0.5)
+
+glitch.Transparency = NumberSequence.new(0.95)
+
+glitch.Brightness = 2
+
+
+
+local aura = Instance.new("ParticleEmitter", Attachment)
+
+aura.Texture = "rbxassetid://1084955012"
+
+aura.Lifetime = NumberRange.new(0.2)
+
+aura.Rate = 40
+
+aura.Speed = NumberRange.new(0)
+
+aura.Size = NumberSequence.new(10)
+
+aura.Color = ColorSequence.new(Color3.fromRGB(10,255,170))
+
+aura.LightEmission = 1
+
+aura.LightInfluence = 0
+
+aura.LockedToPart = true
+
+aura.ZOffset = 0.4
+
+aura.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0.37), NumberSequenceKeypoint.new(0.18, 1), NumberSequenceKeypoint.new(1, 1)})
+
+aura.Rotation = NumberRange.new(-180,180)
+
+local Attack = Instance.new("Sound", Eyes)
+
+Attack.Volume = 1
+
+Attack.RollOffMode = "InverseTapered"
+
+Attack.RollOffMaxDistance = 1000
+
+Attack.RollOffMinDistance = 10
+
+Attack.SoundId = "rbxassetid://297569488"
+
+Attack.Name = "Yell1"
+
+local shift = Instance.new("PitchShiftSoundEffect", Attack)
+
+shift.Octave = 0.77
+
+local distort = Instance.new("DistortionSoundEffect", Attack)
+
+distort.Level = 0.89
+
+local eq = Instance.new("EqualizerSoundEffect", Attack)
+
+eq.HighGain = -80
+
+eq.MidGain = 10
+
+eq.LowGain = -1.7
+
+local flange = Instance.new("FlangeSoundEffect", Attack)
+
+flange.Depth = 0.2
+
+flange.Mix = 0.2
+
+flange.Rate = 0.3
+
+local tremolo = Instance.new("TremoloSoundEffect", Attack)
+
+tremolo.Depth = 1
+
+tremolo.Duty = 1
+
+tremolo.Frequency = 20
+
+local Attack2 = Attack:Clone()
+
+Attack2.Parent = Eyes
+
+Attack2.Volume = 0.8
+
+Attack2.SoundId = "rbxassetid://5930834201"
+
+Attack2.Name = "Yell2"
+
+
+
+local Ouch = Instance.new("Sound", Eyes)
+
+Ouch.Name = "Damage"
+
+Ouch.Volume = 2.5
+
+Ouch.RollOffMode = "InverseTapered"
+
+Ouch.RollOffMaxDistance = 1000
+
+Ouch.RollOffMinDistance = 10
+
+Ouch.Pitch = 0.9
+
+Ouch.SoundId = "rbxassetid://5930834201"
+
+local flange = Instance.new("FlangeSoundEffect", Ouch)
+
+flange.Depth = 0.2
+
+flange.Mix = 0.2
+
+flange.Rate = 0.3
+
+local tremolo = Instance.new("TremoloSoundEffect", Ouch)
+
+tremolo.Depth = 1
+
+tremolo.Duty = 1
+
+tremolo.Frequency = 20
+
+Eyes.CFrame = Eyes.CFrame + Vector3.new(0,5,0)
+
+return Modl
