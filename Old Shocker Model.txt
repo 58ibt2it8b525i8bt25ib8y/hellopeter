@@ -108,47 +108,29 @@ local function bike(Text)
 
 local Face1 = Particle(Text, true, 0)
 
-Face1.Size = NumberSequence.new(3.5)
-
-Face1.Squash = NumberSequence.new{
-
-				NumberSequenceKeypoint.new(0, -32.8, 0),
-
-				NumberSequenceKeypoint.new(0.01, 0.018, 0),
-
-				NumberSequenceKeypoint.new(0.20, -0.0158, 0),
-
-				NumberSequenceKeypoint.new(0.25, 0.0128, 0),
-
-				NumberSequenceKeypoint.new(0.32, -0.0058, 0),
-
-				NumberSequenceKeypoint.new(0.49, 0.0128, 0),
-
-				NumberSequenceKeypoint.new(0.5, 18, 0),
-
-				NumberSequenceKeypoint.new(1, -3.8, 0),
-
-			}
+Face1.Size = NumberSequence.new(3)
 
 Face1.ZOffset = 1
 
-Face1.Drag = 1000
+Face1.Drag = 10
 
 Face1.Lifetime = NumberRange.new(0.5)
 
 Face1.Rotation = NumberRange.new(-2,2)
 
-Face1.Speed = NumberRange.new(20)
+Face1.Speed = NumberRange.new(3)
 
 Face1.SpreadAngle = Vector2.new(20,20)
 
+Face1.VelocitySpread = 70
+
 Face1.Brightness = 5
 
-Face1.Color = ColorSequence.new(Color3.fromRGB(70,255,175))
+Face1.Color = ColorSequence.new(Color3.fromRGB(10,255,120))
 
 Face1.Transparency = NumberSequence.new{
 
-				NumberSequenceKeypoint.new(0, 0.35, 0),
+				NumberSequenceKeypoint.new(0, 0.535, 0),
 
 				NumberSequenceKeypoint.new(0.47, 1, 0),
 
@@ -156,9 +138,9 @@ Face1.Transparency = NumberSequence.new{
 
 			}
 
-Face1.LightEmission = 1
+Face1.LightEmission = 0.2
 
-Face1.LightInfluence = 0.7
+Face1.LightInfluence = 0.1
 
 return Face1
 
@@ -184,11 +166,9 @@ emitter.Lifetime = NumberRange.new(0.5)
 
 emitter.Texture = "rbxassetid://84277811" 
 
-emitter.Color = ColorSequence.new(Color3.fromRGB(0,125,75))
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,105,55))
 
-
-
-emitter.Speed = NumberRange.new(60)
+emitter.Speed = NumberRange.new(10)
 
 emitter.Drag = -10
 
@@ -206,7 +186,7 @@ emitter.RotSpeed = NumberRange.new(335833,32323232)
 
 emitter.LightEmission = 0
 
-emitter.Size = NumberSequence.new({NumberSequenceKeypoint.new(0,5,0),NumberSequenceKeypoint.new(1,9,0)})
+emitter.Size = NumberSequence.new(4.5)
 
 emitter.ZOffset = -1
 
@@ -238,7 +218,7 @@ glitch.Rate = 50 --forsomething
 
 glitch.Speed = NumberRange.new(20)
 
-glitch.Size = NumberSequence.new(7)
+glitch.Size = NumberSequence.new(5)
 
 glitch.Color = ColorSequence.new(Color3.fromRGB(5,255,175))
 
@@ -268,7 +248,7 @@ aura.Rate = 40
 
 aura.Speed = NumberRange.new(0)
 
-aura.Size = NumberSequence.new(10)
+aura.Size = NumberSequence.new(7)
 
 aura.Color = ColorSequence.new(Color3.fromRGB(10,255,170))
 

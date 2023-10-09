@@ -442,4 +442,36 @@ tremolo.Frequency = 20
 
 Eyes.CFrame = Eyes.CFrame + Vector3.new(0,5,0)
 
+coroutine.wrap(function()
+
+while Modl.Parent ~= nil do
+
+Attachment1.Position = beautiful
+
+Attachment2.Position = morning
+
+Attachment3.Position = morning
+
+task.wait(0.1)
+
+Attachment1.Position = morning
+
+Attachment2.Position = beautiful
+
+Attachment3.Position = morning
+
+task.wait(0.1)
+
+Attachment1.Position = morning
+
+Attachment2.Position = morning
+
+Attachment3.Position = beautiful
+
+task.wait(0.1)
+
+end
+
+end)()
+
 return Modl

@@ -1,0 +1,209 @@
+-- Model
+
+local Modl = Instance.new("Model")
+--Modl.Parent = workspace
+Modl.Name = "Ripper"
+
+			local Eyes = Instance.new("Part", Modl)
+			Eyes.Transparency = 1
+               Modl.PrimaryPart = Eyes
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(5, 5, 5)
+			local Attachment = Instance.new("Attachment", Eyes)
+             Attachment.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
+
+-- Lights
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 7
+			Light1.Color = Color3.fromRGB(255,0,0)
+			Light1.Enabled = true
+			Light1.Range = 20
+			Light1.Shadows = true
+
+			local Light2 = Instance.new("PointLight", Eyes)
+
+			Light2.Brightness = 5
+			Light2.Color = Color3.fromRGB(155,0,0)
+			Light2.Enabled = true
+			Light2.Range = 50
+			Light2.Shadows = true
+
+-- Particle Emitters: Face
+
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+local Face1 = Particle("rbxassetid://14998980928", true, 0)
+Face1.Parent = Attachment
+Face1.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 3, 0),
+				NumberSequenceKeypoint.new(0.1, 6.37, 0),
+				NumberSequenceKeypoint.new(1, 6.95, 0),
+			}
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.2, 0),
+				NumberSequenceKeypoint.new(0.15, 0.3, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Squash = NumberSequence.new(0.3)
+Face1.ZOffset = 1
+Face1.Rate = 120
+Face1.Name = "Face1"
+Face1.Lifetime = NumberRange.new(0,0.3)
+Face1.Rotation = NumberRange.new(-4,4)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Brightness = 2.5
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(150,0,0)),
+    ColorSequenceKeypoint.new(0.123, Color3.fromRGB(110,0,0)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(250,0,0))
+})
+
+-- Particle Emitters
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+emitter.Rate = 180
+emitter.Lifetime = NumberRange.new(0.2)
+
+emitter.Texture = "rbxassetid://84277811" 
+emitter.Color = ColorSequence.new(Color3.fromRGB(155, 0, 0))
+
+emitter.Speed = NumberRange.new(20)
+emitter.Drag = -10
+emitter.VelocitySpread = 360
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = false
+emitter.SpreadAngle = Vector2.new(180,180)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.LightEmission = 0.2
+emitter.Brightness = 3
+emitter.Size = NumberSequence.new(8)
+emitter.ZOffset = 0.2
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Squash = NumberSequence.new(0.05)
+emitter.Name = "RushTrail"
+--emitter.Transparency = NumberSequence.new(0.35)
+emitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.35, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+emitter.Rate = 180
+emitter.Lifetime = NumberRange.new(0.2)
+
+emitter.Texture = "rbxassetid://84277811" 
+emitter.Color = ColorSequence.new(Color3.fromRGB(255, 0, 0))
+
+emitter.Speed = NumberRange.new(40)
+emitter.Drag = -10
+emitter.VelocitySpread = 360
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = false
+emitter.SpreadAngle = Vector2.new(180,180)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.LightEmission = 0.2
+emitter.Brightness = 3
+emitter.Size = NumberSequence.new(8)
+emitter.ZOffset = 0
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Squash = NumberSequence.new(0.05)
+emitter.Name = "RushTrail2"
+emitter.Transparency = NumberSequence.new(0.35)
+
+--Sounds
+local Slam = Instance.new("Sound", Eyes)
+Slam.SoundId = "rbxassetid://1837829565"
+Slam.Volume = 6
+Slam.Looped = false
+Slam.Name = "Despawn"
+Slam.RollOffMode = "InverseTapered"
+Slam.RollOffMaxDistance = 250
+Slam.RollOffMinDistance = 60
+
+-- Moving Sounds
+local Moving = Instance.new("Sound", Eyes)
+Moving.SoundId = "rbxassetid://6963538865"
+Moving.Pitch = 0.37
+Moving.Volume = 3
+Moving.RollOffMaxDistance = 550
+Moving.RollOffMinDistance = 30
+Moving.RollOffMode = "InverseTapered"
+local Distort = Instance.new("DistortionSoundEffect", Moving)
+Distort.Level = 0.85
+local Equalizer = Instance.new("EqualizerSoundEffect", Moving)
+Equalizer.HighGain = 0
+Equalizer.MidGain = -10
+Equalizer.LowGain = -20
+--[[
+local Equalizer = Instance.new("EqualizerSoundEffect", Moving)
+Equalizer.HighGain = -20
+Equalizer.MidGain = -5
+Equalizer.LowGain = -10
+]]--
+local Echo = Instance.new("EchoSoundEffect", Moving)
+Echo.Delay = 1
+local Shift = Instance.new("PitchShiftSoundEffect", Moving)
+Shift.Octave = 0.545
+local Reverb = Instance.new("ReverbSoundEffect", Moving)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+Moving.Looped = true
+Moving:Play()
+Moving.Name = "Static"
+
+local Moving2 = Instance.new("Sound", Eyes)
+Moving2.SoundId = "rbxassetid://9125713501"
+Moving2.Volume = 6
+local Shift = Instance.new("PitchShiftSoundEffect", Moving2)
+Shift.Octave = 0.88
+Moving2.Looped = true
+Moving2.Pitch = 0.6
+Moving2.RollOffMaxDistance = 100
+Moving2.RollOffMinDistance = 20
+Moving2.RollOffMode = "InverseTapered"
+Moving2:Play()
+Moving2.Name = "Screaming1"
+
+local Moving3 = Instance.new("Sound", Eyes)
+Moving3.SoundId = "rbxassetid://9125713501"
+Moving3.Volume = 6
+Moving3.RollOffMaxDistance = 70
+Moving3.RollOffMinDistance = 20
+Moving3.RollOffMode = "InverseTapered"
+local Shift = Instance.new("PitchShiftSoundEffect", Moving3)
+Shift.Octave = 0.88
+Moving3.Looped = true
+Moving3.Pitch = 0.5
+Moving3:Play()
+Moving3.Name = "Screaming2"
+
+local Moving4 = Instance.new("Sound", Eyes)
+Moving4.SoundId = "rbxassetid://9125713501"
+Moving4.Volume = 6
+Moving4.RollOffMaxDistance = 130
+Moving4.RollOffMinDistance = 20
+Moving4.RollOffMode = "InverseTapered"
+local Shift = Instance.new("PitchShiftSoundEffect", Moving4)
+Shift.Octave = 0.88
+Moving4.Looped = true
+Moving4.Pitch = 0.4
+Moving4:Play()
+Moving4.Name = "Screaming3"
+
+Eyes.CFrame = Eyes.CFrame + Vector3.new(0,10,0)
+return Modl

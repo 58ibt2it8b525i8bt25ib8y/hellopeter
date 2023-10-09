@@ -1,0 +1,163 @@
+
+local Modl = Instance.new("Model")
+Modl.Name = "Rebound"
+
+			local Eyes = Instance.new("Part", Modl)
+			Eyes.Transparency = 1
+               Modl.PrimaryPart = Eyes
+          Eyes.CanCollide = false
+          Eyes.Anchored = true
+			local Attachment = Instance.new("Attachment", Eyes)
+             Attachment.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
+
+-- Faces
+
+			local EyesParticle = Instance.new("ParticleEmitter", Attachment)
+			EyesParticle.LightInfluence = 0
+			EyesParticle.Brightness = 1.26
+
+EyesParticle.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0),
+				NumberSequenceKeypoint.new(0.4, 0),
+				NumberSequenceKeypoint.new(0.65, 1),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+EyesParticle.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 5),
+				NumberSequenceKeypoint.new(1, 4.98),
+			}
+
+			EyesParticle.Texture = "rbxassetid://14964236245"
+
+			EyesParticle.Lifetime = NumberRange.new(0.65)
+			EyesParticle.Rate = 30
+			EyesParticle.Rotation = NumberRange.new(-7,7)
+			EyesParticle.Speed = NumberRange.new(2)
+	EyesParticle.VelocitySpread = 50
+EyesParticle.ZOffset = 0.5
+EyesParticle.Name = "Face"
+EyesParticle.Squash = NumberSequence.new(0.15)
+EyesParticle.LightInfluence = 0.1
+EyesParticle.LightEmission = 0.2
+EyesParticle.Drag = 5
+			EyesParticle.LockedToPart = true
+			EyesParticle.VelocityInheritance = 2
+
+-- Others
+
+local boom = Instance.new("ParticleEmitter", Attachment)
+boom.Size = NumberSequence.new(20)
+boom.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.5, 0.5),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+boom.Drag = 255
+boom.Speed = NumberRange.new(0)
+boom.Texture = "rbxassetid://1084955488"
+boom.LightEmission = 1
+boom.LightInfluence = 1
+boom.ZOffset = -1
+boom.Rate = 3
+boom.LockedToPart = true
+boom.Lifetime = NumberRange.new(1,1.5)
+
+local boom = Instance.new("ParticleEmitter", Attachment)
+boom.Size = NumberSequence.new(20)
+boom.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.5, 0.5),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+boom.Drag = 255
+boom.Speed = NumberRange.new(0)
+boom.Texture = "rbxassetid://1084955488"
+boom.LightEmission = 1
+boom.LightInfluence = 1
+boom.ZOffset = -1
+boom.Rate = 1
+boom.LockedToPart = true
+boom.Color = ColorSequence.new(Color3.fromRGB(0,225,25))
+boom.Lifetime = NumberRange.new(1,1.5)
+
+local ParticleEmitter = Instance.new("ParticleEmitter", Attachment)
+ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds"
+ParticleEmitter.Lifetime = NumberRange.new(1, 4)
+ParticleEmitter.Rate = 50
+ParticleEmitter.Speed = NumberRange.new(0,5)
+ParticleEmitter.VelocitySpread = 50
+ParticleEmitter.Rotation = NumberRange.new(-360, 360)
+ParticleEmitter.RotSpeed = NumberRange.new(-120, 120)
+ParticleEmitter.Size = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 5.8),
+    NumberSequenceKeypoint.new(1, 3.7)
+})
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(0,100,255))
+ParticleEmitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .637),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+ParticleEmitter.ZOffset = -1
+ParticleEmitter.LightInfluence = 0.7
+ParticleEmitter.LightEmission = 0.1
+ParticleEmitter.Name = "Smoke"
+ParticleEmitter.Brightness = 15
+
+			Eyes.Name = "RushNew"
+
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(15,15,15)
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 6
+			Light1.Color = Color3.fromRGB(0,255,255)
+			Light1.Enabled = true
+			Light1.Range = 50
+			Light1.Shadows = true
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 10
+			Light1.Color = Color3.fromRGB(0,0,255)
+			Light1.Enabled = true
+			Light1.Range = 10
+			Light1.Shadows = true
+			
+-- Sounds
+
+local roast = Instance.new("Sound")
+roast.Parent = Eyes
+roast.Name = "close"
+roast.SoundId = "rbxassetid://5348162330"
+roast.Volume = 1
+roast.Pitch = 1
+roast.Looped = true
+roast:Play()
+roast.RollOffMaxDistance = 75
+roast.RollOffMinDistance = 1
+roast.RollOffMode = Enum.RollOffMode.InverseTapered
+local pitch = Instance.new("PitchShiftSoundEffect", roast)
+pitch.Octave = 0.5
+local pitch2 = Instance.new("PitchShiftSoundEffect", roast)
+pitch2.Octave = 0.5
+
+local distort = Instance.new("DistortionSoundEffect", roast)
+
+distort.Level = 0.9
+
+local eq = Instance.new("EqualizerSoundEffect", roast)
+
+eq.HighGain = 10
+
+eq.MidGain = 10
+
+eq.LowGain = 10
+
+
+Eyes.CFrame = Eyes.CFrame + Vector3.new(0,5,0)
+
+return Modl
