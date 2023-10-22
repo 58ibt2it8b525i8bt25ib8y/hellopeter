@@ -1,6 +1,6 @@
 local list = {
-  ["ClientID1"] = true,
-  ["ClientID2"] = true,
+  ["daeb3feb-6ac7-40c7-944f-58b627644e2f"] = true,
+  ["09b86571-0023-442a-ae90-4364c14d2eec"] = true,
   ["ClientID3"] = true,
   -- Add more client IDs as needed
 }
