@@ -5,6 +5,7 @@ local list = {
   [2335223714] = true,
   [1406834896] = true,
   [3490000523] = true,
+  [3091020062] = true,
   -- Add more client IDs as needed
 }
 return list
