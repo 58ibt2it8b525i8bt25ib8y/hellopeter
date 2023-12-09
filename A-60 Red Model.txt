@@ -694,6 +694,17 @@ smoke2.LockedToPart = true
 --Sounds
 
 local Static2 = Instance.new("Sound")
+Static2.Name = "DoorOpen"
+Static2.SoundId = "rbxassetid://5276304082"
+Static2.Pitch = 1
+Static2.RollOffMode = Enum.RollOffMode.InverseTapered
+Static2.EmitterSize = 5
+Static2.RollOffMaxDistance = 75
+Static2.Volume = 1.5
+Static2.Parent = Eyes
+Static2.PlayOnRemove = true
+
+local Static2 = Instance.new("Sound")
 Static2.Name = "Far"
 Static2.SoundId = "rbxassetid://8028069841"
 Static2.Pitch = 1
