@@ -1,0 +1,237 @@
+
+local Modl = Instance.new("Model")
+Modl.Name = "FrostbiteOld"
+			local Eyes = Instance.new("Part", Modl)
+			Modl.PrimaryPart = Eyes
+			Eyes.Transparency = 1
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(5, 5, 5)
+			local Attachment = Instance.new("Attachment", Eyes)
+			local Attach = Instance.new("Attachment", Attachment)
+			Attach.Name = "Head"
+            Attach.Position = Attachment.Position+Vector3.new(0, 0.5, 0)
+
+-- Lights
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 7
+			Light1.Color = Color3.fromRGB(0,255,255)
+			Light1.Enabled = true
+			Light1.Range = 15
+			Light1.Shadows = true
+			Light1.Name = "LightClose"
+
+			local Light1 = Instance.new("PointLight", Eyes)
+
+			Light1.Brightness = 5
+			Light1.Color = Color3.fromRGB(0,50,255)
+			Light1.Enabled = true
+			Light1.Range = 30
+		    Light1.Shadows = true
+		    Light1.Name = "LightFar"
+
+-- Particle Emitters: Face
+
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+local Face1 = Particle("rbxassetid://15843359879", true, 0)
+Face1.Parent = Attach
+Face1.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 5.5, 0),
+				NumberSequenceKeypoint.new(0.15, 5.68, 0),
+				NumberSequenceKeypoint.new(0.30, 5.5, 0),
+				NumberSequenceKeypoint.new(0.45, 5.78, 0),
+				NumberSequenceKeypoint.new(0.50, 5.5, 0),
+				NumberSequenceKeypoint.new(1, 5.78, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 250
+Face1.Name = "Face1"
+Face1.Lifetime = NumberRange.new(0.02)
+Face1.Rotation = NumberRange.new(2,15)
+Face1.RotSpeed = NumberRange.new(-35,35)
+Face1.LightEmission = 0.05
+Face1.LightInfluence = 0.01
+Face1.VelocitySpread = 360
+Face1.Drag = 15
+Face1.Speed = NumberRange.new(-50,50)
+Face1.Enabled = false
+
+-- Particle Emitters
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+
+emitter.Rate = 145
+
+emitter.Lifetime = NumberRange.new(0.5)
+
+emitter.Texture = "rbxassetid://15843602047" 
+
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,100,75))
+
+emitter.Speed = NumberRange.new(20)
+
+emitter.Drag = 3
+
+emitter.VelocitySpread = 360
+
+emitter.Acceleration = Vector3.new(0, 0, 0)
+
+emitter.LockedToPart = true
+
+emitter.SpreadAngle = Vector2.new(180,180)
+
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+
+emitter.LightEmission = -0.05
+
+emitter.LightInfluence = 0.05
+
+emitter.Size = NumberSequence.new(3.5)
+
+emitter.ZOffset = -1
+
+emitter.Rotation = NumberRange.new(360, 360)
+
+emitter.Name = "RushTrail"
+
+emitter.Transparency = NumberSequence.new(0.655)
+
+local emitter = Instance.new("ParticleEmitter", Attachment)
+
+
+
+emitter.Rate = 45
+
+
+emitter.Lifetime = NumberRange.new(0.5)
+
+
+emitter.Texture = "rbxassetid://15843602047" 
+
+
+
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,10,35))
+
+
+
+emitter.Speed = NumberRange.new(20)
+
+
+
+emitter.Drag = 3
+
+
+emitter.VelocitySpread = 360
+
+
+emitter.Acceleration = Vector3.new(0, 0, 0)
+
+
+
+emitter.LockedToPart = true
+
+
+
+emitter.SpreadAngle = Vector2.new(180,180)
+
+
+
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+
+
+
+emitter.LightEmission = 0
+
+
+
+emitter.Size = NumberSequence.new(1)
+
+
+emitter.ZOffset = -0.5
+
+
+emitter.Rotation = NumberRange.new(360, 360)
+
+
+
+emitter.Name = "RushTrail1"
+
+
+
+emitter.Transparency = NumberSequence.new(0.41)
+
+--Sounds
+local s = Instance.new("Sound", Eyes)
+s.Name = "Amb"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 250
+s.Volume = 1
+s.TimePosition = 0
+s.Pitch = 1.2
+s.Looped = true
+s.SoundId = "rbxassetid://167123203"
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 1
+fl.Rate = 0.25
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 0.73
+fl.Rate = 0.75
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Spawn"
+s.Looped = true
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 1000
+s.Volume = 1
+s.Pitch = 0.11
+s.SoundId = "rbxassetid://372770465"
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 1
+fl.Rate = 0.25
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Depth = 1
+fl.Mix = 0.73
+fl.Rate = 0.75
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Despawn"
+s.MaxDistance = 500
+s.Pitch = 0.24
+s.RollOffMode = "InverseTapered"
+s.SoundId = "rbxassetid://6305809364"
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Rate = 0.75
+fl.Depth = 1
+fl.Mix = 0.73
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Rate = 0.25
+fl.Depth = 1
+fl.Mix = 1
+
+--[[Eyes.CFrame = CFrame.new(0, 10, 0)
+Modl.Parent = workspace]]--
+
+return Modl
