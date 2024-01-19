@@ -1,5 +1,5 @@
 --shh----------------------------------- z  z   -    z z  z znbshnshnshnhnshnshnsnhshmshmshk  s s      shhh  v v  v  hcfnhnfhnfkhrujr         hndjhdhnsngsgnsgnsgn                  hfnhfhnfhnhnfndj
-local Modl = Instance.new("Model", workspace)
+local Modl = Instance.new("Model")
 Modl.Name = "Specimen 8"
 			local Eyes = Instance.new("Part", Modl)
 			Modl.PrimaryPart = Eyes
@@ -8,7 +8,7 @@ Modl.Name = "Specimen 8"
 			Eyes.Anchored = true
 			Eyes.CanCollide = false
 			Eyes.Size = Vector3.new(5, 5, 5)
-			Eyes.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position --+ Vector3.new(0, 5, 0)
+			--Eyes.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position --+ Vector3.new(0, 5, 0)
 			local Attachment = Instance.new("Attachment", Eyes)
 			Attachment.Name = "FullBody"
 			local Attach = Instance.new("Attachment", Eyes)
