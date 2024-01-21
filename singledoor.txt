@@ -1,0 +1,614 @@
+
+local Modl = Instance.new("Model")
+Modl.Name = "mmmmgghmgmmmYIPPEEE"
+--Modl.Parent = workspace
+			local Eyes = Instance.new("Part", Modl)
+			Modl.PrimaryPart = Eyes
+			Eyes.Transparency = 1
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(5, 5, 5)
+			local Hitbox = Instance.new("Part", Modl)
+            Hitbox.Transparency = 1
+			Hitbox.Name = "Hitbox"
+			Hitbox.Anchored = true
+			Hitbox.CanCollide = false
+			Hitbox.Size = Vector3.new(20,20,5)
+			local Attachment = Instance.new("Attachment", Eyes)
+			local Attach = Instance.new("Attachment", Attachment)
+			Attach.Name = "Head"
+            Attach.Position = Vector3.new(0, 0.5, 0)
+            local JAttachment = Instance.new("Attachment", Eyes)
+            JAttachment.Name = "Death"
+            JAttachment.Position = Vector3.new(0, 20, 0)
+			local JAttach = Instance.new("Attachment", JAttachment)
+			JAttach.Name = "Head"
+            JAttach.Position = Vector3.new(0, 0.5, 0)
+            
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+-- Death Particle Emitters: Face
+
+local Face1 = Particle("rbxassetid://16051477164", true, 0)
+Face1.Parent = JAttach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face11"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,30)
+Face1.Enabled = false
+
+local Face2 = Particle("rbxassetid://16051477164", true, 10)
+Face2.Parent = JAttach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face12"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = false
+
+local Face1 = Particle("rbxassetid://16051484931", true, 0)
+Face1.Parent = JAttach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face21"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,30)
+Face1.Enabled = false
+
+local Face2 = Particle("rbxassetid://16051484931", true, 10)
+Face2.Parent = JAttach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face22"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = false
+
+local Face1 = Particle("rbxassetid://16051492709", true, 0)
+Face1.Parent = JAttach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face31"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,30)
+Face1.Enabled = false
+
+local Face2 = Particle("rbxassetid://16051492709", true, 10)
+Face2.Parent = JAttach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face32"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = false
+
+local Face1 = Particle("rbxassetid://16051499070", true, 0)
+Face1.Parent = JAttach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face41"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,30)
+Face1.Enabled = false
+
+local Face2 = Particle("rbxassetid://16051499070", true, 10)
+Face2.Parent = JAttach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face42"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = false
+
+local Face1 = Particle("rbxassetid://16051505691", true, 0)
+Face1.Parent = JAttach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face51"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,30)
+Face1.Enabled = false
+
+local Face2 = Particle("rbxassetid://16051505691", true, 10)
+Face2.Parent = JAttach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face52"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = false
+
+local Face1 = Particle("rbxassetid://16051511777", true, 0)
+Face1.Parent = JAttach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face61"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,30)
+Face1.Enabled = false
+
+local Face2 = Particle("rbxassetid://16051511777", true, 10)
+Face2.Parent = JAttach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face62"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = false
+
+-- Particle Emitters: Face
+
+local Face1 = Particle("rbxassetid://16051511777", true, 0)
+Face1.Parent = Attach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.001, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.1, -0.001, 0),
+				NumberSequenceKeypoint.new(0.15, 0, 0),
+				NumberSequenceKeypoint.new(0.2, 0.001, 0),
+				NumberSequenceKeypoint.new(0.25, 0, 0),
+				NumberSequenceKeypoint.new(0.3, -0.001, 0),
+				NumberSequenceKeypoint.new(0.35, 0, 0),
+				NumberSequenceKeypoint.new(0.40, 0.001, 0),
+				NumberSequenceKeypoint.new(0.45, 0, 0),
+				NumberSequenceKeypoint.new(0.5, -0.001, 0),
+				NumberSequenceKeypoint.new(0.55, 0, 0),
+				NumberSequenceKeypoint.new(0.6, -0.001, 0),
+				NumberSequenceKeypoint.new(1, 0, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face1"
+Face1.Lifetime = NumberRange.new(0.2)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,10)
+Face1.Enabled = true
+
+local Face2 = Particle("rbxassetid://16051511777", true, 10)
+Face2.Parent = Attach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.001, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.1, -0.001, 0),
+				NumberSequenceKeypoint.new(0.15, 0, 0),
+				NumberSequenceKeypoint.new(0.2, 0.001, 0),
+				NumberSequenceKeypoint.new(0.25, 0, 0),
+				NumberSequenceKeypoint.new(0.3, -0.001, 0),
+				NumberSequenceKeypoint.new(0.35, 0, 0),
+				NumberSequenceKeypoint.new(0.40, 0.001, 0),
+				NumberSequenceKeypoint.new(0.45, 0, 0),
+				NumberSequenceKeypoint.new(0.5, -0.001, 0),
+				NumberSequenceKeypoint.new(0.55, 0, 0),
+				NumberSequenceKeypoint.new(0.6, -0.001, 0),
+				NumberSequenceKeypoint.new(1, 0, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face2"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = true
+
+local Face1 = Particle("rbxassetid://16051505691", true, 0)
+Face1.Parent = Attach
+Face1.Size = NumberSequence.new(5.5)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.001, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.1, -0.001, 0),
+				NumberSequenceKeypoint.new(0.15, 0, 0),
+				NumberSequenceKeypoint.new(0.2, 0.001, 0),
+				NumberSequenceKeypoint.new(0.25, 0, 0),
+				NumberSequenceKeypoint.new(0.3, -0.001, 0),
+				NumberSequenceKeypoint.new(0.35, 0, 0),
+				NumberSequenceKeypoint.new(0.40, 0.001, 0),
+				NumberSequenceKeypoint.new(0.45, 0, 0),
+				NumberSequenceKeypoint.new(0.5, -0.001, 0),
+				NumberSequenceKeypoint.new(0.55, 0, 0),
+				NumberSequenceKeypoint.new(0.6, -0.001, 0),
+				NumberSequenceKeypoint.new(1, 0, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 10000
+Face1.Name = "Face3"
+Face1.Lifetime = NumberRange.new(0.05)
+Face1.Rotation = NumberRange.new(-13,13)
+Face1.RotSpeed = NumberRange.new(0,0)
+Face1.Drag = 10
+Face1.Speed = NumberRange.new(5,10)
+Face1.Enabled = true
+
+local Face2 = Particle("rbxassetid://16051505691", true, 10)
+Face2.Parent = Attach
+Face2.Size = NumberSequence.new(5.5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.15, 0.78, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.001, 0),
+				NumberSequenceKeypoint.new(0.05, 0, 0),
+				NumberSequenceKeypoint.new(0.1, -0.001, 0),
+				NumberSequenceKeypoint.new(0.15, 0, 0),
+				NumberSequenceKeypoint.new(0.2, 0.001, 0),
+				NumberSequenceKeypoint.new(0.25, 0, 0),
+				NumberSequenceKeypoint.new(0.3, -0.001, 0),
+				NumberSequenceKeypoint.new(0.35, 0, 0),
+				NumberSequenceKeypoint.new(0.40, 0.001, 0),
+				NumberSequenceKeypoint.new(0.45, 0, 0),
+				NumberSequenceKeypoint.new(0.5, -0.001, 0),
+				NumberSequenceKeypoint.new(0.55, 0, 0),
+				NumberSequenceKeypoint.new(0.6, -0.001, 0),
+				NumberSequenceKeypoint.new(1, 0, 0),
+			}
+Face2.ZOffset = -0.5
+Face2.Rate = 150
+Face2.Name = "Face4"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(3,6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.VelocitySpread = 360
+Face2.Enabled = true
+
+-- Particle Emitters
+
+local emitter = Instance.new("ParticleEmitter", JAttachment)
+emitter.Rate = 130
+emitter.Lifetime = NumberRange.new(0.5)
+emitter.Texture = "rbxassetid://269613979" 
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,0,0))
+emitter.Speed = NumberRange.new(10)
+emitter.Drag = -2
+emitter.VelocitySpread = 180
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = true
+emitter.SpreadAngle = Vector2.new(120,120)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.Size = NumberSequence.new(3)
+emitter.ZOffset = -3
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Name = "RushTrail1"
+emitter.Enabled = false
+emitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .37),
+				NumberSequenceKeypoint.new(0.76, .37),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+local emitter = Instance.new("ParticleEmitter", JAttachment)
+emitter.Rate = 150
+emitter.Lifetime = NumberRange.new(0.4)
+emitter.Texture = "rbxassetid://8510586199" 
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,0,0))
+emitter.Speed = NumberRange.new(15)
+emitter.Drag = -2
+emitter.VelocitySpread = 180
+emitter.VelocityInheritance = 7
+emitter.Acceleration = Vector3.new(0, -1, 0)
+emitter.LockedToPart = true
+emitter.SpreadAngle = Vector2.new(120,120)
+emitter.RotSpeed = NumberRange.new(335833,32323232)
+emitter.Size = NumberSequence.new(4)
+emitter.ZOffset = -3
+emitter.Rotation = NumberRange.new(360, 360)
+emitter.Name = "RushTrail2"
+emitter.Enabled = false
+emitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .1),
+				NumberSequenceKeypoint.new(0.356, .37),
+				NumberSequenceKeypoint.new(0.76, .37),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+local ParticleEmitter = Instance.new("ParticleEmitter", Attachment)
+ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds"
+ParticleEmitter.Lifetime = NumberRange.new(1)
+ParticleEmitter.Rate = 1000
+ParticleEmitter.Speed = NumberRange.new(0,5)
+ParticleEmitter.VelocitySpread = 50
+ParticleEmitter.Rotation = NumberRange.new(-360, 360)
+ParticleEmitter.RotSpeed = NumberRange.new(-50,50)
+ParticleEmitter.Size = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 8),
+    NumberSequenceKeypoint.new(1, 8.6)
+})
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(0, 0, 0))
+ParticleEmitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .137),
+				NumberSequenceKeypoint.new(0.76, .37),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+ParticleEmitter.ZOffset = -3
+ParticleEmitter.LightInfluence = 0.1
+ParticleEmitter.LightEmission = 0.3
+ParticleEmitter.Name = "Smoke"
+ParticleEmitter.SpreadAngle = Vector2.new(-180,180)
+local smoke2 = ParticleEmitter:Clone()
+smoke2.Parent = Attachment
+smoke2.LockedToPart = true
+smoke2.Name = "Smoke2"
+
+local h = Instance.new("ParticleEmitter", JAttachment)
+h.Texture = "rbxassetid://8945404215"
+h.Lifetime = NumberRange.new(0.5)
+h.VelocitySpread = 50
+h.SpreadAngle = Vector2.new(50,50)
+h.LightEmission = 0.5
+h.Brightness = 1
+h.Rate = 1000
+h.Enabled = false
+h.Color = ColorSequence.new(Color3.fromRGB(0,0,0))
+h.Size = NumberSequence.new(5.5)
+h.Squash = NumberSequence.new{
+   NumberSequenceKeypoint.new(0, 0.7),
+   NumberSequenceKeypoint.new(0.147, 0.755),
+   NumberSequenceKeypoint.new(0.18, 0.641),
+   NumberSequenceKeypoint.new(0.21, -0.431),
+   NumberSequenceKeypoint.new(0.247, 0.755),
+   NumberSequenceKeypoint.new(0.58, 0.641),
+   NumberSequenceKeypoint.new(0.75, 0.31),
+   NumberSequenceKeypoint.new(0.847, -0.6),
+   NumberSequenceKeypoint.new(0.88, 0.641),
+   NumberSequenceKeypoint.new(1, 1),
+}
+h.ZOffset = -3.5
+h.Orientation = "VelocityPerpendicular"
+h.Name = "Sparkles2"
+
+local val = Instance.new("BoolValue", Eyes)
+val.Name = "Hostile"
+val.Value = false
+
+--Sounds
+
+local cream = Instance.new("Sound", Eyes)
+cream.Name = "HELP ME!"
+cream.SoundId = "rbxassetid://2738830850"
+cream.Pitch = 0.57
+cream.Volume = 1
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 150
+cream.TimePosition = 18
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+cream.Looped = true
+local echo = Instance.new("EchoSoundEffect", cream)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Eyes)
+cream.Name = "HELP ME! 2"
+cream.SoundId = "rbxassetid://9043360584"
+cream.Volume = 0.5
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 150
+--cream:Play()
+cream.Looped = true
+local echo = Instance.new("EchoSoundEffect", cream)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Knock"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 3
+s.MaxDistance = 120
+s.Volume = 2
+s.Looped = true
+s.Pitch = 1
+s.SoundId = "rbxassetid://9114140488"
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Break"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 120
+s.Volume = 2
+s.Pitch = 1
+s.SoundId = "rbxassetid://9120957463"
+
+local cream = Instance.new("Sound", Eyes)
+cream.Name = "Death1"
+cream.SoundId = "rbxassetid://9043360584"
+cream.Volume = 1.5
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 2.5
+cream.RollOffMaxDistance = 50
+
+local cream = Instance.new("Sound", Eyes)
+cream.Name = "Death2"
+cream.SoundId = "rbxassetid://2738830850"
+cream.Pitch = 0.57
+cream.Volume = 1
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 5
+cream.RollOffMaxDistance = 50
+cream.TimePosition = 19.82
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 0.7
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+return Modl                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
