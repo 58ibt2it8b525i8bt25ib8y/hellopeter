@@ -509,8 +509,9 @@ h.Orientation = "VelocityPerpendicular"
 h.Name = "Sparkles2"
 
 local val = Instance.new("BoolValue", Eyes)
-val.Name = "Hostile"
+val.Name = "Ghostile"
 val.Value = false
+val.Parent = Eyes
 
 --Sounds
 
@@ -593,7 +594,7 @@ local cream = Instance.new("Sound", Eyes)
 cream.Name = "Death2"
 cream.SoundId = "rbxassetid://2738830850"
 cream.Pitch = 0.57
-cream.Volume = 1
+cream.Volume = 2.5
 cream.RollOffMode = "InverseTapered"
 cream.EmitterSize = 5
 cream.RollOffMaxDistance = 50
