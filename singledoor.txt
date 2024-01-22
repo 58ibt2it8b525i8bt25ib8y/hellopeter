@@ -599,10 +599,10 @@ cream.RollOffMode = "InverseTapered"
 cream.EmitterSize = 5
 cream.RollOffMaxDistance = 50
 cream.TimePosition = 19.82
-local eq = Instance.new("EqualizerSoundEffect", cream)
-eq.HighGain = -10
-eq.MidGain = -30
-eq.LowGain = -10
+--local eq = Instance.new("EqualizerSoundEffect", cream)
+--eq.HighGain = -10
+--eq.MidGain = -30
+--eq.LowGain = -10
 --cream:Play()
 local rev = Instance.new("ReverbSoundEffect", cream)
 rev.DecayTime = 0.7
