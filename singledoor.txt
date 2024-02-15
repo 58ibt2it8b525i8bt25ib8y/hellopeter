@@ -612,4 +612,13 @@ rev.DryLevel = -6
 local distort2 = Instance.new("DistortionSoundEffect", cream)
 distort2.Level = 0.5
 
+local cream = Instance.new("Sound", Eyes)
+cream.Name = "VictimScream"
+cream.SoundId = "rbxassetid://9125714014"
+cream.Volume = 1
+cream.Pitch = 0.85
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 2.5
+cream.RollOffMaxDistance = 50
+
 return Modl                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
