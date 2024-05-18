@@ -1,7 +1,7 @@
 
 local Modl = Instance.new("Model")
 Modl.Name = "mmmmgghmgmmmYIPPEEE"
-Modl.Parent = workspace
+--Modl.Parent = workspace
 			local Eyes = Instance.new("Part", Modl)
 			Modl.PrimaryPart = Eyes
 			Eyes.Transparency = 1
@@ -514,7 +514,7 @@ local cream = Instance.new("Sound", Eyes)
 cream.Name = "Moving"
 cream.SoundId = "rbxassetid://9114226117"
 cream.Pitch = 0.65
-cream.Volume = 2
+cream.Volume = 5
 cream.RollOffMode = "InverseTapered"
 cream.EmitterSize = 15
 cream.RollOffMaxDistance = 145
@@ -611,7 +611,6 @@ s.RollOffMode = "InverseTapered"
 s.EmitterSize = 10
 s.MaxDistance = 120
 s.Volume = 10
-s.Looped = true
 s.Pitch = 0.8
 s.SoundId = "rbxassetid://9114787862"
 
