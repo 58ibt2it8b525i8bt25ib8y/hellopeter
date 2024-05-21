@@ -1,0 +1,39 @@
+
+			local Eyes = Instance.new("Part")
+			Eyes.Transparency = 1
+			Eyes.Name = "Photo, Synthesize!"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(2.5, 7, 2.5)
+			--Eyes.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,5, 0)
+			local Attachment = Instance.new("Attachment", Eyes)
+			local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+			local Face1 = Particle("rbxassetid://17557993818", true, 0)
+Face1.Parent = Attachment
+Face1.Size = NumberSequence.new(7)
+Face1.Squash = NumberSequence.new(0.1)
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1,0),
+				NumberSequenceKeypoint.new(0.25, 0, 0),
+				NumberSequenceKeypoint.new(0.45, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.ZOffset = 0
+Face1.Rate = 45
+Face1.Name = "Face11"
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Rotation = NumberRange.new(-0.5,0.5)
+Face1.RotSpeed = NumberRange.new(-1,1)
+Face1.Drag = 10
+Face1.LightInfluence = 1
+Face1.Speed = NumberRange.new(-1,1)
+Face1.Enabled = true
+return Eyes
