@@ -1,0 +1,682 @@
+
+local Modl = Instance.new("Model")
+Modl.Name = "KSI IS MY SAVIOR!"
+--Modl.Parent = workspace
+
+			local Eyes = Instance.new("Part", Modl)
+			Eyes.Transparency = 1
+               Modl.PrimaryPart = Eyes
+          Eyes.CanCollide = true
+          Eyes.Anchored = true
+          Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(6,15,6)
+			local Light1 = Instance.new("PointLight", Eyes)
+			Light1.Brightness = 3
+			Light1.Color = Color3.fromRGB(50,0,255)
+			Light1.Enabled = true
+			Light1.Range = 50
+			Light1.Shadows = true
+			
+			local Light1 = Instance.new("PointLight", Eyes)
+			Light1.Brightness = 6
+			Light1.Color = Color3.fromRGB(-255,175,255)
+			Light1.Enabled = true
+			Light1.Range = 30
+			Light1.Shadows = true
+
+			local Light1 = Instance.new("PointLight", Eyes)
+			Light1.Brightness = 10
+			Light1.Color = Color3.fromRGB(-70,155,255)
+			Light1.Enabled = true
+			Light1.Range = 10
+			Light1.Shadows = true
+			
+			local Light1 = Instance.new("PointLight", Eyes)
+			Light1.Brightness = 100
+			Light1.Color = Color3.fromRGB(-70,255,255)
+			Light1.Enabled = true
+			Light1.Range = 3.5
+			Light1.Shadows = true
+			local Attachment = Instance.new("Attachment", Eyes)
+             Attachment.Position = Vector3.new(0, 0.5, 0)
+             local Attachnt = Instance.new("Attachment", Attachment)
+             Attachnt.Position = Vector3.new(0, 0, 0)
+             local Poop = Instance.new("Attachment", Attachment)
+             Poop.Position = Vector3.new(0, 2.5, 0)
+
+-- Faces
+
+local function Particle(Texture, LockedToPart, Speed)
+
+			local EyesParticle = Instance.new("ParticleEmitter")
+
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+
+			local EyesParticle = Instance.new("ParticleEmitter", Attachnt)
+			EyesParticle.LightInfluence = 0
+			EyesParticle.Brightness = 1.26
+
+EyesParticle.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.15),
+				NumberSequenceKeypoint.new(0.1, 0.05),
+				NumberSequenceKeypoint.new(0.76, 0.05),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+local squashKeypoints = {
+	-- API: NumberSequenceKeypoint.new(time, size, envelop)
+	NumberSequenceKeypoint.new(0, 0.35), -- At t=0, fully transparent
+	NumberSequenceKeypoint.new(0.1, 0.25), -- At t=0, fully transparent
+	NumberSequenceKeypoint.new(0.6, 0.25), -- At t=.1, fully opaque
+	NumberSequenceKeypoint.new(1, 0.15), -- At t=1, fully transparent
+}
+
+EyesParticle.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 4.7),
+				NumberSequenceKeypoint.new(0.021, 5),
+				NumberSequenceKeypoint.new(0.031, 4.8),
+				NumberSequenceKeypoint.new(0.041, 5),
+				NumberSequenceKeypoint.new(0.051, 4.7),
+				NumberSequenceKeypoint.new(0.1, 5),
+				NumberSequenceKeypoint.new(0.7, 4.95),
+				NumberSequenceKeypoint.new(1, 5.2),
+			}
+
+			EyesParticle.Texture = "rbxassetid://17079129134"
+
+			EyesParticle.Lifetime = NumberRange.new(0.65)
+			EyesParticle.Rate = 15
+			EyesParticle.Rotation = NumberRange.new(-7,7)
+			EyesParticle.Speed = NumberRange.new(0.5)
+EyesParticle.ZOffset = -0.5
+EyesParticle.Name = "Neck"
+EyesParticle.Squash = NumberSequence.new(squashKeypoints)
+EyesParticle.Orientation = "FacingCameraWorldUp"
+EyesParticle.LightInfluence = 1
+EyesParticle.Brightness = 0.5
+EyesParticle.Drag = 5
+			EyesParticle.LockedToPart = true
+			EyesParticle.VelocityInheritance = 2
+
+			local EyesParticle = Instance.new("ParticleEmitter", Poop)
+			EyesParticle.LightInfluence = 0
+			EyesParticle.Brightness = 1.26
+
+EyesParticle.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.15),
+				NumberSequenceKeypoint.new(0.1, 0.05),
+				NumberSequenceKeypoint.new(0.76, 0.05),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+EyesParticle.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 4.7),
+				NumberSequenceKeypoint.new(0.021, 5),
+				NumberSequenceKeypoint.new(0.031, 4.8),
+				NumberSequenceKeypoint.new(0.041, 5),
+				NumberSequenceKeypoint.new(0.051, 4.7),
+				NumberSequenceKeypoint.new(0.1, 5),
+				NumberSequenceKeypoint.new(0.7, 4.95),
+				NumberSequenceKeypoint.new(1, 5.2),
+			}
+
+			EyesParticle.Texture = "rbxassetid://17079114484"
+
+			EyesParticle.Lifetime = NumberRange.new(0.65)
+			EyesParticle.Rate = 15
+			EyesParticle.Rotation = NumberRange.new(-7,7)
+			EyesParticle.Speed = NumberRange.new(0.5)
+EyesParticle.ZOffset = 1
+EyesParticle.Name = "Head"
+EyesParticle.Squash = NumberSequence.new(squashKeypoints)
+EyesParticle.LightInfluence = 1
+EyesParticle.Brightness = 0.5
+EyesParticle.Drag = 5
+			EyesParticle.LockedToPart = true
+			EyesParticle.VelocityInheritance = 2
+
+			local EyesParticle = Instance.new("ParticleEmitter", Poop)
+			EyesParticle.LightInfluence = 0
+			EyesParticle.Brightness = 1.26
+
+EyesParticle.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.15),
+				NumberSequenceKeypoint.new(0.1, 0.05),
+				NumberSequenceKeypoint.new(0.76, 0.05),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+EyesParticle.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 4.7),
+				NumberSequenceKeypoint.new(0.021, 5),
+				NumberSequenceKeypoint.new(0.031, 4.8),
+				NumberSequenceKeypoint.new(0.041, 5),
+				NumberSequenceKeypoint.new(0.051, 4.7),
+				NumberSequenceKeypoint.new(0.1, 5),
+				NumberSequenceKeypoint.new(0.7, 4.95),
+				NumberSequenceKeypoint.new(1, 5.2),
+			}
+
+			EyesParticle.Texture = "rbxassetid://17079142432"
+
+			EyesParticle.Lifetime = NumberRange.new(0.65)
+			EyesParticle.Rate = 15
+			EyesParticle.Rotation = NumberRange.new(-7,7)
+			EyesParticle.Speed = NumberRange.new(0.5)
+EyesParticle.ZOffset = 1
+EyesParticle.Name = "Eyes"
+EyesParticle.Squash = NumberSequence.new(squashKeypoints)
+EyesParticle.LightInfluence = 1
+EyesParticle.Brightness = 0.5
+EyesParticle.Drag = 5
+			EyesParticle.LockedToPart = true
+			EyesParticle.VelocityInheritance = 2
+
+-- Others
+
+local boom = Instance.new("ParticleEmitter", Attachment)
+boom.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0),
+				NumberSequenceKeypoint.new(0.1, 30),
+				NumberSequenceKeypoint.new(1, 30),
+			}
+boom.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .354),
+				NumberSequenceKeypoint.new(0.1, 1),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+boom.Drag = 255
+boom.Speed = NumberRange.new(0)
+boom.Texture = "rbxassetid://1084955488"
+boom.LightEmission = 1
+boom.LightInfluence = 2
+boom.ZOffset = -1
+boom.Rate = 3
+boom.LockedToPart = true
+
+local boom = Instance.new("ParticleEmitter", Attachment)
+boom.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0),
+				NumberSequenceKeypoint.new(0.1, 35),
+				NumberSequenceKeypoint.new(1, 35),
+			}
+boom.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .354),
+				NumberSequenceKeypoint.new(0.1, 1),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+boom.Drag = 255
+boom.Speed = NumberRange.new(0)
+boom.Texture = "rbxassetid://1084955488"
+boom.LightEmission = 1
+boom.LightInfluence = 2
+boom.ZOffset = -1
+boom.Rate = 1
+boom.LockedToPart = true
+boom.Color = ColorSequence.new(Color3.fromRGB(70,225,155))
+
+local ParticleEmitter = Instance.new("ParticleEmitter")
+ParticleEmitter.Parent = Attachment
+
+-- Set particle properties
+ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds" -- Replace with actual texture ID
+ParticleEmitter.Lifetime = NumberRange.new(1)
+ParticleEmitter.Rate = 10
+ParticleEmitter.Speed = NumberRange.new(0,5)
+ParticleEmitter.VelocitySpread = 50
+ParticleEmitter.Rotation = NumberRange.new(-360, 360)
+ParticleEmitter.RotSpeed = NumberRange.new(-120, 120)
+ParticleEmitter.Size = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 5.8),
+    NumberSequenceKeypoint.new(1, 3.7)
+})
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(50,100,255))
+ParticleEmitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .637),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+ParticleEmitter.ZOffset = -1
+ParticleEmitter.LightEmission = 1
+ParticleEmitter.LightInfluence = 100
+ParticleEmitter.Name = "Smoke"
+ParticleEmitter.Brightness = 0.5
+
+local ParticleEmitter = Instance.new("ParticleEmitter", Attachment)
+ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds"
+ParticleEmitter.Lifetime = NumberRange.new(1)
+ParticleEmitter.Rate = 10
+ParticleEmitter.Speed = NumberRange.new(0,5)
+ParticleEmitter.VelocitySpread = 50
+ParticleEmitter.Rotation = NumberRange.new(-360, 360)
+ParticleEmitter.RotSpeed = NumberRange.new(-190,190)
+ParticleEmitter.Size = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 5.6),
+    NumberSequenceKeypoint.new(1, 0.7)
+})
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(50,100,255))
+ParticleEmitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .67),
+				NumberSequenceKeypoint.new(0.76, .67),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+ParticleEmitter.ZOffset = -1.3
+ParticleEmitter.LightEmission = 1
+ParticleEmitter.LightInfluence = 100
+ParticleEmitter.Name = "Smoke"
+ParticleEmitter.SpreadAngle = Vector2.new(-180,180)
+ParticleEmitter.Brightness = 0.5
+
+			local Spark = Instance.new("ParticleEmitter", Attachment)
+			Spark.Texture = "rbxassetid://2581223252"
+			Spark.Color = ColorSequence.new(Color3.fromRGB(70,120,255))
+			Spark.Size = NumberSequence.new(10)
+			Spark.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .975),
+				NumberSequenceKeypoint.new(0.247, 0.75),
+				NumberSequenceKeypoint.new(0.498, .525),
+				NumberSequenceKeypoint.new(0.786, .675),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+			Spark.Drag = 15
+			Spark.LockedToPart = true
+			Spark.VelocityInheritance = 0.5
+
+			Spark.Lifetime = NumberRange.new(0.5, 2)
+			Spark.Rate = 5
+			Spark.Rotation = NumberRange.new(-50, 50)
+			Spark.RotSpeed = NumberRange.new(-5, -5)
+			Spark.Speed = NumberRange.new(1, 3)
+			Spark.SpreadAngle = Vector2.new(180, 180)
+            Spark.LightInfluence = 0.4
+            Spark.ZOffset = -0.7
+            Spark.Brightness = 0.5
+            Spark.Name = "Sparkles"
+
+local trail = Instance.new("ParticleEmitter", Eyes)
+trail.Name = "dust thing"
+trail.Texture = "rbxassetid://669133414"
+trail.Lifetime = NumberRange.new(1)
+trail.Rate = 600
+trail.Drag = 10
+trail.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.1, 0.8, 0),
+				NumberSequenceKeypoint.new(0.14, -0.35, 0),
+				NumberSequenceKeypoint.new(0.23, 2.10, 0),
+				NumberSequenceKeypoint.new(0.35, -0.11, 0),
+				NumberSequenceKeypoint.new(0.6, 1.56, 0),
+				NumberSequenceKeypoint.new(0.75, -1.10, 0),
+				NumberSequenceKeypoint.new(0.8, 0.3, 0),
+				NumberSequenceKeypoint.new(0.89, -2.342, 0),
+				NumberSequenceKeypoint.new(0.9, 1.530, 0),
+				NumberSequenceKeypoint.new(0.93, -0.85, 0),
+				NumberSequenceKeypoint.new(0.96, 1, 0),
+				NumberSequenceKeypoint.new(0.965, -0.09, 0),
+				NumberSequenceKeypoint.new(1, 0, 0),
+			}
+trail.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.6, 0),
+				NumberSequenceKeypoint.new(0.75, 0.1, 0),
+				NumberSequenceKeypoint.new(1, 0.21, 0),
+			}
+trail.Speed = NumberRange.new(54,95)
+trail.Rotation = NumberRange.new(-360,360)
+trail.RotSpeed = NumberRange.new(0,0)
+trail.LockedToPart = true
+trail.Color = ColorSequence.new(Color3.fromRGB(30,55,55))
+trail.Shape = Enum.ParticleEmitterShape.Sphere
+trail.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+trail.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+trail.ShapePartial = 1
+trail.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.845, 0.5, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+trail.Orientation = "FacingCameraWorldUp"
+trail.Brightness = 5000
+trail.SpreadAngle = Vector2.new(100,100)
+trail.ZOffset = -0.6
+
+local trail = Instance.new("ParticleEmitter", Eyes)
+trail.Name = "dust thing"
+trail.Texture = "rbxassetid://669133414"
+trail.Lifetime = NumberRange.new(1)
+trail.Rate = 600
+trail.Drag = 10
+trail.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.1, 0.8, 0),
+				NumberSequenceKeypoint.new(0.14, -0.35, 0),
+				NumberSequenceKeypoint.new(0.23, 2.10, 0),
+				NumberSequenceKeypoint.new(0.35, -0.11, 0),
+				NumberSequenceKeypoint.new(0.6, 1.56, 0),
+				NumberSequenceKeypoint.new(0.75, -1.10, 0),
+				NumberSequenceKeypoint.new(0.8, 0.3, 0),
+				NumberSequenceKeypoint.new(0.89, -2.342, 0),
+				NumberSequenceKeypoint.new(0.9, 1.530, 0),
+				NumberSequenceKeypoint.new(0.93, -0.85, 0),
+				NumberSequenceKeypoint.new(0.96, 1, 0),
+				NumberSequenceKeypoint.new(0.965, -0.09, 0),
+				NumberSequenceKeypoint.new(1, 0, 0),
+			}
+trail.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.6, 0),
+				NumberSequenceKeypoint.new(0.75, 0.1, 0),
+				NumberSequenceKeypoint.new(1, 0.21, 0),
+			}
+trail.Speed = NumberRange.new(54,95)
+trail.Rotation = NumberRange.new(-360,360)
+trail.RotSpeed = NumberRange.new(0,0)
+trail.LockedToPart = false
+trail.Color = ColorSequence.new(Color3.fromRGB(30,55,55))
+trail.Shape = Enum.ParticleEmitterShape.Sphere
+trail.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+trail.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+trail.ShapePartial = 1
+trail.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.845, 0.5, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+trail.Orientation = "FacingCameraWorldUp"
+trail.Brightness = 5000
+trail.SpreadAngle = Vector2.new(100,100)
+trail.ZOffset = 0.6
+
+local Scribble = Particle("rbxassetid://10587729749", true, 0)
+Scribble.Parent = Attachment
+Scribble.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 4.3, 0),
+				NumberSequenceKeypoint.new(0.05, 5.37, 0),
+				NumberSequenceKeypoint.new(1, 6.5, 0),
+			}
+Scribble.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.01, 0),
+				NumberSequenceKeypoint.new(0.015, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.05, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(1, 0.28, 0),
+			}
+Scribble.ZOffset = -1
+Scribble.Rate = 35
+Scribble.Name = "copiedsmokegta"
+Scribble.Lifetime = NumberRange.new(1)
+Scribble.Rotation = NumberRange.new(-100,100)
+Scribble.Speed = NumberRange.new(14)
+Scribble.RotSpeed = NumberRange.new(-150,150)
+Scribble.SpreadAngle = Vector2.new(180,180)
+Scribble.Brightness = 2
+Scribble.LightInfluence = 1
+Scribble.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1, 0),
+				NumberSequenceKeypoint.new(0.10, .715, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Scribble.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(100,255,155)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(75,106,175)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(24,66,58)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(24,78,48)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(14,56,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,36,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+			
+local Scribble = Particle("rbxassetid://241629053", true, 0)
+Scribble.Parent = Attachment
+Scribble.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 6.3, 0),
+				NumberSequenceKeypoint.new(0.05, 5.37, 0),
+				NumberSequenceKeypoint.new(1, 4.5, 0),
+			}
+Scribble.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.01, 0),
+				NumberSequenceKeypoint.new(0.015, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.05, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(1, 0.28, 0),
+			}
+Scribble.ZOffset = -1
+Scribble.Rate = 65
+Scribble.Name = "copiedsmoke"
+Scribble.Lifetime = NumberRange.new(1)
+Scribble.Rotation = NumberRange.new(-100,100)
+Scribble.Speed = NumberRange.new(14)
+Scribble.RotSpeed = NumberRange.new(-150,150)
+Scribble.SpreadAngle = Vector2.new(180,180)
+Scribble.Brightness = 2
+Scribble.LightInfluence = 1
+Scribble.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1, 0),
+				NumberSequenceKeypoint.new(0.10, 0.75, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Scribble.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(100,255,155)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(75,106,175)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(24,66,58)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(24,78,48)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(14,56,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,36,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+
+local ParticleEmitter = Instance.new("ParticleEmitter")
+ParticleEmitter.Parent = Eyes
+
+-- Set particle properties
+ParticleEmitter.Texture = "rbxassetid://4770542473" -- Replace with actual texture ID
+ParticleEmitter.Lifetime = NumberRange.new(1, 4)
+ParticleEmitter.Rate = 10
+ParticleEmitter.Speed = NumberRange.new(-5,5)
+ParticleEmitter.VelocitySpread = 50
+ParticleEmitter.Rotation = NumberRange.new(-360, 360)
+ParticleEmitter.RotSpeed = NumberRange.new(-120, 120)
+ParticleEmitter.Size = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 8.8),
+    NumberSequenceKeypoint.new(1, 6.7)
+})
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(20,170,255))
+ParticleEmitter.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.356, .137),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+ParticleEmitter.ZOffset = -2
+ParticleEmitter.LightInfluence = 0.01
+ParticleEmitter.Name = "Smoke"
+            
+			local Spark = Instance.new("ParticleEmitter", Attachment)
+			Spark.Texture = "rbxassetid://16947207217"
+			Spark.Color = ColorSequence.new(Color3.fromRGB(10,170,255))
+			Spark.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 5),
+				NumberSequenceKeypoint.new(0.247, 8.5),
+				NumberSequenceKeypoint.new(0.498, 8.25),
+				NumberSequenceKeypoint.new(0.547, 8.5),
+				NumberSequenceKeypoint.new(0.77, 8.95),
+				NumberSequenceKeypoint.new(0.86, 6),
+				NumberSequenceKeypoint.new(1, 0),
+			}
+			Spark.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.2),
+				NumberSequenceKeypoint.new(0.147, 0.75),
+				NumberSequenceKeypoint.new(0.298, .625),
+				NumberSequenceKeypoint.new(0.347, 0.75),
+				NumberSequenceKeypoint.new(0.47, 0.85),
+				NumberSequenceKeypoint.new(0.56, .15),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+			Spark.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, .975),
+				NumberSequenceKeypoint.new(0.247, 0.75),
+				NumberSequenceKeypoint.new(0.498, .825),
+				NumberSequenceKeypoint.new(0.786, .775),
+				NumberSequenceKeypoint.new(1, 1),
+			}
+
+			Spark.Drag = 15
+			Spark.LockedToPart = true
+			Spark.VelocityInheritance = 0.5
+
+			Spark.Lifetime = NumberRange.new(0.56)
+			Spark.Rate = 7
+			Spark.Rotation = NumberRange.new(-50, 50)
+			Spark.RotSpeed = NumberRange.new(-5, -5)
+			Spark.Speed = NumberRange.new(1, 3)
+			Spark.SpreadAngle = Vector2.new(180, 180)
+            Spark.LightInfluence = 0.4
+            Spark.ZOffset = -3
+            Spark.LightEmission = 5
+            Spark.Name = "Sparkles"
+			
+-- Sounds
+
+local roast = Instance.new("Sound")
+roast.Parent = Eyes
+roast.Name = "close"
+roast.SoundId = "rbxassetid://5348162330"
+roast.Volume = 5
+roast.Pitch = 1
+roast.Looped = true
+roast.RollOffMaxDistance = 60
+roast.RollOffMinDistance = 10
+roast.RollOffMode = Enum.RollOffMode.InverseTapered
+local pitch = Instance.new("PitchShiftSoundEffect", roast)
+pitch.Octave = 0.5
+local pitch2 = Instance.new("PitchShiftSoundEffect", roast)
+pitch2.Octave = 0.5
+roast:Play()
+local toast = roast:Clone()
+toast.Parent = Eyes
+toast.Pitch = 1
+toast.RollOffMaxDistance = 20
+toast.RollOffMinDistance = 5
+toast.Volume = 5
+toast.Name = "veryclose"
+local eq = Instance.new("EqualizerSoundEffect", toast)
+eq.HighGain = 10
+eq.MidGain = 10
+eq.LowGain = 10
+local distort = Instance.new("DistortionSoundEffect", toast)
+distort.Level = 0.9
+local distort = Instance.new("DistortionSoundEffect", roast)
+distort.Level = 1
+local eq = Instance.new("EqualizerSoundEffect", roast)
+eq.HighGain = -80
+eq.MidGain = -80
+eq.LowGain = -60
+
+local arrival = Instance.new("Sound")
+arrival.Parent = Eyes
+arrival.Name = "FarRumble"
+arrival.SoundId = "rbxassetid://9113218938"
+arrival.Volume = 10
+arrival.Pitch = 1
+arrival.Looped = true
+arrival.RollOffMaxDistance = 200
+arrival.RollOffMinDistance = 10
+arrival.RollOffMode = Enum.RollOffMode.InverseTapered
+arrival:Play()
+
+local arrival = Instance.new("Sound")
+arrival.Parent = Eyes
+arrival.Name = "HeartBeatVeryFar"
+arrival.SoundId = "rbxassetid://376977814"
+arrival.Volume = 0.6
+arrival.Pitch = 1
+arrival.Looped = true
+arrival.RollOffMaxDistance = 450
+arrival.RollOffMinDistance = 100
+arrival.RollOffMode = Enum.RollOffMode.InverseTapered
+arrival:Play()
+
+local arrival = Instance.new("Sound")
+arrival.Parent = Eyes
+arrival.Name = "HeartBeatFar"
+arrival.SoundId = "rbxassetid://376977814"
+arrival.Volume = 0.6
+arrival.Pitch = 2
+arrival.Looped = true
+local pitch = Instance.new("PitchShiftSoundEffect", arrival)
+pitch.Octave = 0.5
+arrival.RollOffMaxDistance = 200
+arrival.RollOffMinDistance = 50
+arrival.RollOffMode = Enum.RollOffMode.InverseTapered
+arrival:Play()
+
+local roast = Instance.new("Sound")
+roast.Parent = Eyes
+roast.Name = "blargh"
+roast.SoundId = "rbxassetid://7067158307"
+roast.Volume = 5
+roast.Pitch = 0.9
+roast.Looped = true
+roast.RollOffMaxDistance = 300
+roast.RollOffMinDistance = 10
+roast.RollOffMode = Enum.RollOffMode.InverseTapered
+local pitch = Instance.new("PitchShiftSoundEffect", roast)
+pitch.Octave = 0.8
+local pitch2 = Instance.new("PitchShiftSoundEffect", roast)
+pitch2.Octave = 0.5
+local distort = Instance.new("DistortionSoundEffect", roast)
+distort.Level = 1
+local eq = Instance.new("EqualizerSoundEffect", roast)
+eq.HighGain = -20
+eq.MidGain = -20
+eq.LowGain = -40
+roast:Play()
+
+local roast = Instance.new("Sound")
+roast.Parent = Eyes
+roast.Name = "altgrowl"
+roast.SoundId = "rbxassetid://2796806401"
+roast.Volume = 5
+roast.Pitch = 1
+roast.Looped = true
+roast.RollOffMaxDistance = 250
+roast.RollOffMinDistance = 10
+roast.RollOffMode = Enum.RollOffMode.InverseTapered
+local pitch = Instance.new("PitchShiftSoundEffect", roast)
+pitch.Octave = 0.5
+local pitch2 = Instance.new("PitchShiftSoundEffect", roast)
+pitch2.Octave = 0.5
+local distort = Instance.new("DistortionSoundEffect", roast)
+distort.Level = 1
+local eq = Instance.new("EqualizerSoundEffect", roast)
+eq.HighGain = -80
+eq.MidGain = -70
+eq.LowGain = -65
+roast:Play()
+
+local roast = Instance.new("Sound")
+roast.Parent = Eyes
+roast.Name = "altgrowl2"
+roast.SoundId = "rbxassetid://2796806401"
+roast.Volume = 2.5
+roast.Pitch = 1
+roast.Looped = true
+roast.RollOffMaxDistance = 90
+roast.RollOffMinDistance = 1
+roast.RollOffMode = Enum.RollOffMode.InverseTapered
+local pitch = Instance.new("PitchShiftSoundEffect", roast)
+pitch.Octave = 0.5
+local pitch2 = Instance.new("PitchShiftSoundEffect", roast)
+pitch2.Octave = 0.5
+local distort = Instance.new("DistortionSoundEffect", roast)
+distort.Level = 1
+roast:Play()
+
+--Eyes.Position = Vector3.new(0, 15, 0)
+
+return Modl
