@@ -6,7 +6,7 @@ Modl.Name = "Silence"
 			Eyes.Name = "RushNew"
 			Eyes.Anchored = true
 			Eyes.CanCollide = false
-			Eyes.Size = Vector3.new(3.4,3.5,3.3)
+			Eyes.Size = Vector3.new(3.4,3.4,3.4)
 			Eyes.Shape = "Ball"
 			--Eyes.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,4,0)
 			local Attachment = Instance.new("Attachment", Eyes)
@@ -572,5 +572,77 @@ ReverbSoundEffect.DryLevel = -6
 ReverbSoundEffect.WetLevel = 4
 ReverbSoundEffect.Priority = 0
 
+local cave = Instance.new("Sound", Eyes)
+cave.SoundId = "rbxassetid://9113731969"
+cave.RollOffMode = "InverseTapered"
+cave.EmitterSize = 5
+cave.MaxDistance = 300
+cave.Volume = 0.5
+cave.Pitch = 0.17
+cave.Name = "TheFarJames"
+local shift = Instance.new("PitchShiftSoundEffect", cave)
+shift.Octave = 0.5
+local shift = Instance.new("PitchShiftSoundEffect", cave)
+shift.Octave = 0.7
+local eq = Instance.new("EqualizerSoundEffect", cave)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+cave:Play()
+cave.Looped = true
+
+local cave = Instance.new("Sound", Eyes)
+cave.SoundId = "rbxassetid://9113731927"
+cave.RollOffMode = "InverseTapered"
+cave.EmitterSize = 5
+cave.MaxDistance = 50
+cave.Volume = 0.5
+cave.Pitch = 2
+cave.Name = "Close"
+local shift = Instance.new("PitchShiftSoundEffect", cave)
+shift.Octave = 0.5
+local eq = Instance.new("EqualizerSoundEffect", cave)
+eq.HighGain = 10
+eq.LowGain = 10
+eq.MidGain = -19.7
+cave:Play()
+cave.Looped = true
+
+local cave = Instance.new("Sound", Eyes)
+cave.SoundId = "rbxassetid://9095809158"
+cave.RollOffMode = "InverseTapered"
+cave.EmitterSize = 5
+cave.MaxDistance = 100
+cave.Volume = 0.5
+cave.Pitch = 0.97
+cave.Name = "Far"
+local shift = Instance.new("PitchShiftSoundEffect", cave)
+shift.Octave = 1.25
+local eq = Instance.new("EqualizerSoundEffect", cave)
+eq.HighGain = -30.5
+eq.LowGain = 0.025
+eq.MidGain = -1.505
+eq.Priority = 3
+cave:Play()
+cave.Looped = true
+
+local cave = Instance.new("Sound", Eyes)
+cave.SoundId = "rbxassetid://9095809158"
+cave.RollOffMode = "InverseTapered"
+cave.EmitterSize = 5
+cave.MaxDistance = 170
+cave.Volume = 0.5
+cave.Pitch = 0.57
+cave.Name = "VeryFar"
+local shift = Instance.new("PitchShiftSoundEffect", cave)
+shift.Octave = 0.5
+local eq = Instance.new("EqualizerSoundEffect", cave)
+eq.HighGain = -15.25
+eq.LowGain = 0.05
+eq.MidGain = -3.1
+eq.Priority = 3
+cave:Play()
+cave.Looped = true
 
 return Modl
