@@ -65,12 +65,12 @@ EyeParticle.LockedToPart = LockedToPart
 return EyeParticle
 end
 
-local Face1 = Particle("rbxassetid://17075244180", true, 0)
+local Face1 = Particle("rbxassetid://17771209092", true, 0)
 Face1.Parent = Attach
 Face1.Size = NumberSequence.new(5)
 Face1.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.32, 0),
-				NumberSequenceKeypoint.new(0.05, 0.65, 0),
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.05, 0.25, 0),
 				NumberSequenceKeypoint.new(0.45, 0.4, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
@@ -93,7 +93,7 @@ Face1.Squash = NumberSequence.new{
 Face1.ZOffset = 0.5
 Face1.Rate = 10000
 Face1.Name = "Face1FBT"
-Face1.Lifetime = NumberRange.new(0.05)
+Face1.Lifetime = NumberRange.new(0.1)
 Face1.Rotation = NumberRange.new(-13,13)
 Face1.RotSpeed = NumberRange.new(0,0)
 Face1.Brightness = 5
@@ -103,7 +103,44 @@ Face1.Drag = 10
 Face1.Speed = NumberRange.new(-10,30)
 Face1.Enabled = false
 
-local Face2 = Particle("rbxassetid://17075244180", true, 10)
+local Face2 = Particle("rbxassetid://17771209092", true, 10)
+Face2.Parent = Attach
+Face2.Size = NumberSequence.new(5)
+Face2.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.89, 0),
+				NumberSequenceKeypoint.new(0.15, 0.9, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face2.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.12, 0),
+				NumberSequenceKeypoint.new(0.05, 0.071, 0),
+				NumberSequenceKeypoint.new(0.1, 0.12, 0),
+				NumberSequenceKeypoint.new(0.15, 0.071, 0),
+				NumberSequenceKeypoint.new(0.2, 0.1233, 0),
+				NumberSequenceKeypoint.new(0.25, 0.0731, 0),
+				NumberSequenceKeypoint.new(0.3, 0.123, 0),
+				NumberSequenceKeypoint.new(0.35, 0.061, 0),
+				NumberSequenceKeypoint.new(0.40, 0.123, 0),
+				NumberSequenceKeypoint.new(0.45, 0.071, 0),
+				NumberSequenceKeypoint.new(0.5, 0.123, 0),
+				NumberSequenceKeypoint.new(0.55, 0.091, 0),
+				NumberSequenceKeypoint.new(0.6, 0.128, 0),
+				NumberSequenceKeypoint.new(1, 0.053, 0),
+			}
+Face2.ZOffset = -1
+Face2.Rate = 20
+Face2.Name = "Face2FBT"
+Face2.Lifetime = NumberRange.new(0.5)
+Face2.Speed = NumberRange.new(-6,6)
+Face2.Rotation = NumberRange.new(-13,13)
+Face2.RotSpeed = NumberRange.new(0,0)
+Face2.Brightness = 5
+Face2.LightInfluence = 1
+Face2.VelocitySpread = 360
+--Face2.LightEmission = 0.2
+Face2.Enabled = false
+
+local Face2 = Particle("rbxassetid://17771214924", true, 10)
 Face2.Parent = Attach
 Face2.Size = NumberSequence.new(5)
 Face2.Transparency = NumberSequence.new{
@@ -129,7 +166,7 @@ Face2.Squash = NumberSequence.new{
 			}
 Face2.ZOffset = -1
 Face2.Rate = 150
-Face2.Name = "Face2FBT"
+Face2.Name = "Face3FBT"
 Face2.Lifetime = NumberRange.new(0.5)
 Face2.Speed = NumberRange.new(-6,6)
 Face2.Rotation = NumberRange.new(-13,13)
@@ -137,7 +174,7 @@ Face2.RotSpeed = NumberRange.new(0,0)
 Face2.Brightness = 5
 Face2.LightInfluence = 1
 Face2.VelocitySpread = 360
---Face2.LightEmission = 0.2
+Face2.LightEmission = 0.2
 Face2.Enabled = false
 
 local Face2 = Particle("rbxassetid://4770542473", true, 10)
@@ -323,7 +360,7 @@ ParticleEmitter.Parent = Eyes
 -- Set particle properties
 ParticleEmitter.Texture = "rbxassetid://4770542473" -- Replace with actual texture ID
 ParticleEmitter.Lifetime = NumberRange.new(1, 4)
-ParticleEmitter.Rate = 10
+ParticleEmitter.Rate = 15
 ParticleEmitter.Speed = NumberRange.new(-5,5)
 ParticleEmitter.VelocitySpread = 50
 ParticleEmitter.Rotation = NumberRange.new(-360, 360)
@@ -349,7 +386,7 @@ ParticleEmitter.Parent = Eyes
 -- Set particle properties
 ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds" -- Replace with actual texture ID
 ParticleEmitter.Lifetime = NumberRange.new(1, 4)
-ParticleEmitter.Rate = 10
+ParticleEmitter.Rate = 20
 ParticleEmitter.Speed = NumberRange.new(-5,5)
 ParticleEmitter.VelocitySpread = 50
 ParticleEmitter.Rotation = NumberRange.new(-360, 360)
@@ -371,7 +408,7 @@ ParticleEmitter.Name = "Smoke"
 local ParticleEmitter = Instance.new("ParticleEmitter", Eyes)
 ParticleEmitter.Texture = "rbxasset://textures/particles/smoke_main.dds"
 ParticleEmitter.Lifetime = NumberRange.new(1,4)
-ParticleEmitter.Rate = 20
+ParticleEmitter.Rate = 25
 ParticleEmitter.Speed = NumberRange.new(-5,5)
 ParticleEmitter.VelocitySpread = 50
 ParticleEmitter.Rotation = NumberRange.new(-360, 360)
@@ -479,6 +516,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 local s = Instance.new("Sound", Modl)
 s.SoundId = "rbxassetid://9125402735"
 s.Pitch = 0.7
@@ -489,6 +528,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 local s = Instance.new("Sound", Modl)
 s.SoundId = "rbxassetid://4144478107"
 s.Pitch = 0.9
@@ -499,6 +540,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 local s = Instance.new("Sound", Modl)
 s.SoundId = "rbxassetid://6528452712"
 s.Pitch = 0.15
@@ -513,6 +556,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 --Sounds
 local s = Instance.new("Sound", Eyes)
@@ -544,6 +589,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "AmbNotTooFar"
@@ -568,6 +615,8 @@ local eq = Instance.new("EqualizerSoundEffect", s)
 eq.HighGain = -47.6
 eq.LowGain = -3.5
 eq.MidGain = -80
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "AmbClose"
@@ -594,6 +643,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "AmbCloser"
@@ -614,6 +665,8 @@ local fl = Instance.new("FlangeSoundEffect", s)
 fl.Depth = 1
 fl.Mix = 0.73
 fl.Rate = 0.75
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "Spawn"
@@ -639,6 +692,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "Despawn"
@@ -661,6 +716,8 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "Despawn2"
@@ -682,5 +739,7 @@ eq.HighGain = -30.5
 eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.2
 
 return Modl
