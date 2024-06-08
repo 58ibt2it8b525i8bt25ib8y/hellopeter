@@ -69,9 +69,9 @@ local Face1 = Particle("rbxassetid://17771209092", true, 0)
 Face1.Parent = Attach
 Face1.Size = NumberSequence.new(5)
 Face1.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0, 0),
-				NumberSequenceKeypoint.new(0.05, 0.25, 0),
-				NumberSequenceKeypoint.new(0.45, 0.4, 0),
+				NumberSequenceKeypoint.new(0, 1, 0),
+				NumberSequenceKeypoint.new(0.05, 0.65, 0),
+				NumberSequenceKeypoint.new(0.45, 0.9, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face1.Squash = NumberSequence.new{
@@ -107,8 +107,8 @@ local Face2 = Particle("rbxassetid://17771209092", true, 10)
 Face2.Parent = Attach
 Face2.Size = NumberSequence.new(5)
 Face2.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.89, 0),
-				NumberSequenceKeypoint.new(0.15, 0.9, 0),
+				NumberSequenceKeypoint.new(0, 0.69, 0),
+				NumberSequenceKeypoint.new(0.15, 0.79, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face2.Squash = NumberSequence.new{
@@ -144,8 +144,8 @@ local Face2 = Particle("rbxassetid://17771214924", true, 10)
 Face2.Parent = Attach
 Face2.Size = NumberSequence.new(5)
 Face2.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.89, 0),
-				NumberSequenceKeypoint.new(0.15, 0.9, 0),
+				NumberSequenceKeypoint.new(0, 0.59, 0),
+				NumberSequenceKeypoint.new(0.15, 0.79, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face2.Squash = NumberSequence.new{
@@ -181,7 +181,7 @@ local Face2 = Particle("rbxassetid://4770542473", true, 10)
 Face2.Parent = Attach
 Face2.Size = NumberSequence.new(6.7)
 Face2.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.69, 0),
+				NumberSequenceKeypoint.new(0, 0.369, 0),
 				NumberSequenceKeypoint.new(0.15, 0.8, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
@@ -517,7 +517,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 local s = Instance.new("Sound", Modl)
 s.SoundId = "rbxassetid://9125402735"
 s.Pitch = 0.7
@@ -529,7 +529,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 local s = Instance.new("Sound", Modl)
 s.SoundId = "rbxassetid://4144478107"
 s.Pitch = 0.9
@@ -541,7 +541,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 local s = Instance.new("Sound", Modl)
 s.SoundId = "rbxassetid://6528452712"
 s.Pitch = 0.15
@@ -557,7 +557,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 --Sounds
 local s = Instance.new("Sound", Eyes)
@@ -590,7 +590,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "AmbNotTooFar"
@@ -616,7 +616,7 @@ eq.HighGain = -47.6
 eq.LowGain = -3.5
 eq.MidGain = -80
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "AmbClose"
@@ -644,7 +644,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "AmbCloser"
@@ -666,7 +666,7 @@ fl.Depth = 1
 fl.Mix = 0.73
 fl.Rate = 0.75
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "Spawn"
@@ -693,7 +693,31 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
+
+local s = Instance.new("Sound", Eyes)
+s.Name = "Despawn"
+s.MaxDistance = 500
+s.Pitch = 0.5
+s.RollOffMode = "InverseTapered"
+s.SoundId = "rbxassetid://6305809364"
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Rate = 0.75
+fl.Depth = 1
+fl.Mix = 0.73
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.98
+local fl = Instance.new("FlangeSoundEffect", s)
+fl.Rate = 0.25
+fl.Depth = 1
+fl.Mix = 1
+local eq = Instance.new("EqualizerSoundEffect", s)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+local d = Instance.new("DistortionSoundEffect", s)
+d.Level = 0.5
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "Despawn"
@@ -717,7 +741,7 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 local s = Instance.new("Sound", Eyes)
 s.Name = "Despawn2"
@@ -740,6 +764,6 @@ eq.LowGain = 0.1
 eq.MidGain = -6.2
 eq.Priority = 3
 local d = Instance.new("DistortionSoundEffect", s)
-d.Level = 0.2
+d.Level = 0.5
 
 return Modl
