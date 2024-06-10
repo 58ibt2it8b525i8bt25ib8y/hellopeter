@@ -484,17 +484,17 @@ ParticleEmitter.FlipbookFramerate = NumberRange.new(70,70)
 local Static2 = Instance.new("Sound")
 Static2.Name = "DoorOpen"
 Static2.SoundId = "rbxassetid://5276304082"
-Static2.Pitch = 1
+Static2.Pitch = 0.8
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
-Static2.EmitterSize = 5
-Static2.RollOffMaxDistance = 75
+Static2.EmitterSize = 10
+Static2.RollOffMaxDistance = 100
 Static2.Volume = 10 
 Static2.Parent = Eyes
 
 local Static2 = Instance.new("Sound")
 Static2.Name = "DoorOpen2"
 Static2.SoundId = "rbxassetid://5276304082"
-Static2.Pitch = 1
+Static2.Pitch = 0.8
 Static2.RollOffMode = Enum.RollOffMode.InverseTapered
 Static2.EmitterSize = 10
 Static2.RollOffMaxDistance = 350
@@ -507,9 +507,10 @@ Reverb.Density = 1
 Reverb.Diffusion = 1
 Reverb.DryLevel = 1
 local Equalizer = Instance.new("EqualizerSoundEffect", Static2)
-Equalizer.HighGain = -20
-Equalizer.MidGain = -30
-Equalizer.LowGain = -10
+Equalizer.HighGain = -30.5
+Equalizer.MidGain = -6.2
+Equalizer.LowGain = 0.1
+Equalizer.Priority = 3
 
 -- Far Moving Sounds
 local Moving = Instance.new("Sound", Eyes)
