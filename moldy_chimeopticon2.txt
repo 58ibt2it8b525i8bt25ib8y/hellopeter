@@ -1,0 +1,432 @@
+local Modl = Instance.new("Model")
+Modl.Name = "Burghley"
+			local Eyes = Instance.new("Part", Modl)
+			Modl.PrimaryPart = Eyes
+			Eyes.Transparency = 1
+			Eyes.Name = "RushNew"
+			Eyes.Anchored = true
+			Eyes.CanCollide = false
+			Eyes.Size = Vector3.new(2,4,2)
+			local ActualEyes = Instance.new("Part", Modl)
+			ActualEyes.Transparency = 1
+			ActualEyes.Name = "splotch"
+			ActualEyes.Anchored = false
+			ActualEyes.CanCollide = false
+			ActualEyes.Size = Vector3.new(5,9,5)
+			local Attachment = Instance.new("Attachment", Eyes)
+			Attachment.Name = "neck"
+			Attachment.Position = Vector3.new(0,3.5,0)
+			local Attacht = Instance.new("Attachment", ActualEyes)
+			Attacht.Name = "Head"
+			ActualEyes.Position = Vector3.new(0,3.5, 0)
+			local Weld = Instance.new("Weld", Eyes)
+			Weld.Part0 = Eyes
+			Weld.Part1 = ActualEyes
+			local Weld = Instance.new("WeldConstraint", Eyes)
+			Weld.Part0 = Eyes
+			Weld.Part1 = ActualEyes
+			ActualEyes.Position = Vector3.new(0,5,0)
+			local function Particle(Texture, LockedToPart, Speed)
+			local EyesParticle = Instance.new("ParticleEmitter")
+			EyesParticle.Texture = Texture
+			EyesParticle.Speed = NumberRange.new(Speed)
+EyesParticle.LockedToPart = LockedToPart
+return EyesParticle
+end
+local Face1 = Particle("rbxassetid://17882168834", true, 0)
+Face1.Parent = Attachment
+Face1.Size = NumberSequence.new(5)
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.20, 0.4, 0),
+				NumberSequenceKeypoint.new(0.40, 0.5, 0),
+				NumberSequenceKeypoint.new(0.5, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 0.5, 0),
+			}
+Face1.Rate = 50
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Rotation = NumberRange.new(-0.5,0.5)
+Face1.Speed = NumberRange.new(0.5)
+Face1.SpreadAngle = Vector2.new(5,10)
+Face1.Brightness = 50
+Face1.Name = "DONTLOOKATMEPLEASE"
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,175,165)),
+    ColorSequenceKeypoint.new(0.02, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(175,155,165)),
+    ColorSequenceKeypoint.new(0.10, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.16, Color3.fromRGB(155,195,165)),
+    ColorSequenceKeypoint.new(0.18, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.24, Color3.fromRGB(155,185,165)),
+    ColorSequenceKeypoint.new(0.36, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.42, Color3.fromRGB(125,175,165)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(175,175,115)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Brightness = 0
+Face1.Enabled = true
+Face1.LightInfluence = 1
+Face1.Orientation = "FacingCameraWorldUp"
+Face1.ZOffset = -1
+
+local Face1 = Particle("rbxassetid://17882180881", true, 0)
+Face1.Parent = Attacht
+Face1.Size = NumberSequence.new(4.5)
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.25, 0),
+				NumberSequenceKeypoint.new(0.20, 0.22, 0),
+				NumberSequenceKeypoint.new(0.40, 0.26, 0),
+				NumberSequenceKeypoint.new(0.5, 0.28, 0),
+				NumberSequenceKeypoint.new(1, 0.25, 0),
+			}
+Face1.Rate = 50
+Face1.Acceleration = Vector3.new(0,30,0)
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Rotation = NumberRange.new(-30)
+Face1.RotSpeed = NumberRange.new(70,70)
+Face1.Speed = NumberRange.new(0.5)
+Face1.SpreadAngle = Vector2.new(0,10)
+Face1.Brightness = 50
+Face1.Name = "have i told you about dave and bambi yet"
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,175,165)),
+    ColorSequenceKeypoint.new(0.02, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(175,155,165)),
+    ColorSequenceKeypoint.new(0.10, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.16, Color3.fromRGB(155,195,165)),
+    ColorSequenceKeypoint.new(0.18, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.24, Color3.fromRGB(155,185,165)),
+    ColorSequenceKeypoint.new(0.36, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.42, Color3.fromRGB(125,175,165)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(175,175,115)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Brightness = 0
+Face1.Enabled = true
+Face1.LightEmission = 0.9
+Face1.LightInfluence = 1
+Face1.Orientation = "FacingCameraWorldUp"
+Face1.ZOffset = 1
+
+local Face1 = Particle("rbxassetid://17882192881", true, 0)
+Face1.Parent = Attacht
+Face1.Size = NumberSequence.new(4.5)
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.25, 0),
+				NumberSequenceKeypoint.new(0.20, 0.2, 0),
+				NumberSequenceKeypoint.new(0.40, 0.25,0),
+				NumberSequenceKeypoint.new(0.5, 0.2, 0),
+				NumberSequenceKeypoint.new(1, 0.25, 0),
+			}
+Face1.Rate = 50
+Face1.Acceleration = Vector3.new(0,-30,0)
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Rotation = NumberRange.new(-0.5,0.5)
+Face1.Speed = NumberRange.new(0.5)
+Face1.SpreadAngle = Vector2.new(5,10)
+Face1.Brightness = 50
+Face1.Name = "i love pillow from bfb"
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,175,165)),
+    ColorSequenceKeypoint.new(0.02, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(175,155,165)),
+    ColorSequenceKeypoint.new(0.10, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.16, Color3.fromRGB(155,195,165)),
+    ColorSequenceKeypoint.new(0.18, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.24, Color3.fromRGB(155,185,165)),
+    ColorSequenceKeypoint.new(0.36, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.42, Color3.fromRGB(125,175,165)),
+    ColorSequenceKeypoint.new(0.44, Color3.fromRGB(30,30,30)),
+    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(175,175,115)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Brightness = 0
+Face1.Enabled = true
+Face1.LightEmission = 0.9
+Face1.LightInfluence = 1
+Face1.Orientation = "FacingCameraWorldUp"
+Face1.ZOffset = 2
+
+local Face1 = Particle("rbxassetid://17888000949", true, 0)
+Face1.Parent = Attacht
+Face1.Size = NumberSequence.new(4.5)
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.25, 0),
+				NumberSequenceKeypoint.new(0.20, 0.2, 0),
+				NumberSequenceKeypoint.new(0.40, 0.25,0),
+				NumberSequenceKeypoint.new(0.5, 0.2, 0),
+				NumberSequenceKeypoint.new(1, 0.25, 0),
+			}
+Face1.Rate = 50
+Face1.Acceleration = Vector3.new(0,-30,0)
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Rotation = NumberRange.new(-0.5,0.5)
+Face1.Speed = NumberRange.new(0.5)
+Face1.SpreadAngle = Vector2.new(5,10)
+Face1.Brightness = 50
+Face1.Name = "Song Of The Day, pe-pe-pe-pe- PYEOW, whshshs, i know youre gonna dig this, " .. game.Players.LocalPlayer.Name
+Face1.Color = ColorSequence.new(Color3.fromRGB(0,0,0))
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Brightness = 0
+Face1.Enabled = true
+Face1.LightEmission = 0.5
+Face1.LightInfluence = 1
+Face1.Orientation = "FacingCameraWorldUp"
+
+local fly = Instance.new('ParticleEmitter', Attacht)
+fly.Name = "Fly"
+fly.Color = ColorSequence.new(Color3.fromRGB(50,50,50))
+fly.Acceleration = Vector3.new(0, 2, 0)
+fly.Drag = 10
+fly.Lifetime = NumberRange.new(0.5, 1)
+fly.LightInfluence = 1
+fly.Brightness = 10
+fly.Rate = 15
+fly.RotSpeed = NumberRange.new(200,240 )
+fly.ShapePartial = 0
+fly.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+fly.Size = NumberSequence.new(1)
+fly.Speed = NumberRange.new(10,60)
+fly.SpreadAngle = Vector2.new(-360,360)
+fly.Texture = "rbxassetid://11521955045"
+fly.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.5, 1, 0),
+				NumberSequenceKeypoint.new(0.7, 0.05, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+
+local Face1 = Particle("rbxassetid://11504729379", true, 0)
+Face1.Parent = ActualEyes
+Face1.Size = NumberSequence.new(1.5)
+Face1.Rate = 50
+Face1.Acceleration = Vector3.new(0,-50,0)
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Speed = NumberRange.new(0)
+Face1.Brightness = 50
+Face1.EmissionDirection = "Bottom"
+Face1.Name = "ONEMILLIONDOLLARSDRIPPY"
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(155,175,165)),
+    ColorSequenceKeypoint.new(0.08, Color3.fromRGB(175,155,165)),
+    ColorSequenceKeypoint.new(0.16, Color3.fromRGB(155,195,165)),
+    ColorSequenceKeypoint.new(0.24, Color3.fromRGB(155,185,165)),
+    ColorSequenceKeypoint.new(0.42, Color3.fromRGB(125,175,165)),
+    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(175,175,115)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Brightness = 0
+Face1.Enabled = true
+Face1.LightEmission = 0.9
+Face1.LightInfluence = 1
+Face1.Orientation = "FacingCameraWorldUp"
+Face1.ZOffset = -1
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Gurgling"
+thug.SoundId = "rbxassetid://17700195429"
+thug.Volume = 5
+thug.Pitch = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 50
+thug.MinDistance = 5
+thug.Looped = true
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -15.25
+eq.LowGain = 0.05
+eq.MidGain = -3.1
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Gurgling"
+thug.SoundId = "rbxassetid://17700195429"
+thug.Volume = 5
+thug.Pitch = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 110
+thug.MinDistance = 5
+thug.Looped = true
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Gurgling"
+thug.SoundId = "rbxassetid://9112823199"
+thug.Volume = 5
+thug.Pitch = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 50
+thug.MinDistance = 5
+thug.Looped = true
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -80
+eq.LowGain = 80
+eq.MidGain = -10
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Gurgling"
+thug.SoundId = "rbxassetid://9112823199"
+thug.Volume = 5
+thug.Pitch = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 110
+thug.MinDistance = 5
+thug.Looped = true
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -80
+eq.LowGain = -80
+eq.MidGain = -20
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Breathing"
+thug.SoundId = "rbxassetid://2388641039"
+thug.Volume = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 30
+thug.MinDistance = 10
+thug.Looped = true
+thug.Pitch = 0.25
+local Shift = Instance.new("PitchShiftSoundEffect", thug)
+Shift.Octave = 1.265
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "flies"
+thug.SoundId = "rbxassetid://2913427116"
+thug.Volume = 7
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 70
+thug.MinDistance = 10
+thug.Looped = true
+thug.Pitch = 0.5
+local Shift = Instance.new("PitchShiftSoundEffect", thug)
+Shift.Octave = 1.265
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Ambient"
+thug.SoundId = "rbxassetid://5312518467"
+thug.Volume = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 110
+thug.MinDistance = 8
+thug.Looped = true
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Ambient"
+thug.SoundId = "rbxassetid://2086157995"
+thug.Volume = 0.1
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 110
+thug.MinDistance = 8
+thug.Looped = true
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+eq.Priority = 3
+thug:Play()
+
+local thug = Instance.new("Sound", Eyes)
+thug.Name = "Chime"
+thug.SoundId = "rbxassetid://1894010197"
+thug.Volume = 0.5
+thug.RollOffMode = "InverseTapered"
+thug.MaxDistance = 450
+thug.MinDistance = 100
+thug.Looped = true
+thug.Pitch = 0.55
+local eq = Instance.new("EqualizerSoundEffect", thug)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local Reverb = Instance.new("ReverbSoundEffect", thug)
+Reverb.Density = 1
+Reverb.Diffusion = 1
+Reverb.DryLevel = -6
+eq.Priority = 3
+thug:Play()
+
+Eyes.CFrame = Eyes.CFrame + Vector3.new(0,2.5,0)
+return Modl
