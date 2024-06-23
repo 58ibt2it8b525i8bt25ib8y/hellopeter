@@ -13,6 +13,21 @@ Modl.Name = "Burghley"
 			ActualEyes.Anchored = false
 			ActualEyes.CanCollide = false
 			ActualEyes.Size = Vector3.new(5,9,5)
+						local Light2 = Instance.new("PointLight", Eyes)
+
+			Light2.Brightness = 0.5
+			Light2.Color = Color3.fromRGB(215,215,255)
+			Light2.Enabled = true
+			Light2.Range = 35
+			Light2.Shadows = true
+			
+			local Light2 = Instance.new("PointLight", ActualEyes)
+
+			Light2.Brightness = 1
+			Light2.Color = Color3.fromRGB(215,215,255)
+			Light2.Enabled = true
+			Light2.Range = 10
+			Light2.Shadows = true
 			local Attachment = Instance.new("Attachment", Eyes)
 			Attachment.Name = "neck"
 			Attachment.Position = Vector3.new(0,3.5,0)
