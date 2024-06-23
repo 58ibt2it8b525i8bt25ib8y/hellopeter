@@ -428,5 +428,43 @@ Reverb.DryLevel = -6
 eq.Priority = 3
 thug:Play()
 
+local close = Instance.new("Sound", Eyes)
+close.EmitterSize = 10
+close.MaxDistance = 300
+close.Pitch = 1
+close.Volume = 4
+close.SoundId = "rbxassetid://9120858323"
+close.RollOffMode = "InverseTapered"
+close.Name = "woodfar_Despawn"
+close.PlayOnRemove = true
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.44
+dis.Priority = 3
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = 0
+eq.LowGain = -80
+eq.MidGain = 0
+local dis = Instance.new("DistortionSoundEffect", close)
+dis.Level = 0.75
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -30.5
+eq.LowGain = 0.1
+eq.MidGain = -6.2
+local eq = Instance.new("EqualizerSoundEffect", close)
+eq.HighGain = -20.6
+eq.LowGain = 4.6
+eq.MidGain = -14.3
+
+local End = Instance.new("Sound", Modl)
+End.Volume = 2
+End.SoundId = "rbxassetid://9043340893"
+End.Name = "endmymisery"
+End.PlayOnRemove = true
+local rev = Instance.new("ReverbSoundEffect", End)
+rev.Diffusion = 1
+rev.DecayTime = 1.5
+rev.Density = 1
+rev.DryLevel = -6
+
 Eyes.CFrame = Eyes.CFrame + Vector3.new(0,2.5,0)
 return Modl
