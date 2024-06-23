@@ -12,10 +12,10 @@ Modl.Name = "Burghley"
 			ActualEyes.Name = "splotch"
 			ActualEyes.Anchored = false
 			ActualEyes.CanCollide = false
-			ActualEyes.Size = Vector3.new(5,9,5)
+			ActualEyes.Size = Vector3.new(4,8,4)
 						local Light2 = Instance.new("PointLight", Eyes)
 
-			Light2.Brightness = 0.5
+			Light2.Brightness = 0.1
 			Light2.Color = Color3.fromRGB(215,215,255)
 			Light2.Enabled = true
 			Light2.Range = 35
@@ -23,7 +23,7 @@ Modl.Name = "Burghley"
 			
 			local Light2 = Instance.new("PointLight", ActualEyes)
 
-			Light2.Brightness = 1
+			Light2.Brightness = 0.1
 			Light2.Color = Color3.fromRGB(215,215,255)
 			Light2.Enabled = true
 			Light2.Range = 10
@@ -33,6 +33,9 @@ Modl.Name = "Burghley"
 			Attachment.Position = Vector3.new(0,3.5,0)
 			local Attacht = Instance.new("Attachment", ActualEyes)
 			Attacht.Name = "Head"
+			local Attac = Instance.new("Attachment", ActualEyes)
+			Attac.Name = "drip"
+			Attac.Position = Vector3.new(0, -4, 0)
 			ActualEyes.Position = Vector3.new(0,3.5, 0)
 			local Weld = Instance.new("Weld", Eyes)
 			Weld.Part0 = Eyes
@@ -48,6 +51,36 @@ Modl.Name = "Burghley"
 EyesParticle.LockedToPart = LockedToPart
 return EyesParticle
 end
+local Face1 = Particle("rbxassetid://17882168834", true, 0)
+Face1.Parent = Attachment
+Face1.Size = NumberSequence.new(5)
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.5, 0),
+				NumberSequenceKeypoint.new(0.20, 0.4, 0),
+				NumberSequenceKeypoint.new(0.40, 0.5, 0),
+				NumberSequenceKeypoint.new(0.5, 0.4, 0),
+				NumberSequenceKeypoint.new(1, 0.5, 0),
+			}
+Face1.Rate = 50
+Face1.Lifetime = NumberRange.new(0.5)
+Face1.Rotation = NumberRange.new(-1.5,1.5)
+Face1.Speed = NumberRange.new(0.5)
+Face1.SpreadAngle = Vector2.new(5,10)
+Face1.Brightness = 50
+Face1.Name = "DONTLOOKATMEPLEASE"
+Face1.Color = ColorSequence.new(Color3.fromRGB(0,0,0))
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.05, 0),
+				NumberSequenceKeypoint.new(0.3, 0.05, 0),
+				NumberSequenceKeypoint.new(0.47, 1, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Brightness = 0
+Face1.Enabled = true
+Face1.LightInfluence = 1
+Face1.Orientation = "FacingCameraWorldUp"
+Face1.ZOffset = -1.5
+
 local Face1 = Particle("rbxassetid://17882168834", true, 0)
 Face1.Parent = Attachment
 Face1.Size = NumberSequence.new(5)
@@ -88,6 +121,7 @@ Face1.Transparency = NumberSequence.new{
 Face1.Brightness = 0
 Face1.Enabled = true
 Face1.LightInfluence = 1
+Face1.LightEmission = 1
 Face1.Orientation = "FacingCameraWorldUp"
 Face1.ZOffset = -1
 
@@ -213,7 +247,7 @@ Face1.LightEmission = 0.5
 Face1.LightInfluence = 1
 Face1.Orientation = "FacingCameraWorldUp"
 
-local fly = Instance.new('ParticleEmitter', Attacht)
+local fly = Instance.new('ParticleEmitter', ActualEyes)
 fly.Name = "Fly"
 fly.Color = ColorSequence.new(Color3.fromRGB(50,50,50))
 fly.Acceleration = Vector3.new(0, 2, 0)
@@ -238,7 +272,7 @@ fly.Transparency = NumberSequence.new{
 			}
 
 local Face1 = Particle("rbxassetid://11504729379", true, 0)
-Face1.Parent = ActualEyes
+Face1.Parent = Attac
 Face1.Size = NumberSequence.new(1.5)
 Face1.Rate = 50
 Face1.Acceleration = Vector3.new(0,-50,0)
@@ -374,10 +408,10 @@ thug:Play()
 local thug = Instance.new("Sound", Eyes)
 thug.Name = "flies"
 thug.SoundId = "rbxassetid://2913427116"
-thug.Volume = 7
+thug.Volume = 10
 thug.RollOffMode = "InverseTapered"
 thug.MaxDistance = 70
-thug.MinDistance = 10
+thug.MinDistance = 20
 thug.Looped = true
 thug.Pitch = 0.5
 local Shift = Instance.new("PitchShiftSoundEffect", thug)
@@ -396,7 +430,7 @@ thug:Play()
 local thug = Instance.new("Sound", Eyes)
 thug.Name = "Ambient"
 thug.SoundId = "rbxassetid://5312518467"
-thug.Volume = 0.5
+thug.Volume = 0.25
 thug.RollOffMode = "InverseTapered"
 thug.MaxDistance = 110
 thug.MinDistance = 8
@@ -411,7 +445,7 @@ thug:Play()
 local thug = Instance.new("Sound", Eyes)
 thug.Name = "Ambient"
 thug.SoundId = "rbxassetid://2086157995"
-thug.Volume = 0.1
+thug.Volume = 0.05
 thug.RollOffMode = "InverseTapered"
 thug.MaxDistance = 110
 thug.MinDistance = 8
@@ -444,7 +478,7 @@ eq.Priority = 3
 thug:Play()
 
 local close = Instance.new("Sound", Eyes)
-close.EmitterSize = 10
+close.EmitterSize = 1
 close.MaxDistance = 300
 close.Pitch = 1
 close.Volume = 4
