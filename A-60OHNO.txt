@@ -2084,7 +2084,7 @@ camShake:Start()
 end
 
 coroutine.wrap(function()
-while Modl.Parent ~= nil do
+while Modl.Parent == workspace do
 if Attacht.Parent ~= nil then
 cframe = (game.Workspace.CurrentCamera.CFrame.Position - Attacht.WorldPosition).Unit
 local yaw = math.atan2(-cframe.X, -cframe.Z)
@@ -2099,7 +2099,7 @@ end
 end)()
 
 coroutine.wrap(function()
-while Modl.Parent ~= nil do
+while Modl.Parent == workspace do
 if val.Parent ~= nil and val.Value == false then
 MergedFace.Texture = MergedStuff[math.random(1,#MergedStuff)].Image
 UnmergedFace1.Texture = UnmergedStuff[math.random(1,#UnmergedStuff)].Image
@@ -2111,7 +2111,7 @@ end
 end)()
 
 coroutine.wrap(function()
-while Modl.Parent ~= nil do
+while Modl.Parent == workspace do
 if val.Parent ~= nil and val.Value == false and ScreenusFlickus.Parent ~= nil then
 ScreenusFlickus.Enabled = not ScreenusFlickus.Enabled
 end
@@ -2120,7 +2120,7 @@ end
 end)()
 
 coroutine.wrap(function()
-while Modl.Parent ~= nil do
+while Modl.Parent == workspace do
 if val.Parent ~= nil and val.Value == false then
 for i, v in ipairs(Attacht:GetChildren()) do
 if v:IsA("ParticleEmitter") then
