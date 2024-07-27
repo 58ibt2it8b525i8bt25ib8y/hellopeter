@@ -1,0 +1,1233 @@
+local Singularity = Instance.new('Model')
+Singularity.Name = 'Singularity'
+local Main = Instance.new('Part')
+Singularity.PrimaryPart = Main
+Main.Name = 'Main'
+Main.Material = Enum.Material.Plastic
+Main.Anchored = true
+Main.CanTouch = false
+Main.CastShadow = true
+Main.BrickColor = BrickColor.new('Medium stone grey')
+Main.Color = Color3.new('0.639216, 0.635294, 0.647059')
+Main.CanCollide = true
+Main.Rotation = Vector3.new(0, 0, 0)
+Main.Position = Vector3.new(0, 13, 0)
+Main.Size = Vector3.new(5, 7, 7)
+Main.Transparency = 1
+Main.Parent = Singularity
+
+local Head = Instance.new('Part')
+Head.Name = 'Head'
+Head.Material = Enum.Material.Plastic
+Head.Anchored = false
+Head.CanTouch = false
+Head.CastShadow = true
+Head.BrickColor = BrickColor.new('Medium stone grey')
+Head.Color = Color3.new('0.639216, 0.635294, 0.647059')
+Head.CanCollide = true
+Head.Rotation = Vector3.new(0, 0, 0)
+Head.Position = Vector3.new(0, 13.5, 0)
+Head.Size = Vector3.new(5, 7, 2)
+Head.Transparency = 1
+Head.Parent = Singularity
+
+local Fly = Instance.new('ParticleEmitter')
+Fly.Speed = NumberRange.new(3,35)
+Fly.Name = 'Fly'
+Fly.Texture = 'rbxassetid://11521955045'
+Fly.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(1, 1)}
+Fly.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.30000001192092896, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.5, 1),
+NumberSequenceKeypoint.new(0.699999988079071, 0.05000000074505806),
+NumberSequenceKeypoint.new(1, 1)}
+Fly.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Fly.VelocitySpread = -360
+Fly.VelocityInheritance = 0
+Fly.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+Fly.ShapePartial = 0
+Fly.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Fly.Shape = Enum.ParticleEmitterShape.Sphere
+Fly.SpreadAngle = Vector2.new(-360, 360)
+Fly.Rotation = NumberRange.new(0,0)
+Fly.RotSpeed = NumberRange.new(200,240)
+Fly.LightEmission = 0
+Fly.LightInfluence = 1
+Fly.ZOffset = 0
+Fly.Drag = 10
+Fly.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496)),
+ColorSequenceKeypoint.new(1, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496))}
+Fly.Parent = Head
+Fly.Brightness = 10
+Fly.Orientation = Enum.ParticleOrientation.FacingCamera
+Fly.EmissionDirection = Enum.NormalId.Back
+Fly.Lifetime = NumberRange.new(0.5, 1)
+Fly.Rate = 2.5
+Fly.LockedToPart = false
+Fly.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Fly.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Fly.FlipbookFramerate = NumberRange.new(1,1)
+Fly.Acceleration = Vector3.new(0, 2, 0)
+Fly.WindAffectsDrag = false
+Fly.TimeScale = 1
+Fly.Enabled = true
+
+
+local Smoke = Instance.new('ParticleEmitter')
+Smoke.Speed = NumberRange.new(-1,1)
+Smoke.Name = 'Smoke'
+Smoke.Texture = 'rbxasset://textures/particles/smoke_main.dds'
+Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2.5), NumberSequenceKeypoint.new(1, 3.5)}
+Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1),
+NumberSequenceKeypoint.new(0.35600000619888306, 0.05999999865889549),
+NumberSequenceKeypoint.new(0.7590000033378601, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 1)}
+Smoke.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Smoke.VelocitySpread = -180
+Smoke.VelocityInheritance = 0
+Smoke.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+Smoke.ShapePartial = 1
+Smoke.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Smoke.Shape = Enum.ParticleEmitterShape.Box
+Smoke.SpreadAngle = Vector2.new(-180, 180)
+Smoke.Rotation = NumberRange.new(-360,360)
+Smoke.RotSpeed = NumberRange.new(-50,50)
+Smoke.LightEmission = -1
+Smoke.LightInfluence = 0
+Smoke.ZOffset = -3
+Smoke.Drag = 0
+Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.22563977539539337, 0.2529234290122986, 0.22810472548007965)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+Smoke.Parent = Head
+Smoke.Brightness = 1
+Smoke.Orientation = Enum.ParticleOrientation.FacingCamera
+Smoke.EmissionDirection = Enum.NormalId.Back
+Smoke.Lifetime = NumberRange.new(1, 1)
+Smoke.Rate = 20
+Smoke.LockedToPart = true
+Smoke.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Smoke.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Smoke.FlipbookFramerate = NumberRange.new(1,1)
+Smoke.Acceleration = Vector3.new(0, 0, 0)
+Smoke.WindAffectsDrag = false
+Smoke.TimeScale = 1
+Smoke.Enabled = true
+
+
+local Fly = Instance.new('ParticleEmitter')
+Fly.Speed = NumberRange.new(3,35)
+Fly.Name = 'Fly'
+Fly.Texture = 'rbxassetid://11521955045'
+Fly.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(1, 1)}
+Fly.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.30000001192092896, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.5, 1),
+NumberSequenceKeypoint.new(0.699999988079071, 0.05000000074505806),
+NumberSequenceKeypoint.new(1, 1)}
+Fly.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Fly.VelocitySpread = -360
+Fly.VelocityInheritance = 0
+Fly.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+Fly.ShapePartial = 0
+Fly.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Fly.Shape = Enum.ParticleEmitterShape.Sphere
+Fly.SpreadAngle = Vector2.new(-360, 360)
+Fly.Rotation = NumberRange.new(0,0)
+Fly.RotSpeed = NumberRange.new(200,240)
+Fly.LightEmission = 0
+Fly.LightInfluence = 1
+Fly.ZOffset = 0
+Fly.Drag = 10
+Fly.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496)),
+ColorSequenceKeypoint.new(1, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496))}
+Fly.Parent = Head
+Fly.Brightness = 10
+Fly.Orientation = Enum.ParticleOrientation.FacingCamera
+Fly.EmissionDirection = Enum.NormalId.Left
+Fly.Lifetime = NumberRange.new(0.5, 1)
+Fly.Rate = 2.5
+Fly.LockedToPart = false
+Fly.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Fly.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Fly.FlipbookFramerate = NumberRange.new(1,1)
+Fly.Acceleration = Vector3.new(0, 2, 0)
+Fly.WindAffectsDrag = false
+Fly.TimeScale = 1
+Fly.Enabled = true
+
+
+local Fly = Instance.new('ParticleEmitter')
+Fly.Speed = NumberRange.new(3,35)
+Fly.Name = 'Fly'
+Fly.Texture = 'rbxassetid://11521955045'
+Fly.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(1, 1)}
+Fly.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.30000001192092896, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.5, 1),
+NumberSequenceKeypoint.new(0.699999988079071, 0.05000000074505806),
+NumberSequenceKeypoint.new(1, 1)}
+Fly.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Fly.VelocitySpread = -360
+Fly.VelocityInheritance = 0
+Fly.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+Fly.ShapePartial = 0
+Fly.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Fly.Shape = Enum.ParticleEmitterShape.Sphere
+Fly.SpreadAngle = Vector2.new(-360, 360)
+Fly.Rotation = NumberRange.new(0,0)
+Fly.RotSpeed = NumberRange.new(200,240)
+Fly.LightEmission = 0
+Fly.LightInfluence = 1
+Fly.ZOffset = 0
+Fly.Drag = 10
+Fly.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496)),
+ColorSequenceKeypoint.new(1, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496))}
+Fly.Parent = Head
+Fly.Brightness = 10
+Fly.Orientation = Enum.ParticleOrientation.FacingCamera
+Fly.EmissionDirection = Enum.NormalId.Front
+Fly.Lifetime = NumberRange.new(0.5, 1)
+Fly.Rate = 2.5
+Fly.LockedToPart = false
+Fly.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Fly.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Fly.FlipbookFramerate = NumberRange.new(1,1)
+Fly.Acceleration = Vector3.new(0, 2, 0)
+Fly.WindAffectsDrag = false
+Fly.TimeScale = 1
+Fly.Enabled = true
+
+local Attachment = Instance.new('Attachment')
+Attachment.Name = 'Attachment'
+
+
+Attachment.Position = Vector3.new(0, 0, 0)
+Attachment.Orientation = Vector3.new(-90, -0, 0)
+Attachment.Parent = Head
+local Face11 = Instance.new('ParticleEmitter')
+Face11.Speed = NumberRange.new(-0.5,0.5)
+Face11.Name = 'Face11'
+Face11.Texture = 'rbxassetid://18670044525'
+Face11.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3), NumberSequenceKeypoint.new(1, 3)}
+Face11.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(0.05000000074505806, 0),
+NumberSequenceKeypoint.new(0.44999998807907104, 0.4000000059604645),
+NumberSequenceKeypoint.new(1, 1)}
+Face11.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 0.10000000149011612),
+}
+Face11.VelocitySpread = 0
+Face11.VelocityInheritance = 0
+Face11.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+Face11.ShapePartial = 1
+Face11.ShapeInOut = Enum.ParticleEmitterShapeInOut.Inward
+Face11.Shape = Enum.ParticleEmitterShape.Box
+Face11.SpreadAngle = Vector2.new(0, 0)
+Face11.Rotation = NumberRange.new(-3,3)
+Face11.RotSpeed = NumberRange.new(0,0)
+Face11.LightEmission = 0.10000000149011612
+Face11.LightInfluence = 0.10000000149011612
+Face11.ZOffset = 0
+Face11.Drag = 10
+Face11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+ColorSequenceKeypoint.new(1, Color3.new(1, 1, 1))}
+Face11.Parent = Attachment
+Face11.Brightness = 0
+Face11.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
+Face11.EmissionDirection = Enum.NormalId.Top
+Face11.Lifetime = NumberRange.new(1, 1)
+Face11.Rate = 40
+Face11.LockedToPart = true
+Face11.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Face11.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Face11.FlipbookFramerate = NumberRange.new(1,1)
+Face11.Acceleration = Vector3.new(0, 0, 0)
+Face11.WindAffectsDrag = false
+Face11.TimeScale = 1
+Face11.Enabled = true
+
+local Smoke = Instance.new('ParticleEmitter')
+Smoke.Speed = NumberRange.new(-1,1)
+Smoke.Name = 'Smoke'
+Smoke.Texture = 'rbxasset://textures/particles/smoke_main.dds'
+Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2.5), NumberSequenceKeypoint.new(1, 3.5)}
+Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1),
+NumberSequenceKeypoint.new(0.35600000619888306, 0.05999999865889549),
+NumberSequenceKeypoint.new(0.7590000033378601, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 1)}
+Smoke.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Smoke.VelocitySpread = -180
+Smoke.VelocityInheritance = 0
+Smoke.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+Smoke.ShapePartial = 1
+Smoke.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Smoke.Shape = Enum.ParticleEmitterShape.Box
+Smoke.SpreadAngle = Vector2.new(-180, 180)
+Smoke.Rotation = NumberRange.new(-360,360)
+Smoke.RotSpeed = NumberRange.new(-50,50)
+Smoke.LightEmission = -1
+Smoke.LightInfluence = 0
+Smoke.ZOffset = -3
+Smoke.Drag = 0
+Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.22563977539539337, 0.2529234290122986, 0.22810472548007965)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+Smoke.Parent = Head
+Smoke.Brightness = 1
+Smoke.Orientation = Enum.ParticleOrientation.FacingCamera
+Smoke.EmissionDirection = Enum.NormalId.Back
+Smoke.Lifetime = NumberRange.new(1, 1)
+Smoke.Rate = 20
+Smoke.LockedToPart = true
+Smoke.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Smoke.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Smoke.FlipbookFramerate = NumberRange.new(1,1)
+Smoke.Acceleration = Vector3.new(0, 0, 0)
+Smoke.WindAffectsDrag = false
+Smoke.TimeScale = 1
+Smoke.Enabled = true
+
+local Smoke = Instance.new('ParticleEmitter')
+Smoke.Speed = NumberRange.new(-1,1)
+Smoke.Name = 'Smoke'
+Smoke.Texture = 'rbxthumb://type=Asset&id=16830667309&w=420&h=420'
+Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2.5), NumberSequenceKeypoint.new(1, 3.5)}
+Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1),
+NumberSequenceKeypoint.new(0.35600000619888306, 0.05999999865889549),
+NumberSequenceKeypoint.new(0.7590000033378601, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 1)}
+Smoke.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Smoke.VelocitySpread = -180
+Smoke.VelocityInheritance = 0
+Smoke.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+Smoke.ShapePartial = 1
+Smoke.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Smoke.Shape = Enum.ParticleEmitterShape.Box
+Smoke.SpreadAngle = Vector2.new(-180, 180)
+Smoke.Rotation = NumberRange.new(-360,360)
+Smoke.RotSpeed = NumberRange.new(-50,50)
+Smoke.LightEmission = -1
+Smoke.LightInfluence = 0
+Smoke.ZOffset = -3
+Smoke.Drag = 0
+Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.22563977539539337, 0.2529234290122986, 0.22810472548007965)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+Smoke.Parent = Head
+Smoke.Brightness = 1
+Smoke.Orientation = Enum.ParticleOrientation.FacingCamera
+Smoke.EmissionDirection = Enum.NormalId.Back
+Smoke.Lifetime = NumberRange.new(1, 1)
+Smoke.Rate = 5
+Smoke.LockedToPart = true
+Smoke.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Smoke.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Smoke.FlipbookFramerate = NumberRange.new(1,1)
+Smoke.Acceleration = Vector3.new(0, 0, 0)
+Smoke.WindAffectsDrag = false
+Smoke.TimeScale = 1
+Smoke.Enabled = true
+
+
+local Fly = Instance.new('ParticleEmitter')
+Fly.Speed = NumberRange.new(3,35)
+Fly.Name = 'Fly'
+Fly.Texture = 'rbxassetid://11521955045'
+Fly.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(1, 1)}
+Fly.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.30000001192092896, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.5, 1),
+NumberSequenceKeypoint.new(0.699999988079071, 0.05000000074505806),
+NumberSequenceKeypoint.new(1, 1)}
+Fly.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Fly.VelocitySpread = -360
+Fly.VelocityInheritance = 0
+Fly.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+Fly.ShapePartial = 0
+Fly.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Fly.Shape = Enum.ParticleEmitterShape.Sphere
+Fly.SpreadAngle = Vector2.new(-360, 360)
+Fly.Rotation = NumberRange.new(0,0)
+Fly.RotSpeed = NumberRange.new(200,240)
+Fly.LightEmission = 0
+Fly.LightInfluence = 1
+Fly.ZOffset = 0
+Fly.Drag = 10
+Fly.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496)),
+ColorSequenceKeypoint.new(1, Color3.new(0.19607843458652496, 0.19607843458652496, 0.19607843458652496))}
+Fly.Parent = Head
+Fly.Brightness = 10
+Fly.Orientation = Enum.ParticleOrientation.FacingCamera
+Fly.EmissionDirection = Enum.NormalId.Right
+Fly.Lifetime = NumberRange.new(0.5, 1)
+Fly.Rate = 2.5
+Fly.LockedToPart = false
+Fly.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Fly.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Fly.FlipbookFramerate = NumberRange.new(1,1)
+Fly.Acceleration = Vector3.new(0, 2, 0)
+Fly.WindAffectsDrag = false
+Fly.TimeScale = 1
+Fly.Enabled = true
+
+local ONEMILLIONDOLLARSDRIPPY = Instance.new('ParticleEmitter')
+ONEMILLIONDOLLARSDRIPPY.Speed = NumberRange.new(0,0)
+ONEMILLIONDOLLARSDRIPPY.Name = 'ONEMILLIONDOLLARSDRIPPY'
+ONEMILLIONDOLLARSDRIPPY.Texture = 'rbxassetid://18670018056'
+ONEMILLIONDOLLARSDRIPPY.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5), NumberSequenceKeypoint.new(1, 0)}
+ONEMILLIONDOLLARSDRIPPY.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.30000001192092896, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.4699999988079071, 1),
+NumberSequenceKeypoint.new(1, 1)}
+ONEMILLIONDOLLARSDRIPPY.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+ONEMILLIONDOLLARSDRIPPY.VelocitySpread = 0
+ONEMILLIONDOLLARSDRIPPY.VelocityInheritance = 0
+ONEMILLIONDOLLARSDRIPPY.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+ONEMILLIONDOLLARSDRIPPY.ShapePartial = 1
+ONEMILLIONDOLLARSDRIPPY.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+ONEMILLIONDOLLARSDRIPPY.Shape = Enum.ParticleEmitterShape.Box
+ONEMILLIONDOLLARSDRIPPY.SpreadAngle = Vector2.new(0, 0)
+ONEMILLIONDOLLARSDRIPPY.Rotation = NumberRange.new(0,0)
+ONEMILLIONDOLLARSDRIPPY.RotSpeed = NumberRange.new(0,0)
+ONEMILLIONDOLLARSDRIPPY.LightEmission = 0
+ONEMILLIONDOLLARSDRIPPY.LightInfluence = 2
+ONEMILLIONDOLLARSDRIPPY.ZOffset = -1
+ONEMILLIONDOLLARSDRIPPY.Drag = 0
+ONEMILLIONDOLLARSDRIPPY.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.6078431606292725, 0.686274528503418, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.07999999821186066, Color3.new(0.686274528503418, 0.6078431606292725, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.1599999964237213, Color3.new(0.6078431606292725, 0.7647058963775635, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.23999999463558197, Color3.new(0.6078431606292725, 0.7254902124404907, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.41999998688697815, Color3.new(0.4901960790157318, 0.686274528503418, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.5, Color3.new(0.686274528503418, 0.686274528503418, 0.45098039507865906)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+ONEMILLIONDOLLARSDRIPPY.Parent = Head
+ONEMILLIONDOLLARSDRIPPY.Brightness = 0
+ONEMILLIONDOLLARSDRIPPY.Orientation = Enum.ParticleOrientation.FacingCameraWorldUp
+ONEMILLIONDOLLARSDRIPPY.EmissionDirection = Enum.NormalId.Bottom
+ONEMILLIONDOLLARSDRIPPY.Lifetime = NumberRange.new(0.5, 0.5)
+ONEMILLIONDOLLARSDRIPPY.Rate = 1
+ONEMILLIONDOLLARSDRIPPY.LockedToPart = true
+ONEMILLIONDOLLARSDRIPPY.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+ONEMILLIONDOLLARSDRIPPY.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+ONEMILLIONDOLLARSDRIPPY.FlipbookFramerate = NumberRange.new(1,1)
+ONEMILLIONDOLLARSDRIPPY.Acceleration = Vector3.new(0, -50, 0)
+ONEMILLIONDOLLARSDRIPPY.WindAffectsDrag = false
+ONEMILLIONDOLLARSDRIPPY.TimeScale = 1
+ONEMILLIONDOLLARSDRIPPY.Enabled = true
+
+local Neck = Instance.new('Part')
+Neck.Name = 'Neck'
+Neck.Material = Enum.Material.Plastic
+Neck.Anchored = false
+Neck.CanTouch = false
+Neck.CastShadow = true
+Neck.BrickColor = BrickColor.new('Medium stone grey')
+Neck.Color = Color3.new('0.639216, 0.635294, 0.647059')
+Neck.CanCollide = true
+Neck.Rotation = Vector3.new(-30.00200080871582, 0, 0)
+Neck.Position = Vector3.new(0, 10, 1)
+Neck.Size = Vector3.new(1, 3, 1)
+Neck.Transparency = 1
+Neck.Parent = Singularity
+
+local Smoke = Instance.new('ParticleEmitter')
+Smoke.Speed = NumberRange.new(-1,1)
+Smoke.Name = 'Smoke'
+Smoke.Texture = 'rbxasset://textures/particles/smoke_main.dds'
+Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2), NumberSequenceKeypoint.new(1, 2.5)}
+Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1),
+NumberSequenceKeypoint.new(0.35600000619888306, 0.05999999865889549),
+NumberSequenceKeypoint.new(0.7590000033378601, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 1)}
+Smoke.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Smoke.VelocitySpread = -180
+Smoke.VelocityInheritance = 0
+Smoke.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+Smoke.ShapePartial = 1
+Smoke.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Smoke.Shape = Enum.ParticleEmitterShape.Box
+Smoke.SpreadAngle = Vector2.new(-180, 180)
+Smoke.Rotation = NumberRange.new(-360,360)
+Smoke.RotSpeed = NumberRange.new(-50,50)
+Smoke.LightEmission = -1
+Smoke.LightInfluence = 0
+Smoke.ZOffset = -3
+Smoke.Drag = 0
+Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.22563977539539337, 0.2529234290122986, 0.22810472548007965)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+Smoke.Parent = Neck
+Smoke.Brightness = 1
+Smoke.Orientation = Enum.ParticleOrientation.FacingCamera
+Smoke.EmissionDirection = Enum.NormalId.Back
+Smoke.Lifetime = NumberRange.new(1, 1)
+Smoke.Rate = 20
+Smoke.LockedToPart = true
+Smoke.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Smoke.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Smoke.FlipbookFramerate = NumberRange.new(1,1)
+Smoke.Acceleration = Vector3.new(0, 0, 0)
+Smoke.WindAffectsDrag = false
+Smoke.TimeScale = 1
+Smoke.Enabled = true
+
+
+local Attachment = Instance.new('Attachment')
+Attachment.Name = 'Attachment'
+Attachment.Position = Vector3.new(0, 0, 0)
+Attachment.Orientation = Vector3.new(90, 0, 0)
+Attachment.Parent = Neck
+
+local Face11 = Instance.new('ParticleEmitter')
+Face11.Speed = NumberRange.new(-0.5,0.5)
+Face11.Name = 'Face11'
+Face11.Texture = 'rbxassetid://18670062360'
+Face11.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2), NumberSequenceKeypoint.new(1, 2)}
+Face11.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(0.05000000074505806, 0),
+NumberSequenceKeypoint.new(0.44999998807907104, 0.4000000059604645),
+NumberSequenceKeypoint.new(1, 1)}
+Face11.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, -0.25),
+NumberSequenceKeypoint.new(1, -0.25),
+}
+Face11.VelocitySpread = 0
+Face11.VelocityInheritance = 0
+Face11.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+Face11.ShapePartial = 1
+Face11.ShapeInOut = Enum.ParticleEmitterShapeInOut.Inward
+Face11.Shape = Enum.ParticleEmitterShape.Box
+Face11.SpreadAngle = Vector2.new(0, 0)
+Face11.Rotation = NumberRange.new(-3,3)
+Face11.RotSpeed = NumberRange.new(0,0)
+Face11.LightEmission = 0.10000000149011612
+Face11.LightInfluence = 0.10000000149011612
+Face11.ZOffset = 0
+Face11.Drag = 10
+Face11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+ColorSequenceKeypoint.new(1, Color3.new(1, 1, 1))}
+Face11.Parent = Attachment
+Face11.Brightness = 0
+Face11.Orientation = Enum.ParticleOrientation.VelocityPerpendicular
+Face11.EmissionDirection = Enum.NormalId.Top
+Face11.Lifetime = NumberRange.new(1, 1)
+Face11.Rate = 40
+Face11.LockedToPart = true
+Face11.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Face11.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Face11.FlipbookFramerate = NumberRange.new(1,1)
+Face11.Acceleration = Vector3.new(0, 0, 0)
+Face11.WindAffectsDrag = false
+Face11.TimeScale = 1
+Face11.Enabled = true
+
+local Smoke = Instance.new('ParticleEmitter')
+Smoke.Speed = NumberRange.new(-1,1)
+Smoke.Name = 'Smoke'
+Smoke.Texture = 'rbxasset://textures/particles/smoke_main.dds'
+Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2), NumberSequenceKeypoint.new(1, 2.5)}
+Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1),
+NumberSequenceKeypoint.new(0.35600000619888306, 0.05999999865889549),
+NumberSequenceKeypoint.new(0.7590000033378601, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 1)}
+Smoke.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Smoke.VelocitySpread = -180
+Smoke.VelocityInheritance = 0
+Smoke.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+Smoke.ShapePartial = 1
+Smoke.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Smoke.Shape = Enum.ParticleEmitterShape.Box
+Smoke.SpreadAngle = Vector2.new(-180, 180)
+Smoke.Rotation = NumberRange.new(-360,360)
+Smoke.RotSpeed = NumberRange.new(-50,50)
+Smoke.LightEmission = -1
+Smoke.LightInfluence = 0
+Smoke.ZOffset = -3
+Smoke.Drag = 0
+Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.22563977539539337, 0.2529234290122986, 0.22810472548007965)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+Smoke.Parent = Neck
+Smoke.Brightness = 1
+Smoke.Orientation = Enum.ParticleOrientation.FacingCamera
+Smoke.EmissionDirection = Enum.NormalId.Back
+Smoke.Lifetime = NumberRange.new(1, 1)
+Smoke.Rate = 20
+Smoke.LockedToPart = true
+Smoke.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Smoke.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Smoke.FlipbookFramerate = NumberRange.new(1,1)
+Smoke.Acceleration = Vector3.new(0, 0, 0)
+Smoke.WindAffectsDrag = false
+Smoke.TimeScale = 1
+Smoke.Enabled = true
+
+local Smoke = Instance.new('ParticleEmitter')
+Smoke.Speed = NumberRange.new(-1,1)
+Smoke.Name = 'Smoke'
+Smoke.Texture = 'rbxthumb://type=Asset&id=16830667309&w=420&h=420'
+Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2), NumberSequenceKeypoint.new(1, 2.5)}
+Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1),
+NumberSequenceKeypoint.new(0.35600000619888306, 0.05999999865889549),
+NumberSequenceKeypoint.new(0.7590000033378601, 0.10000000149011612),
+NumberSequenceKeypoint.new(1, 1)}
+Smoke.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+Smoke.VelocitySpread = -180
+Smoke.VelocityInheritance = 0
+Smoke.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+Smoke.ShapePartial = 1
+Smoke.ShapeInOut = Enum.ParticleEmitterShapeInOut.Outward
+Smoke.Shape = Enum.ParticleEmitterShape.Box
+Smoke.SpreadAngle = Vector2.new(-180, 180)
+Smoke.Rotation = NumberRange.new(-360,360)
+Smoke.RotSpeed = NumberRange.new(-50,50)
+Smoke.LightEmission = -1
+Smoke.LightInfluence = 0
+Smoke.ZOffset = -3
+Smoke.Drag = 0
+Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.22563977539539337, 0.2529234290122986, 0.22810472548007965)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+Smoke.Parent = Neck
+Smoke.Brightness = 1
+Smoke.Orientation = Enum.ParticleOrientation.FacingCamera
+Smoke.EmissionDirection = Enum.NormalId.Back
+Smoke.Lifetime = NumberRange.new(1, 1)
+Smoke.Rate = 5
+Smoke.LockedToPart = true
+Smoke.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+Smoke.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+Smoke.FlipbookFramerate = NumberRange.new(1,1)
+Smoke.Acceleration = Vector3.new(0, 0, 0)
+Smoke.WindAffectsDrag = false
+Smoke.TimeScale = 1
+Smoke.Enabled = true
+
+local ONEMILLIONDOLLARSDRIPPY = Instance.new('ParticleEmitter')
+ONEMILLIONDOLLARSDRIPPY.Speed = NumberRange.new(0,0)
+ONEMILLIONDOLLARSDRIPPY.Name = 'ONEMILLIONDOLLARSDRIPPY'
+ONEMILLIONDOLLARSDRIPPY.Texture = 'rbxassetid://18670018056'
+ONEMILLIONDOLLARSDRIPPY.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5), NumberSequenceKeypoint.new(1, 0)}
+ONEMILLIONDOLLARSDRIPPY.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.30000001192092896, 0.05000000074505806),
+NumberSequenceKeypoint.new(0.4699999988079071, 1),
+NumberSequenceKeypoint.new(1, 1)}
+ONEMILLIONDOLLARSDRIPPY.Squash = NumberSequence.new{NumberSequenceKeypoint.new(0, 0),
+NumberSequenceKeypoint.new(1, 0),
+}
+ONEMILLIONDOLLARSDRIPPY.VelocitySpread = 0
+ONEMILLIONDOLLARSDRIPPY.VelocityInheritance = 0
+ONEMILLIONDOLLARSDRIPPY.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+ONEMILLIONDOLLARSDRIPPY.ShapePartial = 1
+ONEMILLIONDOLLARSDRIPPY.ShapeInOut = Enum.ParticleEmitterShapeInOut.Inward
+ONEMILLIONDOLLARSDRIPPY.Shape = Enum.ParticleEmitterShape.Box
+ONEMILLIONDOLLARSDRIPPY.SpreadAngle = Vector2.new(0, 0)
+ONEMILLIONDOLLARSDRIPPY.Rotation = NumberRange.new(0,0)
+ONEMILLIONDOLLARSDRIPPY.RotSpeed = NumberRange.new(0,0)
+ONEMILLIONDOLLARSDRIPPY.LightEmission = 0
+ONEMILLIONDOLLARSDRIPPY.LightInfluence = 0.10000000149011612
+ONEMILLIONDOLLARSDRIPPY.ZOffset = -1
+ONEMILLIONDOLLARSDRIPPY.Drag = 0
+ONEMILLIONDOLLARSDRIPPY.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.6078431606292725, 0.686274528503418, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.07999999821186066, Color3.new(0.686274528503418, 0.6078431606292725, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.1599999964237213, Color3.new(0.6078431606292725, 0.7647058963775635, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.23999999463558197, Color3.new(0.6078431606292725, 0.7254902124404907, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.41999998688697815, Color3.new(0.4901960790157318, 0.686274528503418, 0.6470588445663452)),
+ColorSequenceKeypoint.new(0.5, Color3.new(0.686274528503418, 0.686274528503418, 0.45098039507865906)),
+ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))}
+ONEMILLIONDOLLARSDRIPPY.Parent = Neck
+ONEMILLIONDOLLARSDRIPPY.Brightness = 0
+ONEMILLIONDOLLARSDRIPPY.Orientation = Enum.ParticleOrientation.FacingCameraWorldUp
+ONEMILLIONDOLLARSDRIPPY.EmissionDirection = Enum.NormalId.Bottom
+ONEMILLIONDOLLARSDRIPPY.Lifetime = NumberRange.new(0.5, 0.5)
+ONEMILLIONDOLLARSDRIPPY.Rate = 2.5
+ONEMILLIONDOLLARSDRIPPY.LockedToPart = true
+ONEMILLIONDOLLARSDRIPPY.FlipbookMode = Enum.ParticleFlipbookMode.Loop
+ONEMILLIONDOLLARSDRIPPY.FlipbookLayout = Enum.ParticleFlipbookLayout.None
+ONEMILLIONDOLLARSDRIPPY.FlipbookFramerate = NumberRange.new(1,1)
+ONEMILLIONDOLLARSDRIPPY.Acceleration = Vector3.new(0, -50, 0)
+ONEMILLIONDOLLARSDRIPPY.WindAffectsDrag = false
+ONEMILLIONDOLLARSDRIPPY.TimeScale = 1
+ONEMILLIONDOLLARSDRIPPY.Enabled = true
+
+local breath = Instance.new('Sound')
+breath.Name = 'breath'
+breath.SoundId = 'rbxassetid://6515874251'
+breath.Pitch = 0.699999988079071
+breath.Volume = 3
+breath.RollOffMode = Enum.RollOffMode.InverseTapered
+breath.RollOffMaxDistance = 50
+breath.RollOffMinDistance = 1
+breath.Looped = true
+breath:Play()
+breath.Parent = Head
+local ReverbSoundEffect = Instance.new('ReverbSoundEffect')
+ReverbSoundEffect.DecayTime = 1.5
+ReverbSoundEffect.Density = 1
+ReverbSoundEffect.Diffusion = 1
+ReverbSoundEffect.DryLevel = -6
+ReverbSoundEffect.WetLevel = 0
+ReverbSoundEffect.Priority = 0
+ReverbSoundEffect.Parent = breath
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = -80
+EqualizerSoundEffect.MidGain = -20
+EqualizerSoundEffect.LowGain = -80
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = breath
+local breath = Instance.new('Sound')
+breath.Name = 'breath'
+breath.SoundId = 'rbxassetid://6515874251'
+breath.Pitch = 0.699999988079071
+breath.Volume = 10
+breath.RollOffMode = Enum.RollOffMode.InverseTapered
+breath.RollOffMaxDistance = 90
+breath.RollOffMinDistance = 1
+breath.Looped = true
+breath:Play()
+breath.Parent = Head
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = 0
+EqualizerSoundEffect.MidGain = -80
+EqualizerSoundEffect.LowGain = -80
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = breath
+local breath = Instance.new('Sound')
+breath.Name = 'breath'
+breath.SoundId = 'rbxassetid://6515874251'
+breath.Pitch = 0.699999988079071
+breath.Volume = 4
+breath.RollOffMode = Enum.RollOffMode.InverseTapered
+breath.RollOffMaxDistance = 100
+breath.RollOffMinDistance = 0.5
+breath.Looped = true
+breath:Play()
+breath.Parent = Head
+local ReverbSoundEffect = Instance.new('ReverbSoundEffect')
+ReverbSoundEffect.DecayTime = 1.5
+ReverbSoundEffect.Density = 1
+ReverbSoundEffect.Diffusion = 1
+ReverbSoundEffect.DryLevel = -6
+ReverbSoundEffect.WetLevel = 0
+ReverbSoundEffect.Priority = 0
+ReverbSoundEffect.Parent = breath
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = -80
+EqualizerSoundEffect.MidGain = -50
+EqualizerSoundEffect.LowGain = 0
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = breath
+local rasp = Instance.new('Sound')
+rasp.Name = 'rasp'
+rasp.SoundId = 'rbxassetid://1837786350'
+rasp.Pitch = 0.004999999888241291
+rasp.Volume = 0.009999999776482582
+rasp.RollOffMode = Enum.RollOffMode.InverseTapered
+rasp.RollOffMaxDistance = 150
+rasp.RollOffMinDistance = 20
+rasp.Looped = true
+rasp:Play()
+rasp.Parent = Head
+local DistortionSoundEffect = Instance.new('DistortionSoundEffect')
+DistortionSoundEffect.Level = 1
+DistortionSoundEffect.Priority = 0
+DistortionSoundEffect.Parent = rasp
+local EchoSoundEffect = Instance.new('EchoSoundEffect')
+EchoSoundEffect.Delay = 1
+EchoSoundEffect.DryLevel = 0
+EchoSoundEffect.Feedback = 0.5
+EchoSoundEffect.WetLevel = 0
+EchoSoundEffect.Priority = 0
+EchoSoundEffect.Parent = rasp
+local ReverbSoundEffect = Instance.new('ReverbSoundEffect')
+ReverbSoundEffect.DecayTime = 1.5
+ReverbSoundEffect.Density = 1
+ReverbSoundEffect.Diffusion = 1
+ReverbSoundEffect.DryLevel = -6
+ReverbSoundEffect.WetLevel = 0
+ReverbSoundEffect.Priority = 0
+ReverbSoundEffect.Parent = rasp
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = 0
+EqualizerSoundEffect.MidGain = -80
+EqualizerSoundEffect.LowGain = -80
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = rasp
+local glargle = Instance.new('Sound')
+glargle.Name = 'glargle'
+glargle.SoundId = 'rbxassetid://406943544'
+glargle.Pitch = 0.699999988079071
+glargle.Volume = 1
+glargle.RollOffMode = Enum.RollOffMode.Inverse
+glargle.RollOffMaxDistance = 35
+glargle.RollOffMinDistance = 1
+glargle.Looped = true
+glargle:Play()
+glargle.Parent = Neck
+local EchoSoundEffect = Instance.new('EchoSoundEffect')
+EchoSoundEffect.Delay = 0.699999988079071
+EchoSoundEffect.DryLevel = 10
+EchoSoundEffect.Feedback = 1
+EchoSoundEffect.WetLevel = 10
+EchoSoundEffect.Priority = 0
+EchoSoundEffect.Parent = glargle
+local ReverbSoundEffect = Instance.new('ReverbSoundEffect')
+ReverbSoundEffect.DecayTime = 1.5
+ReverbSoundEffect.Density = 1
+ReverbSoundEffect.Diffusion = 1
+ReverbSoundEffect.DryLevel = -6
+ReverbSoundEffect.WetLevel = 0
+ReverbSoundEffect.Priority = 0
+ReverbSoundEffect.Parent = glargle
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = -80
+EqualizerSoundEffect.MidGain = -50
+EqualizerSoundEffect.LowGain = 0
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = glargle
+local glargle = Instance.new('Sound')
+glargle.Name = 'glargle'
+glargle.SoundId = 'rbxassetid://9113464573'
+glargle.Pitch = 0.699999988079071
+glargle.Volume = 0.5
+glargle.RollOffMode = Enum.RollOffMode.Inverse
+glargle.RollOffMaxDistance = 10
+glargle.RollOffMinDistance = 1
+glargle:Play()
+glargle.Looped = true
+glargle.Parent = Neck
+local EchoSoundEffect = Instance.new('EchoSoundEffect')
+EchoSoundEffect.Delay = 0.699999988079071
+EchoSoundEffect.DryLevel = 10
+EchoSoundEffect.Feedback = 1
+EchoSoundEffect.WetLevel = 10
+EchoSoundEffect.Priority = 0
+EchoSoundEffect.Parent = glargle
+local ReverbSoundEffect = Instance.new('ReverbSoundEffect')
+ReverbSoundEffect.DecayTime = 1.5
+ReverbSoundEffect.Density = 1
+ReverbSoundEffect.Diffusion = 1
+ReverbSoundEffect.DryLevel = -6
+ReverbSoundEffect.WetLevel = 0
+ReverbSoundEffect.Priority = 0
+ReverbSoundEffect.Parent = glargle
+local EchoSoundEffect2 = Instance.new('EchoSoundEffect')
+EchoSoundEffect2.Delay = 0.699999988079071
+EchoSoundEffect2.DryLevel = 10
+EchoSoundEffect2.Feedback = 1
+EchoSoundEffect2.WetLevel = 10
+EchoSoundEffect2.Priority = 0
+EchoSoundEffect.Parent = glargle
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = -80
+EqualizerSoundEffect.MidGain = -50
+EqualizerSoundEffect.LowGain = 0
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = glargle
+local glargle = Instance.new('Sound')
+glargle.Name = 'glargle'
+glargle.SoundId = 'rbxassetid://9113464418'
+glargle.Pitch = 0.699999988079071
+glargle.Volume = 10
+glargle.RollOffMode = Enum.RollOffMode.Inverse
+glargle.RollOffMaxDistance = 10
+glargle.RollOffMinDistance = 1
+glargle.Looped = true
+glargle:Play()
+glargle.Parent = Neck
+local ReverbSoundEffect = Instance.new('ReverbSoundEffect')
+ReverbSoundEffect.DecayTime = 1.5
+ReverbSoundEffect.Density = 1
+ReverbSoundEffect.Diffusion = 1
+ReverbSoundEffect.DryLevel = -6
+ReverbSoundEffect.WetLevel = 0
+ReverbSoundEffect.Priority = 0
+ReverbSoundEffect.Parent = glargle
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = -80
+EqualizerSoundEffect.MidGain = -50
+EqualizerSoundEffect.LowGain = 0
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = glargle
+local FireCracklingSound = Instance.new('Sound')
+FireCracklingSound.Name = 'Fire Crackling Sound'
+FireCracklingSound.SoundId = 'rbxassetid://9068935533'
+FireCracklingSound.Pitch = 0.05000000074505806
+FireCracklingSound.Volume = 2
+FireCracklingSound.RollOffMode = Enum.RollOffMode.Inverse
+FireCracklingSound.RollOffMaxDistance = 45
+FireCracklingSound.RollOffMinDistance = 3.5
+FireCracklingSound.Looped = true
+FireCracklingSound:Play()
+FireCracklingSound.Parent = Attachment
+local EqualizerSoundEffect = Instance.new('EqualizerSoundEffect')
+EqualizerSoundEffect.HighGain = -80
+EqualizerSoundEffect.MidGain = -10
+EqualizerSoundEffect.LowGain = -80
+EqualizerSoundEffect.Priority = 0
+EqualizerSoundEffect.Parent = FireCracklingSound
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "Moving"
+cream.SoundId = "rbxassetid://9114226117"
+cream.Pitch = 0.65
+cream.Volume = 2.5
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 145
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+cream.Looped = true
+local echo = Instance.new("EchoSoundEffect", cream)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+local cream = Instance.new("Sound", Main)
+cream.Name = "Moving2"
+cream.SoundId = "rbxassetid://9114226117"
+cream.Pitch = 2
+cream.Volume = 3
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 45
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+cream.Looped = true
+local echo = Instance.new("EchoSoundEffect", cream)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "Despawn"
+cream.SoundId = "rbxassetid://1257081652"
+cream.Pitch = 0.7
+cream.Volume = 0.5
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 100
+cream.RollOffMaxDistance = 50000
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+local echo = Instance.new("EchoSoundEffect", cream)
+echo.Delay = 1
+echo.DryLevel = 0
+echo.Feedback = 0.5
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+local Ps = Instance.new("PitchShiftSoundEffect", cream)
+Ps.Octave = 0.5
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = 0
+eq.LowGain = -30
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "Scare"
+cream.SoundId = "rbxassetid://6305809364"
+cream.Pitch = 0.8
+cream.Volume = 0.5
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.745
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -80
+eq.MidGain = -20
+eq.LowGain = -15
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "roa"
+cream.SoundId = "rbxassetid://6305809364"
+cream.Pitch = 0.7
+cream.Volume = 0.5
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.745
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -80
+eq.MidGain = 0
+eq.LowGain = -10
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "ScreamingInPublicBathroomsPrank"
+cream.SoundId = "rbxassetid://9118841838"
+cream.Pitch = 0.7
+cream.Volume = 2
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 150
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.745
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -80
+eq.MidGain = -20
+eq.LowGain = -20
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "gore0"
+cream.SoundId = "rbxassetid://198606040"
+cream.Pitch = 0.9
+cream.Volume = 6
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.845
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -20
+eq.MidGain = -30
+eq.LowGain = 5
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "gore1"
+cream.SoundId = "rbxassetid://3607355239"
+cream.Pitch = 1.1
+cream.Volume = 6
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.745
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "gore2"
+cream.SoundId = "rbxassetid://198606040"
+cream.Pitch = 0.8
+cream.Volume = 6
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.745
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "gore3"
+cream.SoundId = "rbxassetid://5835557537"
+cream.Pitch = 0.96
+cream.Volume = 6
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 15
+cream.RollOffMaxDistance = 500
+local Shift = Instance.new("PitchShiftSoundEffect", cream)
+Shift.Octave = 0.745
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "gibberish"
+cream.SoundId = "rbxassetid://9043350515"
+cream.Pitch = 0.25
+cream.Volume = 2
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 1
+cream.RollOffMaxDistance = 130
+local eq = Instance.new("EqualizerSoundEffect", cream)
+eq.HighGain = -10
+eq.MidGain = -30
+eq.LowGain = -10
+--cream:Play()
+local rev = Instance.new("ReverbSoundEffect", cream)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+local distort2 = Instance.new("DistortionSoundEffect", cream)
+distort2.Level = 0.5
+
+local s = Instance.new("Sound", Main)
+s.Name = "Knock"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 50
+s.Volume = 3
+s.Pitch = 0.8
+s.SoundId = "rbxassetid://9114787862"
+local eq = Instance.new("EqualizerSoundEffect", s)
+eq.HighGain = 0
+eq.MidGain = -10
+eq.LowGain = 0
+local rev = Instance.new("ReverbSoundEffect", s)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+
+local s = Instance.new("Sound", Main)
+s.Name = "KnockFar"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 5
+s.MaxDistance = 350
+s.Volume = 10
+s.Pitch = 0.8
+s.SoundId = "rbxassetid://9114787862"
+local eq = Instance.new("EqualizerSoundEffect", s)
+eq.HighGain = -80
+eq.MidGain = -30
+eq.LowGain = 0
+local rev = Instance.new("ReverbSoundEffect", s)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+
+local s = Instance.new("Sound", Main)
+s.Name = "BreakMain"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 120
+s.Volume = 0.5
+s.Pitch = 1.5
+s.SoundId = "rbxassetid://9120957463"
+local EqualizerSoundEffect = Instance.new("EqualizerSoundEffect", s)
+EqualizerSoundEffect.HighGain = -30
+EqualizerSoundEffect.LowGain = 0
+EqualizerSoundEffect.MidGain = -10
+EqualizerSoundEffect.Enabled = true
+
+local s = Instance.new("Sound", Main)
+s.Name = "Break"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 120
+s.Volume = 1
+s.Pitch = 1
+s.SoundId = "rbxassetid://6700552345"
+
+local cream = Instance.new("Sound", Main)
+cream.Name = "VictimScream"
+cream.SoundId = "rbxassetid://9125714014"
+cream.Volume = 10
+cream.Pitch = 0.85
+cream.RollOffMode = "InverseTapered"
+cream.EmitterSize = 2.5
+cream.RollOffMaxDistance = 50
+local VictimScream = Instance.new("EqualizerSoundEffect", cream)
+VictimScream.HighGain = 0
+VictimScream.LowGain = 0
+VictimScream.MidGain = -80
+VictimScream.Enabled = true
+
+local WeldConstraint2 = Instance.new('WeldConstraint')
+WeldConstraint2.Name = 'WeldConstraint2'
+WeldConstraint2.Enabled = true
+WeldConstraint2.Part0 = Main
+WeldConstraint2.Part1 = Neck
+WeldConstraint2.Parent = Main
+
+local WeldConstraint = Instance.new('WeldConstraint')
+WeldConstraint.Name = 'WeldConstraint'
+WeldConstraint.Enabled = true
+WeldConstraint.Part0 = Neck
+WeldConstraint.Part1 = Head
+WeldConstraint.Parent = Main
+
+return Singularity
