@@ -1216,18 +1216,16 @@ VictimScream.LowGain = 0
 VictimScream.MidGain = -80
 VictimScream.Enabled = true
 
-local WeldConstraint2 = Instance.new('WeldConstraint')
-WeldConstraint2.Name = 'WeldConstraint2'
-WeldConstraint2.Enabled = true
-WeldConstraint2.Part0 = Main
-WeldConstraint2.Part1 = Neck
-WeldConstraint2.Parent = Main
+local Weld2 = Instance.new('Weld')
+Weld2.Name = 'Weld2'
+Weld2.Part0 = Main
+Weld2.Part1 = Neck
+Weld2.Parent = Main
 
-local WeldConstraint = Instance.new('WeldConstraint')
-WeldConstraint.Name = 'WeldConstraint'
-WeldConstraint.Enabled = true
-WeldConstraint.Part0 = Neck
-WeldConstraint.Part1 = Head
-WeldConstraint.Parent = Main
+local Weld = Instance.new('Weld')
+Weld.Name = 'Weld'
+Weld.Part0 = Neck
+Weld.Part1 = Head
+Weld.Parent = Main
 
 return Singularity
