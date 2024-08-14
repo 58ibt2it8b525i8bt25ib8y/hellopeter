@@ -24,7 +24,7 @@ EyesParticle.LockedToPart = LockedToPart
 return EyesParticle
 end
 
-local Face1 = Particle("rbxassetid://14017101027", true, 0)
+local Face1 = Particle("rbxassetid://18939620971", true, 0)
 Face1.Parent = Attachment1
 Face1.Size = NumberSequence.new(4)
 Face1.Squash = NumberSequence.new{
@@ -90,42 +90,6 @@ Face1.Color = ColorSequence.new({
     ColorSequenceKeypoint.new(0.8, Color3.fromRGB(0,28,85)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(11,0,85))
 })
-
-local Face1 = Particle("rbxassetid://13475589107", true, 0)
-Face1.Parent = Attachment1
-Face1.Size = NumberSequence.new(6)
-Face1.Squash = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, -0.08, 0),
-				NumberSequenceKeypoint.new(0.02, -0.01, 0),
-				NumberSequenceKeypoint.new(0.10, -0.00012, 0),
-				NumberSequenceKeypoint.new(0.24, 0.00027, 0),
-				NumberSequenceKeypoint.new(1, -0.0008, 0),
-			}
-Face1.ZOffset = 0.5
-Face1.Rate = 0.5
-Face1.Name = "Face2"
-Face1.Lifetime = NumberRange.new(0,1)
-Face1.Rotation = NumberRange.new(-2,2)
-Face1.Speed = NumberRange.new(15)
-Face1.RotSpeed = NumberRange.new(0)
-Face1.SpreadAngle = Vector2.new(2,2)
-Face1.Brightness = 5
-Face1.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, .80, 0),
-				NumberSequenceKeypoint.new(0.10, 0.75, 0),
-				NumberSequenceKeypoint.new(0.6, 0.84, 0),
-				NumberSequenceKeypoint.new(1, 1, 0),
-			}
-Face1.Drag = 35
-Face1.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
-    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(191,191,191)),
-    ColorSequenceKeypoint.new(0.6, Color3.fromRGB(101, 87, 145)),
-    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(0,28,85)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(11,0,85))
-})
-Face1.LightEmission = 1
-Face1.LightInfluence = 1
 
 --Others
 local Smoke = Particle("rbxassetid://390410785", true, 0)

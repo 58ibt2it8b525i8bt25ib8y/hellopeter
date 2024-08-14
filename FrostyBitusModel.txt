@@ -65,7 +65,7 @@ EyeParticle.LockedToPart = LockedToPart
 return EyeParticle
 end
 
-local Face1 = Particle("rbxassetid://17771209092", true, 0)
+local Face1 = Particle("rbxassetid://18939666782", true, 0)
 Face1.Parent = Attach
 Face1.Size = NumberSequence.new(5)
 Face1.Transparency = NumberSequence.new{
@@ -103,7 +103,7 @@ Face1.Drag = 10
 Face1.Speed = NumberRange.new(-10,30)
 Face1.Enabled = false
 
-local Face2 = Particle("rbxassetid://17771209092", true, 10)
+local Face2 = Particle("rbxassetid://18939666782", true, 10)
 Face2.Parent = Attach
 Face2.Size = NumberSequence.new(5)
 Face2.Transparency = NumberSequence.new{
