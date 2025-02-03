@@ -1,15 +1,15 @@
 {
-    "Accessory": {
+    "Accessory": [ {
         "AccessoryType"
-    },
-    "Accoutrement": {
+    } ],
+    "Accoutrement": [ {
         "AttachmentForward",
         "AttachmentPoint",
         "AttachmentPos",
         "AttachmentRight",
         "AttachmentUp"
-    },
-    "AlignOrientation": {
+    } ],
+    "AlignOrientation": [ {
         "AlignType",
         "CFrame",
         "MaxAngularVelocity",
@@ -21,8 +21,8 @@
         "Responsiveness",
         "RigidityEnabled",
         "SecondaryAxis"
-    },
-    "AlignPosition": {
+    } ],
+    "AlignPosition": [ {
         "ApplyAtCenterOfMass",
         "MaxForce",
         "MaxVelocity",
@@ -31,21 +31,21 @@
         "ReactionForceEnabled",
         "Responsiveness",
         "RigidityEnabled"
-    },
-    "AngularVelocity": {
+    } ],
+    "AngularVelocity": [ {
         "AngularVelocity",
         "MaxTorque",
         "ReactionTorqueEnabled",
         "RelativeTo"
-    },
-    "Animation": {
+    } ],
+    "Animation": [ {
         "AnimationId"
-    },
-    "AnimationClip": {
+    } ],
+    "AnimationClip": [ {
         "Loop",
         "Priority"
-    },
-    "AnimationTrack": {
+    } ],
+    "AnimationTrack": [ {
         "Animation",
         "IsPlaying",
         "Length",
@@ -55,19 +55,19 @@
         "TimePosition",
         "WeightCurrent",
         "WeightTarget"
-    },
-    "ArcHandles": {
+    } ],
+    "ArcHandles": [ {
         "Axes"
-    },
-    "Atmosphere": {
+    } ],
+    "Atmosphere": [ {
         "Color",
         "Decay",
         "Density",
         "Glare",
         "Haze",
         "Offset"
-    },
-    "Attachment": {
+    } ],
+    "Attachment": [ {
         "Axis",
         "CFrame",
         "Orientation",
@@ -79,11 +79,11 @@
         "WorldOrientation",
         "WorldPosition",
         "WorldSecondaryAxis"
-    },
-    "BackpackItem": {
+    } ],
+    "BackpackItem": [ {
         "TextureId"
-    },
-    "BallSocketConstraint": {
+    } ],
+    "BallSocketConstraint": [ {
         "LimitsEnabled",
         "MaxFrictionTorque",
         "Radius",
@@ -92,8 +92,8 @@
         "TwistLowerAngle",
         "TwistUpperAngle",
         "UpperAngle"
-    },
-    "BasePart": {
+    } ],
+    "BasePart": [ {
         "Anchored",
         "AssemblyAngularVelocity",
         "AssemblyCenterOfMass",
@@ -131,20 +131,20 @@
         "Size",
         "TopSurface",
         "Transparency"
-    },
-    "BaseScript": {
+    } ],
+    "BaseScript": [ {
         "Disabled",
         "LinkedSource"
-    },
-    "BaseWrap": {
+    } ],
+    "BaseWrap": [ {
         "CageMeshId",
         "CageOrigin",
         "CageOriginWorld",
         "HSRAssetId",
         "ImportOrigin",
         "ImportOriginWorld"
-    },
-    "Beam": {
+    } ],
+    "Beam": [ {
         "Attachment0",
         "Attachment1",
         "Brightness",
@@ -164,8 +164,8 @@
         "Width0",
         "Width1",
         "ZOffset"
-    },
-    "BillboardGui": {
+    } ],
+    "BillboardGui": [ {
         "Active",
         "Adornee",
         "AlwaysOnTop",
@@ -184,21 +184,21 @@
         "SizeOffset",
         "StudsOffset",
         "StudsOffsetWorldSpace"
-    },
-    "BloomEffect": {
+    } ],
+    "BloomEffect": [ {
         "Intensity",
         "Size",
         "Threshold"
-    },
-    "BlurEffect": {
+    } ],
+    "BlurEffect": [ {
         "Size"
-    },
-    "BodyAngularVelocity": {
+    } ],
+    "BodyAngularVelocity": [ {
         "AngularVelocity",
         "MaxTorque",
         "P"
-    },
-    "BodyColors": {
+    } ],
+    "BodyColors": [ {
         "HeadColor",
         "HeadColor3",
         "LeftArmColor",
@@ -211,49 +211,49 @@
         "RightLegColor3",
         "TorsoColor",
         "TorsoColor3"
-    },
-    "BodyForce": {
+    } ],
+    "BodyForce": [ {
         "Force"
-    },
-    "BodyGyro": {
+    } ],
+    "BodyGyro": [ {
         "CFrame",
         "D",
         "MaxTorque",
         "P"
-    },
-    "BodyPosition": {
+    } ],
+    "BodyPosition": [ {
         "D",
         "MaxForce",
         "P",
         "Position"
-    },
-    "BodyThrust": {
+    } ],
+    "BodyThrust": [ {
         "Force",
         "Location"
-    },
-    "BodyVelocity": {
+    } ],
+    "BodyVelocity": [ {
         "MaxForce",
         "P",
         "Velocity"
-    },
-    "Bone": {
+    } ],
+    "Bone": [ {
         "Transform",
         "TransformedCFrame",
         "TransformedWorldCFrame"
-    },
-    "BoolValue": {
+    } ],
+    "BoolValue": [ {
         "Value"
-    },
-    "BoxHandleAdornment": {
+    } ],
+    "BoxHandleAdornment": [ {
         "Size"
-    },
-    "BrickColorValue": {
+    } ],
+    "BrickColorValue": [ {
         "Value"
-    },
-    "CFrameValue": {
+    } ],
+    "CFrameValue": [ {
         "Value"
-    },
-    "Camera": {
+    } ],
+    "Camera": [ {
         "CFrame",
         "CameraSubject",
         "CameraType",
@@ -266,59 +266,59 @@
         "MaxAxisFieldOfView",
         "NearPlaneZ",
         "ViewportSize"
-    },
-    "CanvasGroup": {
+    } ],
+    "CanvasGroup": [ {
         "GroupColor",
         "GroupTransparency"
-    },
-    "ChannelSelectorSoundEffect": {
+    } ],
+    "ChannelSelectorSoundEffect": [ {
         "Channel"
-    },
-    "CharacterMesh": {
+    } ],
+    "CharacterMesh": [ {
         "BaseTextureId",
         "BodyPart",
         "MeshId",
         "OverlayTextureId"
-    },
-    "Chat": {
+    } ],
+    "Chat": [ {
         "BubbleChatEnabled",
         "LoadDefaultChat"
-    },
-    "ChatInputBarConfiguration": {
+    } ],
+    "ChatInputBarConfiguration": [ {
         "Enabled",
         "TargetTextChannel"
-    },
-    "ChatWindowConfiguration": {
+    } ],
+    "ChatWindowConfiguration": [ {
         "Enabled"
-    },
-    "ChorusSoundEffect": {
+    } ],
+    "ChorusSoundEffect": [ {
         "Depth",
         "Mix",
         "Rate"
-    },
-    "ClickDetector": {
+    } ],
+    "ClickDetector": [ {
         "CursorIcon",
         "MaxActivationDistance"
-    },
-    "Clothing": {
+    } ],
+    "Clothing": [ {
         "Color3"
-    },
-    "Clouds": {
+    } ],
+    "Clouds": [ {
         "Color",
         "Cover",
         "Density",
         "Enabled"
-    },
-    "Color3Value": {
+    } ],
+    "Color3Value": [ {
         "Value"
-    },
-    "ColorCorrectionEffect": {
+    } ],
+    "ColorCorrectionEffect": [ {
         "Brightness",
         "Contrast",
         "Saturation",
         "TintColor"
-    },
-    "CommandInstance": {
+    } ],
+    "CommandInstance": [ {
         "AllowGUIAccessPoints",
         "Checked",
         "DefaultShortcut",
@@ -328,45 +328,45 @@
         "Name",
         "Permission",
         "StatusTip"
-    },
-    "CompressorSoundEffect": {
+    } ],
+    "CompressorSoundEffect": [ {
         "Attack",
         "GainMakeup",
         "Ratio",
         "Release",
         "SideChain",
         "Threshold"
-    },
-    "ConeHandleAdornment": {
+    } ],
+    "ConeHandleAdornment": [ {
         "Height",
         "Radius"
-    },
-    "Constraint": {
+    } ],
+    "Constraint": [ {
         "Active",
         "Attachment0",
         "Attachment1",
         "Color",
         "Enabled",
         "Visible"
-    },
-    "ContentProvider": {
+    } ],
+    "ContentProvider": [ {
         "BaseUrl",
         "RequestQueueSize"
-    },
-    "CoreGui": {
+    } ],
+    "CoreGui": [ {
         "SelectionImageObject",
         "Version"
-    },
-    "CustomEventReceiver": {
+    } ],
+    "CustomEventReceiver": [ {
         "Source"
-    },
-    "CylinderHandleAdornment": {
+    } ],
+    "CylinderHandleAdornment": [ {
         "Angle",
         "Height",
         "InnerRadius",
         "Radius"
-    },
-    "CylindricalConstraint": {
+    } ],
+    "CylindricalConstraint": [ {
         "AngularActuatorType",
         "AngularLimitsEnabled",
         "AngularResponsiveness",
@@ -383,8 +383,8 @@
         "TargetAngle",
         "UpperAngle",
         "WorldRotationAxis"
-    },
-    "DataModel": {
+    } ],
+    "DataModel": [ {
         "CreatorId",
         "CreatorType",
         "GameId",
@@ -395,37 +395,37 @@
         "PrivateServerId",
         "PrivateServerOwnerId",
         "Workspace"
-    },
-    "DataModelMesh": {
+    } ],
+    "DataModelMesh": [ {
         "Offset",
         "Scale",
         "VertexColor"
-    },
-    "DataStoreInfo": {
+    } ],
+    "DataStoreInfo": [ {
         "CreatedTime",
         "DataStoreName",
         "UpdatedTime"
-    },
-    "DataStoreKey": {
+    } ],
+    "DataStoreKey": [ {
         "KeyName"
-    },
-    "DataStoreKeyInfo": {
+    } ],
+    "DataStoreKeyInfo": [ {
         "CreatedTime",
         "UpdatedTime",
         "Version"
-    },
-    "DataStoreObjectVersionInfo": {
+    } ],
+    "DataStoreObjectVersionInfo": [ {
         "CreatedTime",
         "IsDeleted",
         "Version"
-    },
-    "DataStoreOptions": {
+    } ],
+    "DataStoreOptions": [ {
         "AllScopes"
-    },
-    "DataStoreService": {
+    } ],
+    "DataStoreService": [ {
         "AutomaticRetry"
-    },
-    "DebugSettings": {
+    } ],
+    "DebugSettings": [ {
         "DataModel",
         "InstanceCount",
         "IsScriptStackTracingEnabled",
@@ -434,34 +434,34 @@
         "ReportSoundWarnings",
         "RobloxVersion",
         "TickCountPreciseOverride"
-    },
-    "DebuggerBreakpoint": {
+    } ],
+    "DebuggerBreakpoint": [ {
         "Condition",
         "ContinueExecution",
         "IsEnabled",
         "Line",
         "LogExpression",
         "isContextDependentBreakpoint"
-    },
-    "DebuggerManager": {
+    } ],
+    "DebuggerManager": [ {
         "DebuggingEnabled"
-    },
-    "DebuggerWatch": {
+    } ],
+    "DebuggerWatch": [ {
         "Expression"
-    },
-    "Decal": {
+    } ],
+    "Decal": [ {
         "Color3",
         "Texture",
         "Transparency",
         "ZIndex"
-    },
-    "DepthOfFieldEffect": {
+    } ],
+    "DepthOfFieldEffect": [ {
         "FarIntensity",
         "FocusDistance",
         "InFocusRadius",
         "NearIntensity"
-    },
-    "Dialog": {
+    } ],
+    "Dialog": [ {
         "BehaviorType",
         "ConversationDistance",
         "GoodbyeChoiceActive",
@@ -472,25 +472,25 @@
         "Tone",
         "TriggerDistance",
         "TriggerOffset"
-    },
-    "DialogChoice": {
+    } ],
+    "DialogChoice": [ {
         "GoodbyeChoiceActive",
         "GoodbyeDialog",
         "ResponseDialog",
         "UserDialog"
-    },
-    "DistortionSoundEffect": {
+    } ],
+    "DistortionSoundEffect": [ {
         "Level"
-    },
-    "DockWidgetPluginGui": {
+    } ],
+    "DockWidgetPluginGui": [ {
         "HostWidgetWasRestored"
-    },
-    "DoubleConstrainedValue": {
+    } ],
+    "DoubleConstrainedValue": [ {
         "MaxValue",
         "MinValue",
         "Value"
-    },
-    "DraggerService": {
+    } ],
+    "DraggerService": [ {
         "AlignDraggedObjects",
         "AngleSnapEnabled",
         "AngleSnapIncrement",
@@ -507,25 +507,25 @@
         "PivotSnapToGeometry",
         "ShowHover",
         "ShowPivotIndicator"
-    },
-    "DynamicRotate": {
+    } ],
+    "DynamicRotate": [ {
         "BaseAngle"
-    },
-    "EchoSoundEffect": {
+    } ],
+    "EchoSoundEffect": [ {
         "Delay",
         "DryLevel",
         "Feedback",
         "WetLevel"
-    },
-    "EqualizerSoundEffect": {
+    } ],
+    "EqualizerSoundEffect": [ {
         "HighGain",
         "LowGain",
         "MidGain"
-    },
-    "EulerRotationCurve": {
+    } ],
+    "EulerRotationCurve": [ {
         "RotationOrder"
-    },
-    "Explosion": {
+    } ],
+    "Explosion": [ {
         "BlastPressure",
         "BlastRadius",
         "DestroyJointRadiusPercent",
@@ -533,8 +533,8 @@
         "Position",
         "TimeScale",
         "Visible"
-    },
-    "FaceControls": {
+    } ],
+    "FaceControls": [ {
         "ChinRaiser",
         "ChinRaiserUpperLip",
         "Corrugator",
@@ -585,43 +585,43 @@
         "TongueOut",
         "TongueUp",
         "UpperLipSuck"
-    },
-    "FaceInstance": {
+    } ],
+    "FaceInstance": [ {
         "Face"
-    },
-    "Feature": {
+    } ],
+    "Feature": [ {
         "FaceId",
         "InOut",
         "LeftRight",
         "TopBottom"
-    },
-    "FileMesh": {
+    } ],
+    "FileMesh": [ {
         "MeshId",
         "TextureId"
-    },
-    "Fire": {
+    } ],
+    "Fire": [ {
         "Color",
         "Enabled",
         "Heat",
         "SecondaryColor",
         "Size",
         "TimeScale"
-    },
-    "Flag": {
+    } ],
+    "Flag": [ {
         "TeamColor"
-    },
-    "FlagStand": {
+    } ],
+    "FlagStand": [ {
         "TeamColor"
-    },
-    "FlangeSoundEffect": {
+    } ],
+    "FlangeSoundEffect": [ {
         "Depth",
         "Mix",
         "Rate"
-    },
-    "FloatCurve": {
+    } ],
+    "FloatCurve": [ {
         "Length"
-    },
-    "FloorWire": {
+    } ],
+    "FloorWire": [ {
         "CycleOffset",
         "From",
         "StudsBetweenTextures",
@@ -630,50 +630,50 @@
         "To",
         "Velocity",
         "WireRadius"
-    },
-    "ForceField": {
+    } ],
+    "ForceField": [ {
         "Visible"
-    },
-    "Frame": {
+    } ],
+    "Frame": [ {
         "Style"
-    },
-    "FunctionalTest": {
+    } ],
+    "FunctionalTest": [ {
         "Description"
-    },
-    "GameSettings": {
+    } ],
+    "GameSettings": [ {
         "AdditionalCoreIncludeDirs",
         "OverrideStarterScript",
         "VideoCaptureEnabled",
         "VideoRecording"
-    },
-    "GamepadService": {
+    } ],
+    "GamepadService": [ {
         "GamepadCursorEnabled"
-    },
-    "Glue": {
+    } ],
+    "Glue": [ {
         "F0",
         "F1",
         "F2",
         "F3"
-    },
-    "GuiBase2d": {
+    } ],
+    "GuiBase2d": [ {
         "AbsolutePosition",
         "AbsoluteRotation",
         "AbsoluteSize",
         "AutoLocalize",
         "RootLocalizationTable"
-    },
-    "GuiBase3d": {
+    } ],
+    "GuiBase3d": [ {
         "Color3",
         "Transparency",
         "Visible"
-    },
-    "GuiButton": {
+    } ],
+    "GuiButton": [ {
         "AutoButtonColor",
         "Modal",
         "Selected",
         "Style"
-    },
-    "GuiObject": {
+    } ],
+    "GuiObject": [ {
         "Active",
         "AnchorPoint",
         "AutomaticSize",
@@ -696,27 +696,27 @@
         "SizeConstraint",
         "Visible",
         "ZIndex"
-    },
-    "GuiService": {
+    } ],
+    "GuiService": [ {
         "AutoSelectGuiEnabled",
         "CoreGuiNavigationEnabled",
         "GuiNavigationEnabled",
         "MenuIsOpen",
         "SelectedObject",
         "TouchControlsEnabled"
-    },
-    "HandleAdornment": {
+    } ],
+    "HandleAdornment": [ {
         "AdornCullingMode",
         "AlwaysOnTop",
         "CFrame",
         "SizeRelativeOffset",
         "ZIndex"
-    },
-    "Handles": {
+    } ],
+    "Handles": [ {
         "Faces",
         "Style"
-    },
-    "Highlight": {
+    } ],
+    "Highlight": [ {
         "Adornee",
         "DepthMode",
         "Enabled",
@@ -724,8 +724,8 @@
         "FillTransparency",
         "OutlineColor",
         "OutlineTransparency"
-    },
-    "HingeConstraint": {
+    } ],
+    "HingeConstraint": [ {
         "ActuatorType",
         "AngularResponsiveness",
         "AngularSpeed",
@@ -740,15 +740,15 @@
         "ServoMaxTorque",
         "TargetAngle",
         "UpperAngle"
-    },
-    "HopperBin": {
+    } ],
+    "HopperBin": [ {
         "Active",
         "BinType"
-    },
-    "HttpService": {
+    } ],
+    "HttpService": [ {
         "HttpEnabled"
-    },
-    "Humanoid": {
+    } ],
+    "Humanoid": [ {
         "AutoJumpEnabled",
         "AutoRotate",
         "AutomaticScalingEnabled",
@@ -780,8 +780,8 @@
         "WalkSpeed",
         "WalkToPart",
         "WalkToPoint"
-    },
-    "HumanoidDescription": {
+    } ],
+    "HumanoidDescription": [ {
         "AccessoryBlob",
         "BackAccessory",
         "BodyTypeScale",
@@ -820,8 +820,8 @@
         "WaistAccessory",
         "WalkAnimation",
         "WidthScale"
-    },
-    "ImageButton": {
+    } ],
+    "ImageButton": [ {
         "HoverImage",
         "Image",
         "ImageColor3",
@@ -835,12 +835,12 @@
         "SliceCenter",
         "SliceScale",
         "TileSize"
-    },
-    "ImageHandleAdornment": {
+    } ],
+    "ImageHandleAdornment": [ {
         "Image",
         "Size"
-    },
-    "ImageLabel": {
+    } ],
+    "ImageLabel": [ {
         "Image",
         "ImageColor3",
         "ImageRectOffset",
@@ -852,32 +852,32 @@
         "SliceCenter",
         "SliceScale",
         "TileSize"
-    },
-    "ImporterBaseSettings": {
+    } ],
+    "ImporterBaseSettings": [ {
         "Id",
         "ImportName",
         "ShouldImport"
-    },
-    "ImporterGroupSettings": {
+    } ],
+    "ImporterGroupSettings": [ {
         "Anchored",
         "ImportAsModelAsset",
         "InsertInWorkspace"
-    },
-    "ImporterMaterialSettings": {
+    } ],
+    "ImporterMaterialSettings": [ {
         "DiffuseFilePath",
         "IsPbr",
         "MetalnessFilePath",
         "NormalFilePath",
         "RoughnessFilePath"
-    },
-    "ImporterMeshSettings": {
+    } ],
+    "ImporterMeshSettings": [ {
         "Anchored",
         "Dimensions",
         "DoubleSided",
         "IgnoreVertexColors",
         "PolygonCount"
-    },
-    "ImporterRootSettings": {
+    } ],
+    "ImporterRootSettings": [ {
         "Anchored",
         "FileDimensions",
         "ImportAsModelAsset",
@@ -889,64 +889,64 @@
         "ScaleUnit",
         "WorldForward",
         "WorldUp"
-    },
-    "ImporterTextureSettings": {
+    } ],
+    "ImporterTextureSettings": [ {
         "FilePath"
-    },
-    "InputObject": {
+    } ],
+    "InputObject": [ {
         "Delta",
         "KeyCode",
         "Position",
         "UserInputState",
         "UserInputType"
-    },
-    "InsertService": {
+    } ],
+    "InsertService": [ {
         "AllowClientInsertModels"
-    },
-    "Instance": {
+    } ],
+    "Instance": [ {
         "Archivable",
         "ClassName",
         "Name",
         "Parent",
         "PropertyStatusStudio"
-    },
-    "InstanceAdornment": {
+    } ],
+    "InstanceAdornment": [ {
         "Adornee"
-    },
-    "IntConstrainedValue": {
+    } ],
+    "IntConstrainedValue": [ {
         "MaxValue",
         "MinValue",
         "Value"
-    },
-    "IntValue": {
+    } ],
+    "IntValue": [ {
         "Value"
-    },
-    "JointInstance": {
+    } ],
+    "JointInstance": [ {
         "Active",
         "C0",
         "C1",
         "Enabled",
         "Part0",
         "Part1"
-    },
-    "Keyframe": {
+    } ],
+    "Keyframe": [ {
         "Time"
-    },
-    "KeyframeMarker": {
+    } ],
+    "KeyframeMarker": [ {
         "Value"
-    },
-    "LayerCollector": {
+    } ],
+    "LayerCollector": [ {
         "Enabled",
         "ResetOnSpawn",
         "ZIndexBehavior"
-    },
-    "Light": {
+    } ],
+    "Light": [ {
         "Brightness",
         "Color",
         "Enabled",
         "Shadows"
-    },
-    "Lighting": {
+    } ],
+    "Lighting": [ {
         "Ambient",
         "Brightness",
         "ClockTime",
@@ -964,19 +964,19 @@
         "ShadowSoftness",
         "Technology",
         "TimeOfDay"
-    },
-    "LineForce": {
+    } ],
+    "LineForce": [ {
         "ApplyAtCenterOfMass",
         "InverseSquareLaw",
         "Magnitude",
         "MaxForce",
         "ReactionForceEnabled"
-    },
-    "LineHandleAdornment": {
+    } ],
+    "LineHandleAdornment": [ {
         "Length",
         "Thickness"
-    },
-    "LinearVelocity": {
+    } ],
+    "LinearVelocity": [ {
         "LineDirection",
         "LineVelocity",
         "MaxForce",
@@ -986,21 +986,21 @@
         "SecondaryTangentAxis",
         "VectorVelocity",
         "VelocityConstraintMode"
-    },
-    "LocalizationService": {
+    } ],
+    "LocalizationService": [ {
         "RobloxLocaleId",
         "SystemLocaleId"
-    },
-    "LocalizationTable": {
+    } ],
+    "LocalizationTable": [ {
         "SourceLocaleId"
-    },
-    "LuaSourceContainer": {
+    } ],
+    "LuaSourceContainer": [ {
         "CurrentEditor"
-    },
-    "MarkerCurve": {
+    } ],
+    "MarkerCurve": [ {
         "Length"
-    },
-    "MaterialService": {
+    } ],
+    "MaterialService": [ {
         "AsphaltName",
         "BasaltName",
         "Brick",
@@ -1074,8 +1074,8 @@
         "WoodName",
         "WoodPlanks",
         "WoodPlanksName"
-    },
-    "MaterialVariant": {
+    } ],
+    "MaterialVariant": [ {
         "BaseMaterial",
         "ColorMap",
         "MaterialPattern",
@@ -1083,36 +1083,36 @@
         "NormalMap",
         "RoughnessMap",
         "StudsPerTile"
-    },
-    "MeshPart": {
+    } ],
+    "MeshPart": [ {
         "DoubleSided",
         "MeshId",
         "MeshSize",
         "RenderFidelity",
         "TextureID"
-    },
-    "Message": {
+    } ],
+    "Message": [ {
         "Text"
-    },
-    "Model": {
+    } ],
+    "Model": [ {
         "LevelOfDetail",
         "PrimaryPart",
         "WorldPivot"
-    },
-    "ModuleScript": {
+    } ],
+    "ModuleScript": [ {
         "LinkedSource",
         "Source"
-    },
-    "Motor": {
+    } ],
+    "Motor": [ {
         "CurrentAngle",
         "DesiredAngle",
         "MaxVelocity"
-    },
-    "Motor6D": {
+    } ],
+    "Motor6D": [ {
         "ChildName",
         "ParentName"
-    },
-    "Mouse": {
+    } ],
+    "Mouse": [ {
         "Hit",
         "Icon",
         "Origin",
@@ -1124,8 +1124,8 @@
         "ViewSizeY",
         "X",
         "Y"
-    },
-    "NetworkSettings": {
+    } ],
+    "NetworkSettings": [ {
         "HttpProxyEnabled",
         "HttpProxyURL",
         "IncomingReplicationLag",
@@ -1135,29 +1135,29 @@
         "RandomizeJoinInstanceOrder",
         "RenderStreamedRegions",
         "ShowActiveAnimationAsset"
-    },
-    "NoCollisionConstraint": {
+    } ],
+    "NoCollisionConstraint": [ {
         "Enabled",
         "Part0",
         "Part1"
-    },
-    "NotificationService": {
+    } ],
+    "NotificationService": [ {
         "IsLuaGameDetailsEnabled",
         "SelectedTheme"
-    },
-    "NumberPose": {
+    } ],
+    "NumberPose": [ {
         "Value"
-    },
-    "NumberValue": {
+    } ],
+    "NumberValue": [ {
         "Value"
-    },
-    "ObjectValue": {
+    } ],
+    "ObjectValue": [ {
         "Value"
-    },
-    "PVAdornment": {
+    } ],
+    "PVAdornment": [ {
         "Adornee"
-    },
-    "PackageLink": {
+    } ],
+    "PackageLink": [ {
         "AutoUpdate",
         "Creator",
         "PackageAssetName",
@@ -1165,26 +1165,26 @@
         "PermissionLevel",
         "Status",
         "VersionNumber"
-    },
-    "Pages": {
+    } ],
+    "Pages": [ {
         "IsFinished"
-    },
-    "Pants": {
+    } ],
+    "Pants": [ {
         "PantsTemplate"
-    },
-    "Part": {
+    } ],
+    "Part": [ {
         "Shape"
-    },
-    "PartAdornment": {
+    } ],
+    "PartAdornment": [ {
         "Adornee"
-    },
-    "PartOperation": {
+    } ],
+    "PartOperation": [ {
         "RenderFidelity",
         "SmoothingAngle",
         "TriangleCount",
         "UsePartColor"
-    },
-    "ParticleEmitter": {
+    } ],
+    "ParticleEmitter": [ {
         "Acceleration",
         "Brightness",
         "Color",
@@ -1217,21 +1217,21 @@
         "Transparency",
         "VelocityInheritance",
         "ZOffset"
-    },
-    "Path": {
+    } ],
+    "Path": [ {
         "Status"
-    },
-    "PathfindingLink": {
+    } ],
+    "PathfindingLink": [ {
         "Attachment0",
         "Attachment1",
         "IsBidirectional",
         "Label"
-    },
-    "PathfindingModifier": {
+    } ],
+    "PathfindingModifier": [ {
         "Label",
         "PassThrough"
-    },
-    "PhysicsSettings": {
+    } ],
+    "PhysicsSettings": [ {
         "AllowSleep",
         "AreAnchorsShown",
         "AreAssembliesShown",
@@ -1257,11 +1257,11 @@
         "ShowDecompositionGeometry",
         "ThrottleAdjustTime",
         "UseCSGv2"
-    },
-    "PitchShiftSoundEffect": {
+    } ],
+    "PitchShiftSoundEffect": [ {
         "Octave"
-    },
-    "Player": {
+    } ],
+    "Player": [ {
         "AccountAge",
         "AutoJumpEnabled",
         "CameraMaxZoomDistance",
@@ -1288,13 +1288,13 @@
         "Team",
         "TeamColor",
         "UserId"
-    },
-    "PlayerGui": {
+    } ],
+    "PlayerGui": [ {
         "CurrentScreenOrientation",
         "ScreenOrientation",
         "SelectionImageObject"
-    },
-    "Players": {
+    } ],
+    "Players": [ {
         "BubbleChat",
         "CharacterAutoLoads",
         "ClassicChat",
@@ -1302,50 +1302,50 @@
         "MaxPlayers",
         "PreferredPlayers",
         "RespawnTime"
-    },
-    "Plugin": {
+    } ],
+    "Plugin": [ {
         "CollisionEnabled",
         "GridSize"
-    },
-    "PluginAction": {
+    } ],
+    "PluginAction": [ {
         "ActionId",
         "AllowBinding",
         "StatusTip",
         "Text"
-    },
-    "PluginDragEvent": {
+    } ],
+    "PluginDragEvent": [ {
         "Data",
         "MimeType",
         "Position",
         "Sender"
-    },
-    "PluginGui": {
+    } ],
+    "PluginGui": [ {
         "Title"
-    },
-    "PluginMenu": {
+    } ],
+    "PluginMenu": [ {
         "Icon",
         "Title"
-    },
-    "PluginToolbarButton": {
+    } ],
+    "PluginToolbarButton": [ {
         "ClickableWhenViewportHidden",
         "Enabled",
         "Icon"
-    },
-    "PointLight": {
+    } ],
+    "PointLight": [ {
         "Range"
-    },
-    "Pose": {
+    } ],
+    "Pose": [ {
         "CFrame"
-    },
-    "PoseBase": {
+    } ],
+    "PoseBase": [ {
         "EasingDirection",
         "EasingStyle",
         "Weight"
-    },
-    "PostEffect": {
+    } ],
+    "PostEffect": [ {
         "Enabled"
-    },
-    "ProximityPrompt": {
+    } ],
+    "ProximityPrompt": [ {
         "ActionText",
         "AutoLocalize",
         "ClickablePrompt",
@@ -1360,21 +1360,21 @@
         "RootLocalizationTable",
         "Style",
         "UIOffset"
-    },
-    "ProximityPromptService": {
+    } ],
+    "ProximityPromptService": [ {
         "Enabled",
         "MaxPromptsVisible"
-    },
-    "RayValue": {
+    } ],
+    "RayValue": [ {
         "Value"
-    },
-    "ReflectionMetadataClass": {
+    } ],
+    "ReflectionMetadataClass": [ {
         "ExplorerImageIndex",
         "ExplorerOrder",
         "Insertable",
         "PreferredParent"
-    },
-    "ReflectionMetadataItem": {
+    } ],
+    "ReflectionMetadataItem": [ {
         "Browsable",
         "ClassCategory",
         "ClientOnly",
@@ -1390,8 +1390,8 @@
         "UIMaximum",
         "UIMinimum",
         "UINumTicks"
-    },
-    "RenderSettings": {
+    } ],
+    "RenderSettings": [ {
         "AutoFRMLevel",
         "EagerBulkExecution",
         "EditQualityLevel",
@@ -1404,8 +1404,8 @@
         "ReloadAssets",
         "RenderCSGTrianglesDebug",
         "ShowBoundingBoxes"
-    },
-    "RenderingTest": {
+    } ],
+    "RenderingTest": [ {
         "CFrame",
         "ComparisonDiffThreshold",
         "ComparisonMethod",
@@ -1417,21 +1417,21 @@
         "QualityLevel",
         "ShouldSkip",
         "Ticket"
-    },
-    "ReverbSoundEffect": {
+    } ],
+    "ReverbSoundEffect": [ {
         "DecayTime",
         "Density",
         "Diffusion",
         "DryLevel",
         "WetLevel"
-    },
-    "RigidConstraint": {
+    } ],
+    "RigidConstraint": [ {
         "Broken",
         "DestructionEnabled",
         "DestructionForce",
         "DestructionTorque"
-    },
-    "RocketPropulsion": {
+    } ],
+    "RocketPropulsion": [ {
         "CartoonFactor",
         "MaxSpeed",
         "MaxThrust",
@@ -1443,16 +1443,16 @@
         "ThrustP",
         "TurnD",
         "TurnP"
-    },
-    "RodConstraint": {
+    } ],
+    "RodConstraint": [ {
         "CurrentDistance",
         "Length",
         "LimitAngle0",
         "LimitAngle1",
         "LimitsEnabled",
         "Thickness"
-    },
-    "RopeConstraint": {
+    } ],
+    "RopeConstraint": [ {
         "CurrentDistance",
         "Length",
         "Restitution",
@@ -1462,27 +1462,27 @@
         "WinchResponsiveness",
         "WinchSpeed",
         "WinchTarget"
-    },
-    "RotationCurve": {
+    } ],
+    "RotationCurve": [ {
         "Length"
-    },
-    "RunService": {
+    } ],
+    "RunService": [ {
         "ClientGitHash"
-    },
-    "ScreenGui": {
+    } ],
+    "ScreenGui": [ {
         "DisplayOrder",
         "IgnoreGuiInset"
-    },
-    "Script": {
+    } ],
+    "Script": [ {
         "Source"
-    },
-    "ScriptDebugger": {
+    } ],
+    "ScriptDebugger": [ {
         "CurrentLine",
         "IsDebugging",
         "IsPaused",
         "Script"
-    },
-    "ScrollingFrame": {
+    } ],
+    "ScrollingFrame": [ {
         "AbsoluteCanvasSize",
         "AbsoluteWindowSize",
         "AutomaticCanvasSize",
@@ -1500,57 +1500,57 @@
         "TopImage",
         "VerticalScrollBarInset",
         "VerticalScrollBarPosition"
-    },
-    "Seat": {
+    } ],
+    "Seat": [ {
         "Disabled",
         "Occupant"
-    },
-    "Selection": {
+    } ],
+    "Selection": [ {
         "SelectionThickness"
-    },
-    "SelectionBox": {
+    } ],
+    "SelectionBox": [ {
         "LineThickness",
         "SurfaceColor3",
         "SurfaceTransparency"
-    },
-    "SelectionLasso": {
+    } ],
+    "SelectionLasso": [ {
         "Humanoid"
-    },
-    "SelectionPartLasso": {
+    } ],
+    "SelectionPartLasso": [ {
         "Part"
-    },
-    "SelectionPointLasso": {
+    } ],
+    "SelectionPointLasso": [ {
         "Point"
-    },
-    "SelectionSphere": {
+    } ],
+    "SelectionSphere": [ {
         "SurfaceColor3",
         "SurfaceTransparency"
-    },
-    "ServerScriptService": {
+    } ],
+    "ServerScriptService": [ {
         "LoadStringEnabled"
-    },
-    "Shirt": {
+    } ],
+    "Shirt": [ {
         "ShirtTemplate"
-    },
-    "ShirtGraphic": {
+    } ],
+    "ShirtGraphic": [ {
         "Color3",
         "Graphic"
-    },
-    "SkateboardController": {
+    } ],
+    "SkateboardController": [ {
         "Steer",
         "Throttle"
-    },
-    "SkateboardPlatform": {
+    } ],
+    "SkateboardPlatform": [ {
         "Controller",
         "ControllingHumanoid",
         "Steer",
         "StickyWheels",
         "Throttle"
-    },
-    "Skin": {
+    } ],
+    "Skin": [ {
         "SkinColor"
-    },
-    "Sky": {
+    } ],
+    "Sky": [ {
         "CelestialBodiesShown",
         "MoonAngularSize",
         "MoonTextureId",
@@ -1563,8 +1563,8 @@
         "StarCount",
         "SunAngularSize",
         "SunTextureId"
-    },
-    "SlidingBallConstraint": {
+    } ],
+    "SlidingBallConstraint": [ {
         "ActuatorType",
         "CurrentPosition",
         "LimitsEnabled",
@@ -1579,16 +1579,16 @@
         "TargetPosition",
         "UpperLimit",
         "Velocity"
-    },
-    "Smoke": {
+    } ],
+    "Smoke": [ {
         "Color",
         "Enabled",
         "Opacity",
         "RiseVelocity",
         "Size",
         "TimeScale"
-    },
-    "Sound": {
+    } ],
+    "Sound": [ {
         "ChannelCount",
         "IsLoaded",
         "IsPaused",
@@ -1606,34 +1606,34 @@
         "TimeLength",
         "TimePosition",
         "Volume"
-    },
-    "SoundEffect": {
+    } ],
+    "SoundEffect": [ {
         "Enabled",
         "Priority"
-    },
-    "SoundGroup": {
+    } ],
+    "SoundGroup": [ {
         "Volume"
-    },
-    "SoundService": {
+    } ],
+    "SoundService": [ {
         "AmbientReverb",
         "DistanceFactor",
         "DopplerScale",
         "RespectFilteringEnabled",
         "RolloffScale"
-    },
-    "Sparkles": {
+    } ],
+    "Sparkles": [ {
         "Enabled",
         "SparkleColor",
         "TimeScale"
-    },
-    "SpawnLocation": {
+    } ],
+    "SpawnLocation": [ {
         "AllowTeamChangeOnTouch",
         "Duration",
         "Enabled",
         "Neutral",
         "TeamColor"
-    },
-    "Speaker": {
+    } ],
+    "Speaker": [ {
         "ChannelCount",
         "PlaybackLoudness",
         "RollOffMaxDistance",
@@ -1642,19 +1642,19 @@
         "SoundGroup",
         "Source",
         "Volume"
-    },
-    "SpecialMesh": {
+    } ],
+    "SpecialMesh": [ {
         "MeshType"
-    },
-    "SphereHandleAdornment": {
+    } ],
+    "SphereHandleAdornment": [ {
         "Radius"
-    },
-    "SpotLight": {
+    } ],
+    "SpotLight": [ {
         "Angle",
         "Face",
         "Range"
-    },
-    "SpringConstraint": {
+    } ],
+    "SpringConstraint": [ {
         "Coils",
         "CurrentLength",
         "Damping",
@@ -1666,13 +1666,13 @@
         "Radius",
         "Stiffness",
         "Thickness"
-    },
-    "StarterGui": {
+    } ],
+    "StarterGui": [ {
         "ScreenOrientation",
         "ShowDevelopmentGui",
         "VirtualCursorMode"
-    },
-    "StarterPlayer": {
+    } ],
+    "StarterPlayer": [ {
         "AutoJumpEnabled",
         "CameraMaxZoomDistance",
         "CameraMinZoomDistance",
@@ -1692,8 +1692,8 @@
         "LoadCharacterAppearance",
         "NameDisplayDistance",
         "UserEmotesEnabled"
-    },
-    "Stats": {
+    } ],
+    "Stats": [ {
         "ContactsCount",
         "DataReceiveKbps",
         "DataSendKbps",
@@ -1704,11 +1704,11 @@
         "PhysicsSendKbps",
         "PhysicsStepTimeMs",
         "PrimitivesCount"
-    },
-    "StringValue": {
+    } ],
+    "StringValue": [ {
         "Value"
-    },
-    "Studio": {
+    } ],
+    "Studio": [ {
         "CommandBarLocalState",
         "DefaultScriptFileDir",
         "DeprecatedObjectsShown",
@@ -1726,8 +1726,8 @@
         "ScriptTimeoutLength",
         "ShowCorePackagesInExplorer",
         "Theme"
-    },
-    "StudioService": {
+    } ],
+    "StudioService": [ {
         "ActiveScript",
         "DraggerSolveConstraints",
         "DrawConstraintsOnTop",
@@ -1736,19 +1736,19 @@
         "ShowConstraintDetails",
         "StudioLocaleId",
         "UseLocalSpace"
-    },
-    "SunRaysEffect": {
+    } ],
+    "SunRaysEffect": [ {
         "Intensity",
         "Spread"
-    },
-    "SurfaceAppearance": {
+    } ],
+    "SurfaceAppearance": [ {
         "AlphaMode",
         "ColorMap",
         "MetalnessMap",
         "NormalMap",
         "RoughnessMap"
-    },
-    "SurfaceGui": {
+    } ],
+    "SurfaceGui": [ {
         "Active",
         "Adornee",
         "AlwaysOnTop",
@@ -1761,35 +1761,35 @@
         "SizingMode",
         "ToolPunchThroughDistance",
         "ZOffset"
-    },
-    "SurfaceLight": {
+    } ],
+    "SurfaceLight": [ {
         "Angle",
         "Face",
         "Range"
-    },
-    "SurfaceSelection": {
+    } ],
+    "SurfaceSelection": [ {
         "TargetSurface"
-    },
-    "TaskScheduler": {
+    } ],
+    "TaskScheduler": [ {
         "SchedulerDutyCycle",
         "SchedulerRate",
         "ThreadPoolConfig",
         "ThreadPoolSize"
-    },
-    "Team": {
+    } ],
+    "Team": [ {
         "AutoAssignable",
         "TeamColor"
-    },
-    "TeleportAsyncResult": {
+    } ],
+    "TeleportAsyncResult": [ {
         "PrivateServerId",
         "ReservedServerAccessCode"
-    },
-    "TeleportOptions": {
+    } ],
+    "TeleportOptions": [ {
         "ReservedServerAccessCode",
         "ServerInstanceId",
         "ShouldReserveServer"
-    },
-    "Terrain": {
+    } ],
+    "Terrain": [ {
         "Decoration",
         "MaterialColors",
         "MaxExtents",
@@ -1798,8 +1798,8 @@
         "WaterTransparency",
         "WaterWaveSize",
         "WaterWaveSpeed"
-    },
-    "TerrainDetail": {
+    } ],
+    "TerrainDetail": [ {
         "ColorMap",
         "Face",
         "MaterialPattern",
@@ -1807,11 +1807,11 @@
         "NormalMap",
         "RoughnessMap",
         "StudsPerTile"
-    },
-    "TerrainRegion": {
+    } ],
+    "TerrainRegion": [ {
         "SizeInCells"
-    },
-    "TestService": {
+    } ],
+    "TestService": [ {
         "AutoRuns",
         "Description",
         "ErrorCount",
@@ -1824,8 +1824,8 @@
         "TestCount",
         "Timeout",
         "WarnCount"
-    },
-    "TextBox": {
+    } ],
+    "TextBox": [ {
         "ClearTextOnFocus",
         "ContentText",
         "CursorPosition",
@@ -1853,8 +1853,8 @@
         "TextWrapped",
         "TextXAlignment",
         "TextYAlignment"
-    },
-    "TextButton": {
+    } ],
+    "TextButton": [ {
         "ContentText",
         "Font",
         "FontFace",
@@ -1874,13 +1874,13 @@
         "TextWrapped",
         "TextXAlignment",
         "TextYAlignment"
-    },
-    "TextChatCommand": {
+    } ],
+    "TextChatCommand": [ {
         "Enabled",
         "PrimaryAlias",
         "SecondaryAlias"
-    },
-    "TextChatMessage": {
+    } ],
+    "TextChatMessage": [ {
         "MessageId",
         "Metadata",
         "PrefixText",
@@ -1889,17 +1889,17 @@
         "TextChannel",
         "TextSource",
         "Timestamp"
-    },
-    "TextChatMessageProperties": {
+    } ],
+    "TextChatMessageProperties": [ {
         "PrefixText",
         "Text"
-    },
-    "TextChatService": {
+    } ],
+    "TextChatService": [ {
         "ChatVersion",
         "CreateDefaultCommands",
         "CreateDefaultTextChannels"
-    },
-    "TextLabel": {
+    } ],
+    "TextLabel": [ {
         "ContentText",
         "Font",
         "FontFace",
@@ -1919,18 +1919,18 @@
         "TextWrapped",
         "TextXAlignment",
         "TextYAlignment"
-    },
-    "TextSource": {
+    } ],
+    "TextSource": [ {
         "CanSend",
         "UserId"
-    },
-    "Texture": {
+    } ],
+    "Texture": [ {
         "OffsetStudsU",
         "OffsetStudsV",
         "StudsPerTileU",
         "StudsPerTileV"
-    },
-    "Tool": {
+    } ],
+    "Tool": [ {
         "CanBeDropped",
         "Enabled",
         "Grip",
@@ -1941,12 +1941,12 @@
         "ManualActivationOnly",
         "RequiresHandle",
         "ToolTip"
-    },
-    "Torque": {
+    } ],
+    "Torque": [ {
         "RelativeTo",
         "Torque"
-    },
-    "TorsionSpringConstraint": {
+    } ],
+    "TorsionSpringConstraint": [ {
         "Coils",
         "CurrentAngle",
         "Damping",
@@ -1956,8 +1956,8 @@
         "Radius",
         "Restitution",
         "Stiffness"
-    },
-    "Trail": {
+    } ],
+    "Trail": [ {
         "Attachment0",
         "Attachment1",
         "Brightness",
@@ -1974,68 +1974,68 @@
         "TextureMode",
         "Transparency",
         "WidthScale"
-    },
-    "Translator": {
+    } ],
+    "Translator": [ {
         "LocaleId"
-    },
-    "TremoloSoundEffect": {
+    } ],
+    "TremoloSoundEffect": [ {
         "Depth",
         "Duty",
         "Frequency"
-    },
-    "TriangleMeshPart": {
+    } ],
+    "TriangleMeshPart": [ {
         "CollisionFidelity"
-    },
-    "TrussPart": {
+    } ],
+    "TrussPart": [ {
         "Style"
-    },
-    "Tween": {
+    } ],
+    "Tween": [ {
         "Instance",
         "TweenInfo"
-    },
-    "TweenBase": {
+    } ],
+    "TweenBase": [ {
         "PlaybackState"
-    },
-    "UIAspectRatioConstraint": {
+    } ],
+    "UIAspectRatioConstraint": [ {
         "AspectRatio",
         "AspectType",
         "DominantAxis"
-    },
-    "UICorner": {
+    } ],
+    "UICorner": [ {
         "CornerRadius"
-    },
-    "UIGradient": {
+    } ],
+    "UIGradient": [ {
         "Color",
         "Enabled",
         "Offset",
         "Rotation",
         "Transparency"
-    },
-    "UIGridLayout": {
+    } ],
+    "UIGridLayout": [ {
         "AbsoluteCellCount",
         "AbsoluteCellSize",
         "CellPadding",
         "CellSize",
         "FillDirectionMaxCells",
         "StartCorner"
-    },
-    "UIGridStyleLayout": {
+    } ],
+    "UIGridStyleLayout": [ {
         "AbsoluteContentSize",
         "FillDirection",
         "HorizontalAlignment",
         "SortOrder",
         "VerticalAlignment"
-    },
-    "UIListLayout": {
+    } ],
+    "UIListLayout": [ {
         "Padding"
-    },
-    "UIPadding": {
+    } ],
+    "UIPadding": [ {
         "PaddingBottom",
         "PaddingLeft",
         "PaddingRight",
         "PaddingTop"
-    },
-    "UIPageLayout": {
+    } ],
+    "UIPageLayout": [ {
         "Animated",
         "Circular",
         "CurrentPage",
@@ -2046,39 +2046,39 @@
         "ScrollWheelInputEnabled",
         "TouchInputEnabled",
         "TweenTime"
-    },
-    "UIScale": {
+    } ],
+    "UIScale": [ {
         "Scale"
-    },
-    "UISizeConstraint": {
+    } ],
+    "UISizeConstraint": [ {
         "MaxSize",
         "MinSize"
-    },
-    "UIStroke": {
+    } ],
+    "UIStroke": [ {
         "ApplyStrokeMode",
         "Color",
         "Enabled",
         "LineJoinMode",
         "Thickness",
         "Transparency"
-    },
-    "UITableLayout": {
+    } ],
+    "UITableLayout": [ {
         "FillEmptySpaceColumns",
         "FillEmptySpaceRows",
         "MajorAxis",
         "Padding"
-    },
-    "UITextSizeConstraint": {
+    } ],
+    "UITextSizeConstraint": [ {
         "MaxTextSize",
         "MinTextSize"
-    },
-    "UniversalConstraint": {
+    } ],
+    "UniversalConstraint": [ {
         "LimitsEnabled",
         "MaxAngle",
         "Radius",
         "Restitution"
-    },
-    "UserGameSettings": {
+    } ],
+    "UserGameSettings": [ {
         "AllTutorialsDisabled",
         "CameraMode",
         "ChatVisible",
@@ -2107,8 +2107,8 @@
         "VREnabled",
         "VRRotationIntensity",
         "VignetteEnabled"
-    },
-    "UserInputService": {
+    } ],
+    "UserInputService": [ {
         "AccelerometerEnabled",
         "GamepadEnabled",
         "GyroscopeEnabled",
@@ -2122,20 +2122,20 @@
         "OnScreenKeyboardVisible",
         "TouchEnabled",
         "VREnabled"
-    },
-    "VRService": {
+    } ],
+    "VRService": [ {
         "GuiInputUserCFrame",
         "VREnabled"
-    },
-    "Vector3Value": {
+    } ],
+    "Vector3Value": [ {
         "Value"
-    },
-    "VectorForce": {
+    } ],
+    "VectorForce": [ {
         "ApplyAtCenterOfMass",
         "Force",
         "RelativeTo"
-    },
-    "VehicleSeat": {
+    } ],
+    "VehicleSeat": [ {
         "AreHingesDetected",
         "Disabled",
         "HeadsUpDisplay",
@@ -2147,14 +2147,14 @@
         "ThrottleFloat",
         "Torque",
         "TurnSpeed"
-    },
-    "VelocityMotor": {
+    } ],
+    "VelocityMotor": [ {
         "CurrentAngle",
         "DesiredAngle",
         "Hole",
         "MaxVelocity"
-    },
-    "VideoFrame": {
+    } ],
+    "VideoFrame": [ {
         "IsLoaded",
         "Looped",
         "Playing",
@@ -2163,28 +2163,28 @@
         "TimePosition",
         "Video",
         "Volume"
-    },
-    "ViewportFrame": {
+    } ],
+    "ViewportFrame": [ {
         "Ambient",
         "CurrentCamera",
         "ImageColor3",
         "ImageTransparency",
         "LightColor",
         "LightDirection"
-    },
-    "VoiceChatService": {
+    } ],
+    "VoiceChatService": [ {
         "EnableDefaultVoice"
-    },
-    "VoiceSource": {
+    } ],
+    "VoiceSource": [ {
         "UserId"
-    },
-    "WeldConstraint": {
+    } ],
+    "WeldConstraint": [ {
         "Active",
         "Enabled",
         "Part0",
         "Part1"
-    },
-    "Workspace": {
+    } ],
+    "Workspace": [ {
         "AllowThirdPartySales",
         "AnimationWeightedBlendFix",
         "ClientAnimatorThrottling",
@@ -2207,8 +2207,8 @@
         "StreamingTargetRadius",
         "Terrain",
         "TouchesUseCollisionGroups"
-    },
-    "WrapLayer": {
+    } ],
+    "WrapLayer": [ {
         "BindOffset",
         "Color",
         "DebugMode",
@@ -2219,10 +2219,10 @@
         "ReferenceOrigin",
         "ReferenceOriginWorld",
         "ShrinkFactor"
-    },
-    "WrapTarget": {
+    } ],
+    "WrapTarget": [ {
         "Color",
         "DebugMode",
         "Stiffness"
-    }
+    } ]
 }
