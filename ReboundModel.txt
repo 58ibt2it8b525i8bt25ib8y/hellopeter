@@ -42,7 +42,7 @@ EyesParticle.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 5.2),
 			}
 
-			EyesParticle.Texture = "rbxassetid://14072836214"
+			EyesParticle.Texture = "rbxassetid://103729510744153"
 
 			EyesParticle.Lifetime = NumberRange.new(0.65)
 			EyesParticle.Rate = 30

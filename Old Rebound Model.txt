@@ -28,7 +28,7 @@ EyesParticle.Size = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 4.98),
 			}
 
-			EyesParticle.Texture = "rbxassetid://14964236245"
+			EyesParticle.Texture = "rbxassetid://96345440575681"
 
 			EyesParticle.Lifetime = NumberRange.new(0.65)
 			EyesParticle.Rate = 30
@@ -37,7 +37,12 @@ EyesParticle.Size = NumberSequence.new{
 	EyesParticle.VelocitySpread = 50
 EyesParticle.ZOffset = 0.5
 EyesParticle.Name = "Face"
-EyesParticle.Squash = NumberSequence.new(0.15)
+EyesParticle.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.15),
+				NumberSequenceKeypoint.new(0.4, 0.3),
+				NumberSequenceKeypoint.new(0.65, 0.15),
+				NumberSequenceKeypoint.new(1, 1),
+			}
 EyesParticle.LightInfluence = 0.1
 EyesParticle.LightEmission = 0.2
 EyesParticle.Drag = 5

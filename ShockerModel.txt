@@ -178,19 +178,19 @@ end
 
 
 
-local wahn = bike("rbxassetid://14088215918")
+local wahn = bike("rbxassetid://115996637795404")
 
 wahn.Rate = 30
 
 wahn.Parent = Attachment1
 
-local two = bike("rbxassetid://14088220952")
+local two = bike("rbxassetid://107713038448002")
 
 two.Rate = 25
 
 two.Parent = Attachment2
 
-local tree = bike("rbxassetid://14088224722")
+local tree = bike("rbxassetid://81683509403750")
 
 tree.Rate = 20
 
@@ -442,36 +442,66 @@ tremolo.Frequency = 20
 
 Eyes.CFrame = Eyes.CFrame + Vector3.new(0,5,0)
 
-coroutine.wrap(function()
-
-while Modl.Parent ~= nil do
-
-Attachment1.Position = beautiful
-
-Attachment2.Position = morning
-
-Attachment3.Position = morning
-
-task.wait(0.1)
-
-Attachment1.Position = morning
-
-Attachment2.Position = beautiful
-
-Attachment3.Position = morning
-
-task.wait(0.1)
-
-Attachment1.Position = morning
-
-Attachment2.Position = morning
-
-Attachment3.Position = beautiful
-
-task.wait(0.1)
-
-end
-
+coroutine.wrap(function()
+
+
+
+while Modl.Parent ~= nil do
+
+
+
+Attachment1.Position = beautiful
+
+
+
+Attachment2.Position = morning
+
+
+
+Attachment3.Position = morning
+
+
+
+task.wait(0.1)
+
+
+
+Attachment1.Position = morning
+
+
+
+Attachment2.Position = beautiful
+
+
+
+Attachment3.Position = morning
+
+
+
+task.wait(0.1)
+
+
+
+Attachment1.Position = morning
+
+
+
+Attachment2.Position = morning
+
+
+
+Attachment3.Position = beautiful
+
+
+
+task.wait(0.1)
+
+
+
+end
+
+
+
 end)()
 
 return Modl
