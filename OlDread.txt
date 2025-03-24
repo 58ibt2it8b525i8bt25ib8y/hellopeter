@@ -1,0 +1,304 @@
+local DreadTrue = Instance.new("Model")
+DreadTrue.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+DreadTrue.Name = "DreadTrue"
+DreadTrue.SourceAssetId = -1.000000
+DreadTrue.LevelOfDetail = "Automatic"
+DreadTrue.ModelStreamingMode = "Default"
+-- Unable to serialize Instance property: PrimaryPart
+local RushNew = Instance.new("Part", DreadTrue)
+DreadTrue.PrimaryPart = RushNew
+RushNew.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+RushNew.Name = "RushNew"
+RushNew.Color = Color3.fromRGB(163, 162, 165)
+-- Unable to serialize CFrame property: CFrame
+RushNew.Anchored = true
+RushNew.Size = Vector3.new(6.5, 6.5, 6.5)
+RushNew.CanCollide = true
+local Kill = Instance.new("Sound", RushNew)
+Kill.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+Kill.Name = "Kill"
+Kill.SourceAssetId = -1.000000
+Kill.Volume = 0.120000
+Kill.Pitch = 4.000000
+Kill.LoopRegion = NumberRange.new(0.000000, 60000.000000)
+Kill.PlaybackRegion = NumberRange.new(0.000000, 60000.000000)
+Kill.PlaybackSpeed = 4.000000
+Kill.TimePosition = 0.000000
+Kill.MaxDistance = 1000.000000
+Kill.EmitterSize = 4.000000
+Kill.MinDistance = 4.000000
+Kill.RollOffMaxDistance = 1000.000000
+Kill.RollOffMinDistance = 4.000000
+Kill.RollOffMode = "Inverse"
+Kill.SoundId = "rbxassetid://5263560896"
+local DistortionSoundEffect = Instance.new("DistortionSoundEffect", Kill)
+DistortionSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+DistortionSoundEffect.Name = "DistortionSoundEffect"
+DistortionSoundEffect.SourceAssetId = -1.000000
+DistortionSoundEffect.Priority = 5.000000
+DistortionSoundEffect.Level = 0.980000
+DistortionSoundEffect.Enabled = true
+local PitchShiftSoundEffect = Instance.new("PitchShiftSoundEffect", Kill)
+PitchShiftSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+PitchShiftSoundEffect.Name = "PitchShiftSoundEffect"
+PitchShiftSoundEffect.SourceAssetId = -1.000000
+PitchShiftSoundEffect.Priority = 0.000000
+PitchShiftSoundEffect.Enabled = true
+PitchShiftSoundEffect.Octave = 0.500000
+local TremoloSoundEffect = Instance.new("TremoloSoundEffect", Kill)
+TremoloSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+TremoloSoundEffect.Name = "TremoloSoundEffect"
+TremoloSoundEffect.SourceAssetId = -1.000000
+TremoloSoundEffect.Priority = 2.000000
+TremoloSoundEffect.Depth = 1.000000
+TremoloSoundEffect.Frequency = 20.000000
+TremoloSoundEffect.Enabled = true
+TremoloSoundEffect.Duty = 0.940000
+local FlangeSoundEffect = Instance.new("FlangeSoundEffect", Kill)
+FlangeSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+FlangeSoundEffect.Name = "FlangeSoundEffect"
+FlangeSoundEffect.SourceAssetId = -1.000000
+FlangeSoundEffect.Priority = 2.000000
+FlangeSoundEffect.Depth = 1.000000
+FlangeSoundEffect.Mix = 1.000000
+FlangeSoundEffect.Rate = 0.200000
+FlangeSoundEffect.Enabled = true
+local Scream = Instance.new("Sound", RushNew)
+Scream.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+Scream.Name = "Scream"
+Scream.SourceAssetId = -1.000000
+Scream.Volume = 0.200000
+Scream.Pitch = 0.450000
+Scream.LoopRegion = NumberRange.new(0.000000, 60000.000000)
+Scream.PlaybackRegion = NumberRange.new(0.000000, 60000.000000)
+Scream.PlaybackSpeed = 0.450000
+Scream.TimePosition = 0.000000
+Scream.MaxDistance = 1000.000000
+Scream.EmitterSize = 4.000000
+Scream.MinDistance = 4.000000
+Scream.RollOffMaxDistance = 1000.000000
+Scream.RollOffMinDistance = 4.000000
+Scream.RollOffMode = "Inverse"
+Scream.SoundId = "rbxassetid://5263560566"
+local DistortionSoundEffect = Instance.new("DistortionSoundEffect", Scream)
+DistortionSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+DistortionSoundEffect.Name = "DistortionSoundEffect"
+DistortionSoundEffect.SourceAssetId = -1.000000
+DistortionSoundEffect.Priority = 0.000000
+DistortionSoundEffect.Level = 0.960000
+DistortionSoundEffect.Enabled = true
+local EqualizerSoundEffect = Instance.new("EqualizerSoundEffect", Scream)
+EqualizerSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+EqualizerSoundEffect.Name = "EqualizerSoundEffect"
+EqualizerSoundEffect.SourceAssetId = -1.000000
+EqualizerSoundEffect.Priority = 0.000000
+EqualizerSoundEffect.HighGain = -48.500000
+EqualizerSoundEffect.LowGain = -6.200000
+EqualizerSoundEffect.MidGain = -0.800000
+EqualizerSoundEffect.Enabled = true
+local TremoloSoundEffect = Instance.new("TremoloSoundEffect", Scream)
+TremoloSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+TremoloSoundEffect.Name = "TremoloSoundEffect"
+TremoloSoundEffect.SourceAssetId = -1.000000
+TremoloSoundEffect.Priority = 0.000000
+TremoloSoundEffect.Depth = 1.000000
+TremoloSoundEffect.Frequency = 20.000000
+TremoloSoundEffect.Enabled = true
+TremoloSoundEffect.Duty = 0.940000
+local FlangeSoundEffect = Instance.new("FlangeSoundEffect", Scream)
+FlangeSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+FlangeSoundEffect.Name = "FlangeSoundEffect"
+FlangeSoundEffect.SourceAssetId = -1.000000
+FlangeSoundEffect.Priority = 0.000000
+FlangeSoundEffect.Depth = 1.000000
+FlangeSoundEffect.Mix = 1.000000
+FlangeSoundEffect.Rate = 0.800000
+FlangeSoundEffect.Enabled = true
+local Footsteps = Instance.new("Sound", RushNew)
+Footsteps.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+Footsteps.Name = "Footsteps"
+Footsteps.SourceAssetId = -1.000000
+Footsteps.Looped = true
+Footsteps.Volume = 0.450000
+Footsteps.Pitch = 0.600000
+Footsteps.LoopRegion = NumberRange.new(0.000000, 60000.000000)
+Footsteps.PlaybackRegion = NumberRange.new(0.000000, 60000.000000)
+Footsteps.PlaybackSpeed = 0.600000
+Footsteps:Play()
+Footsteps.MaxDistance = 150.000000
+Footsteps.EmitterSize = 5.000000
+Footsteps.MinDistance = 5.000000
+Footsteps.RollOffMaxDistance = 150.000000
+Footsteps.RollOffMinDistance = 5.000000
+Footsteps.RollOffMode = "Linear"
+Footsteps.SoundId = "rbxassetid://9117118928"
+local DistortionSoundEffect = Instance.new("DistortionSoundEffect", Footsteps)
+DistortionSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+DistortionSoundEffect.Name = "DistortionSoundEffect"
+DistortionSoundEffect.SourceAssetId = -1.000000
+DistortionSoundEffect.Priority = 3.000000
+DistortionSoundEffect.Level = 0.440000
+DistortionSoundEffect.Enabled = true
+local EqualizerSoundEffect = Instance.new("EqualizerSoundEffect", Footsteps)
+EqualizerSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+EqualizerSoundEffect.Name = "EqualizerSoundEffect"
+EqualizerSoundEffect.SourceAssetId = -1.000000
+EqualizerSoundEffect.Priority = 0.000000
+EqualizerSoundEffect.HighGain = 0.000000
+EqualizerSoundEffect.LowGain = -80.000000
+EqualizerSoundEffect.MidGain = 0.000000
+EqualizerSoundEffect.Enabled = true
+local Repent = Instance.new("Sound", RushNew)
+Repent.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+Repent.Name = "Repent"
+Repent.SourceAssetId = -1.000000
+Repent.Volume = 0.300000
+Repent.Pitch = 0.600000
+Repent.LoopRegion = NumberRange.new(0.000000, 60000.000000)
+Repent.PlaybackRegion = NumberRange.new(0.000000, 60000.000000)
+Repent.PlaybackSpeed = 0.600000
+Repent.TimePosition = 0.000000
+Repent.MaxDistance = 1000.000000
+Repent.EmitterSize = 4.000000
+Repent.MinDistance = 4.000000
+Repent.RollOffMaxDistance = 1000.000000
+Repent.RollOffMinDistance = 4.000000
+Repent.RollOffMode = "Inverse"
+Repent.SoundId = "rbxassetid://5263560896"
+local DistortionSoundEffect = Instance.new("DistortionSoundEffect", Repent)
+DistortionSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+DistortionSoundEffect.Name = "DistortionSoundEffect"
+DistortionSoundEffect.SourceAssetId = -1.000000
+DistortionSoundEffect.Priority = 0.000000
+DistortionSoundEffect.Level = 0.890000
+DistortionSoundEffect.Enabled = true
+local EqualizerSoundEffect = Instance.new("EqualizerSoundEffect", Repent)
+EqualizerSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+EqualizerSoundEffect.Name = "EqualizerSoundEffect"
+EqualizerSoundEffect.SourceAssetId = -1.000000
+EqualizerSoundEffect.Priority = 0.000000
+EqualizerSoundEffect.HighGain = 1.000000
+EqualizerSoundEffect.LowGain = -6.200000
+EqualizerSoundEffect.MidGain = -0.800000
+EqualizerSoundEffect.Enabled = true
+local TremoloSoundEffect = Instance.new("TremoloSoundEffect", Repent)
+TremoloSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+TremoloSoundEffect.Name = "TremoloSoundEffect"
+TremoloSoundEffect.SourceAssetId = -1.000000
+TremoloSoundEffect.Priority = 0.000000
+TremoloSoundEffect.Depth = 1.000000
+TremoloSoundEffect.Frequency = 20.000000
+TremoloSoundEffect.Enabled = true
+TremoloSoundEffect.Duty = 0.940000
+local FlangeSoundEffect = Instance.new("FlangeSoundEffect", Repent)
+FlangeSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+FlangeSoundEffect.Name = "FlangeSoundEffect"
+FlangeSoundEffect.SourceAssetId = -1.000000
+FlangeSoundEffect.Priority = 0.000000
+FlangeSoundEffect.Depth = 1.000000
+FlangeSoundEffect.Mix = 1.000000
+FlangeSoundEffect.Rate = 0.800000
+FlangeSoundEffect.Enabled = true
+local PlaySound = Instance.new("Sound", RushNew)
+PlaySound.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+PlaySound.Name = "PlaySound"
+PlaySound.SourceAssetId = -1.000000
+PlaySound.Looped = true
+PlaySound.Volume = 1.000000
+PlaySound.Pitch = 0.650000
+PlaySound.LoopRegion = NumberRange.new(0.000000, 60000.000000)
+PlaySound.PlaybackRegion = NumberRange.new(0.000000, 60000.000000)
+PlaySound.PlaybackSpeed = 0.650000
+PlaySound:Play()
+PlaySound.MaxDistance = 300.000000
+PlaySound.EmitterSize = 5.000000
+PlaySound.MinDistance = 5.000000
+PlaySound.RollOffMaxDistance = 300.000000
+PlaySound.RollOffMinDistance = 5.000000
+PlaySound.RollOffMode = "LinearSquare"
+PlaySound.SoundId = "rbxassetid://9117118928"
+local DistortionSoundEffect = Instance.new("DistortionSoundEffect", PlaySound)
+DistortionSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+DistortionSoundEffect.Name = "DistortionSoundEffect"
+DistortionSoundEffect.SourceAssetId = -1.000000
+DistortionSoundEffect.Priority = 3.000000
+DistortionSoundEffect.Level = 0.200000
+DistortionSoundEffect.Enabled = true
+local EqualizerSoundEffect = Instance.new("EqualizerSoundEffect", PlaySound)
+EqualizerSoundEffect.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+EqualizerSoundEffect.Name = "EqualizerSoundEffect"
+EqualizerSoundEffect.SourceAssetId = -1.000000
+EqualizerSoundEffect.Priority = 0.000000
+EqualizerSoundEffect.HighGain = -80.000000
+EqualizerSoundEffect.LowGain = 0.000000
+EqualizerSoundEffect.MidGain = -25.000000
+EqualizerSoundEffect.Enabled = true
+local Attachment = Instance.new("Attachment", RushNew)
+Attachment.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+Attachment.Name = "Attachment"
+Attachment.SourceAssetId = -1.000000
+Attachment.Position = Vector3.new(0.000000, 2.631580, 0.000000)
+Attachment.Rotation = Vector3.new(-0.000000, 0.000000, -0.000000)
+-- Unable to serialize CFrame property: CFrame
+Attachment.Orientation = Vector3.new(-0.000000, 0.000000, 0.000000)
+local ParticleEmitter = Instance.new("ParticleEmitter", Attachment)
+ParticleEmitter.Archivable = true
+-- Unable to serialize SecurityCapabilities property: Capabilities
+ParticleEmitter.Name = "ParticleEmitter"
+ParticleEmitter.SourceAssetId = -1.000000
+ParticleEmitter.Rotation = NumberRange.new(-0.500000, 0.500000)
+ParticleEmitter.Color = ColorSequence.new({ColorSequenceKeypoint.new(0.000000, Color3.fromRGB(14, 14, 11)), ColorSequenceKeypoint.new(1.000000, Color3.fromRGB(14, 14, 11))})
+ParticleEmitter.Rate = 25.000000
+ParticleEmitter.Speed = NumberRange.new(5.000000, 5.000000)
+ParticleEmitter.Enabled = true
+ParticleEmitter.Brightness = 1.000000
+ParticleEmitter.LightEmission = 0.850000
+ParticleEmitter.LightInfluence = 0.900000
+ParticleEmitter.Texture = "http://www.roblox.com/asset/?id=11036572035"
+ParticleEmitter.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0.000000, 0.000000), NumberSequenceKeypoint.new(0.205189, 0.000000), NumberSequenceKeypoint.new(0.260220, 1.000000), NumberSequenceKeypoint.new(0.316824, 0.000000), NumberSequenceKeypoint.new(0.393868, 1.000000), NumberSequenceKeypoint.new(0.441824, 0.000000), NumberSequenceKeypoint.new(0.538522, 1.000000), NumberSequenceKeypoint.new(0.611635, 0.000000), NumberSequenceKeypoint.new(0.694969, 1.000000), NumberSequenceKeypoint.new(0.757075, 0.000000), NumberSequenceKeypoint.new(1.000000, 0.000000)})
+ParticleEmitter.ZOffset = 4.000000
+ParticleEmitter.Orientation = "FacingCamera"
+ParticleEmitter.Size = NumberSequence.new({NumberSequenceKeypoint.new(0.000000, 7.000000), NumberSequenceKeypoint.new(1.000000, 7.000000)})
+ParticleEmitter.TimeScale = 1.000000
+ParticleEmitter.Shape = "Box"
+ParticleEmitter.Acceleration = Vector3.new(0.000000, 0.000000, 0.000000)
+ParticleEmitter.Drag = 255.000000
+ParticleEmitter.EmissionDirection = "Top"
+ParticleEmitter.FlipbookFramerate = NumberRange.new(1.000000, 1.000000)
+ParticleEmitter.FlipbookIncompatible = "Particle texture must be 1024 by 1024 to use flipbooks."
+ParticleEmitter.FlipbookLayout = "None"
+ParticleEmitter.FlipbookMode = "Loop"
+ParticleEmitter.Lifetime = NumberRange.new(0.400000, 0.700000)
+ParticleEmitter.LockedToPart = true
+ParticleEmitter.RotSpeed = NumberRange.new(-1.000000, 1.000000)
+ParticleEmitter.ShapeInOut = "Outward"
+ParticleEmitter.ShapePartial = 1.000000
+ParticleEmitter.ShapeStyle = "Volume"
+ParticleEmitter.SpreadAngle = Vector2.new(360.000000, 360.000000)
+ParticleEmitter.Squash = NumberSequence.new({NumberSequenceKeypoint.new(0.000000, 0.000000), NumberSequenceKeypoint.new(0.099885, -0.013333), NumberSequenceKeypoint.new(0.299656, 0.013333), NumberSequenceKeypoint.new(0.601607, -0.013333), NumberSequenceKeypoint.new(0.900115, 0.040000), NumberSequenceKeypoint.new(1.000000, 0.000000)})
+ParticleEmitter.VelocityInheritance = 0.000000
+return DreadTrue

@@ -39,7 +39,7 @@ EyesParticle.LockedToPart = LockedToPart
 return EyesParticle
 end
 
-local Face1 = Particle("rbxassetid://14240871017", true, 0)
+local Face1 = Particle("rbxassetid://130911607175389", true, 0)
 Face1.Parent = Attachment
 --Face1.Size = NumberSequence.new(7)
 Face1.Size = NumberSequence.new{
@@ -57,23 +57,92 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, -8, 0),
 				NumberSequenceKeypoint.new(0.015, -8, 0),
 				NumberSequenceKeypoint.new(0.02, -2, 0),
-				NumberSequenceKeypoint.new(0.035, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.045, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.035, 0.48, 0),
+				NumberSequenceKeypoint.new(0.045, 0.43, 0),
 				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
-				NumberSequenceKeypoint.new(0.12, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.25, -0.0058, 0),
+				NumberSequenceKeypoint.new(0.12, 0.48, 0),
+				NumberSequenceKeypoint.new(0.25, -0.58, 0),
 				NumberSequenceKeypoint.new(0.404, -0.7, 0),
-				NumberSequenceKeypoint.new(0.4053, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.635, 0.0058, 0),
+				NumberSequenceKeypoint.new(0.4053, 0.48, 0),
+				NumberSequenceKeypoint.new(0.635, 0.35, 0),
 				NumberSequenceKeypoint.new(0.64, -0.05, 0),
-				NumberSequenceKeypoint.new(0.665, 0.0058, 0),
-				NumberSequenceKeypoint.new(0.85, 0.0058, 0),
-				NumberSequenceKeypoint.new(1, 0.0018, 0),
+				NumberSequenceKeypoint.new(0.665, 0.45, 0),
+				NumberSequenceKeypoint.new(0.85, 0.025, 0),
+				NumberSequenceKeypoint.new(1, 0.45, 0),
 			}
 Face1.ZOffset = 1
 Face1.Rate = 100
 Face1.Name = "Face1"
 Face1.Lifetime = NumberRange.new(1)
+Face1.Rotation = NumberRange.new(-2,2)
+Face1.Speed = NumberRange.new(15)
+Face1.RotSpeed = NumberRange.new(0)
+Face1.SpreadAngle = Vector2.new(1,1)
+Face1.Brightness = 1
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0.1, 0),
+				NumberSequenceKeypoint.new(0.10, 0.5, 0),
+				NumberSequenceKeypoint.new(0.20, 0, 0),
+				NumberSequenceKeypoint.new(0.30, 0.5, 0),
+				NumberSequenceKeypoint.new(0.40, 0, 0),
+				NumberSequenceKeypoint.new(0.50, 0.5, 0),
+				NumberSequenceKeypoint.new(0.6, 0.14, 0),
+				NumberSequenceKeypoint.new(0.7, 0.5, 0),
+				NumberSequenceKeypoint.new(0.80, 0.2, 0),
+				NumberSequenceKeypoint.new(0.85, 0.5, 0),
+				NumberSequenceKeypoint.new(0.87, 0, 0),
+				NumberSequenceKeypoint.new(0.89, 0.5, 0),
+				NumberSequenceKeypoint.new(0.93, 0.1, 0),
+				NumberSequenceKeypoint.new(0.97, 0.5, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Drag = 35
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(74,76,78)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(54,56,55)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(54,56,68)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(34,36,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,16,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.LightInfluence = 0.1
+
+local Face1 = Particle("rbxassetid://114403220221218", true, 0)
+Face1.Parent = Attachment
+--Face1.Size = NumberSequence.new(7)
+Face1.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 7, 0),
+				NumberSequenceKeypoint.new(0.12, 7, 0),
+				NumberSequenceKeypoint.new(0.25, 6.5, 0),
+				NumberSequenceKeypoint.new(0.404, 6, 0),
+				NumberSequenceKeypoint.new(0.4053, 7, 0),
+				NumberSequenceKeypoint.new(0.635, 7, 0),
+				NumberSequenceKeypoint.new(0.64, 6.5, 0),
+				NumberSequenceKeypoint.new(0.665, 7, 0),
+				NumberSequenceKeypoint.new(1, 7, 0),
+			}
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.015, -8, 0),
+				NumberSequenceKeypoint.new(0.02, -2, 0),
+				NumberSequenceKeypoint.new(0.035, 0.48, 0),
+				NumberSequenceKeypoint.new(0.045, 0.43, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(0.12, 0.48, 0),
+				NumberSequenceKeypoint.new(0.25, -0.58, 0),
+				NumberSequenceKeypoint.new(0.404, -0.7, 0),
+				NumberSequenceKeypoint.new(0.4053, 0.48, 0),
+				NumberSequenceKeypoint.new(0.635, 0.35, 0),
+				NumberSequenceKeypoint.new(0.64, -0.05, 0),
+				NumberSequenceKeypoint.new(0.665, 0.45, 0),
+				NumberSequenceKeypoint.new(0.85, 0.025, 0),
+				NumberSequenceKeypoint.new(1, 0.45, 0),
+			}
+Face1.ZOffset = 1.1
+Face1.Rate = 0.1
+Face1.Name = "Face2"
+Face1.Lifetime = NumberRange.new(0.5)
 Face1.Rotation = NumberRange.new(-2,2)
 Face1.Speed = NumberRange.new(15)
 Face1.RotSpeed = NumberRange.new(0)
@@ -97,6 +166,121 @@ Face1.Color = ColorSequence.new({
 })
 Face1.LightEmission = 0.3
 
+local Face1 = Particle("rbxassetid://91739318075342", true, 0)
+Face1.Parent = Attachment
+--Face1.Size = NumberSequence.new(7)
+Face1.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 7, 0),
+				NumberSequenceKeypoint.new(0.12, 7, 0),
+				NumberSequenceKeypoint.new(0.25, 6.5, 0),
+				NumberSequenceKeypoint.new(0.404, 6, 0),
+				NumberSequenceKeypoint.new(0.4053, 7, 0),
+				NumberSequenceKeypoint.new(0.635, 7, 0),
+				NumberSequenceKeypoint.new(0.64, 6.5, 0),
+				NumberSequenceKeypoint.new(0.665, 7, 0),
+				NumberSequenceKeypoint.new(1, 7, 0),
+			}
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, -8, 0),
+				NumberSequenceKeypoint.new(0.015, -8, 0),
+				NumberSequenceKeypoint.new(0.02, -2, 0),
+				NumberSequenceKeypoint.new(0.035, 0.48, 0),
+				NumberSequenceKeypoint.new(0.045, 0.43, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(0.12, 0.48, 0),
+				NumberSequenceKeypoint.new(0.25, -0.58, 0),
+				NumberSequenceKeypoint.new(0.404, -0.7, 0),
+				NumberSequenceKeypoint.new(0.4053, 0.48, 0),
+				NumberSequenceKeypoint.new(0.635, 0.35, 0),
+				NumberSequenceKeypoint.new(0.64, -0.05, 0),
+				NumberSequenceKeypoint.new(0.665, 0.45, 0),
+				NumberSequenceKeypoint.new(0.85, 0.025, 0),
+				NumberSequenceKeypoint.new(1, 0.45, 0),
+			}
+Face1.ZOffset = 1.1
+Face1.Rate = 2
+Face1.Name = "Face2"
+Face1.Lifetime = NumberRange.new(0.2)
+Face1.Rotation = NumberRange.new(-2,2)
+Face1.Speed = NumberRange.new(15)
+Face1.RotSpeed = NumberRange.new(0)
+Face1.SpreadAngle = Vector2.new(1,1)
+Face1.Brightness = 2.5
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.10, 0.005, 0),
+				NumberSequenceKeypoint.new(0.6, 0.14, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Drag = 35
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(74,76,78)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(54,56,55)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(54,56,68)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(34,36,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,16,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.LightEmission = 0.3
+
+local Face1 = Particle("rbxassetid://81698403562217", true, 0)
+Face1.Parent = Attachment
+--Face1.Size = NumberSequence.new(7)
+Face1.Size = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 7, 0),
+				NumberSequenceKeypoint.new(0.12, 7, 0),
+				NumberSequenceKeypoint.new(0.25, 6.5, 0),
+				NumberSequenceKeypoint.new(0.404, 6, 0),
+				NumberSequenceKeypoint.new(0.4053, 7, 0),
+				NumberSequenceKeypoint.new(0.635, 7, 0),
+				NumberSequenceKeypoint.new(0.64, 6.5, 0),
+				NumberSequenceKeypoint.new(0.665, 7, 0),
+				NumberSequenceKeypoint.new(1, 7, 0),
+			}
+Face1.Squash = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, -8, 0),
+				NumberSequenceKeypoint.new(0.015, -8, 0),
+				NumberSequenceKeypoint.new(0.02, -2, 0),
+				NumberSequenceKeypoint.new(0.035, 0.48, 0),
+				NumberSequenceKeypoint.new(0.045, 0.43, 0),
+				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(0.12, 0.48, 0),
+				NumberSequenceKeypoint.new(0.25, -0.58, 0),
+				NumberSequenceKeypoint.new(0.404, -0.7, 0),
+				NumberSequenceKeypoint.new(0.4053, 0.48, 0),
+				NumberSequenceKeypoint.new(0.635, 0.35, 0),
+				NumberSequenceKeypoint.new(0.64, -0.05, 0),
+				NumberSequenceKeypoint.new(0.665, 0.45, 0),
+				NumberSequenceKeypoint.new(0.85, 0.025, 0),
+				NumberSequenceKeypoint.new(1, 0.45, 0),
+			}
+Face1.ZOffset = 1.1
+Face1.Rate = 3
+Face1.Name = "Face2"
+Face1.Lifetime = NumberRange.new(0.2)
+Face1.Rotation = NumberRange.new(-2,2)
+Face1.Speed = NumberRange.new(15)
+Face1.RotSpeed = NumberRange.new(0)
+Face1.SpreadAngle = Vector2.new(1,1)
+Face1.Brightness = 2.5
+Face1.Transparency = NumberSequence.new{
+				NumberSequenceKeypoint.new(0, 0, 0),
+				NumberSequenceKeypoint.new(0.10, 0.005, 0),
+				NumberSequenceKeypoint.new(0.6, 0.14, 0),
+				NumberSequenceKeypoint.new(1, 1, 0),
+			}
+Face1.Drag = 35
+Face1.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(74,76,78)),
+    ColorSequenceKeypoint.new(0.2, Color3.fromRGB(54,56,55)),
+    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(64,66,68)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(54,56,68)),
+    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(34,36,38)),
+    ColorSequenceKeypoint.new(0.8, Color3.fromRGB(14,16,18)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
+})
+Face1.LightEmission = 0.3
 -- Particle Emitters
 
 local Scribble = Particle("rbxassetid://10587729749", true, 0)
