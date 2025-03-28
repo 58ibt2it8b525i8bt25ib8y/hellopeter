@@ -8,6 +8,7 @@ DreadTrue.ModelStreamingMode = "Default"
 -- Unable to serialize Instance property: PrimaryPart
 local RushNew = Instance.new("Part", DreadTrue)
 DreadTrue.PrimaryPart = RushNew
+RushNew.Transparency = 1
 RushNew.Archivable = true
 -- Unable to serialize SecurityCapabilities property: Capabilities
 RushNew.Name = "RushNew"

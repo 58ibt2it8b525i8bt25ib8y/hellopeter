@@ -780,6 +780,24 @@ s.Volume = 2
 s.Pitch = 1
 s.SoundId = "rbxassetid://6700552345"
 
+local s = Instance.new("Sound", Main)
+s.Name = "Knock"
+s.RollOffMode = "InverseTapered"
+s.EmitterSize = 10
+s.MaxDistance = 120
+s.Volume = 10
+s.Pitch = 0.8
+s.SoundId = "rbxassetid://9114787862"
+local eq = Instance.new("EqualizerSoundEffect", s)
+eq.HighGain = -20
+eq.MidGain = -30
+eq.LowGain = -20
+local rev = Instance.new("ReverbSoundEffect", s)
+rev.DecayTime = 1.5
+rev.Diffusion = 1
+rev.Density = 1
+rev.DryLevel = -6
+
 Singularity.PrimaryPart = Main
 WeldConstraint1.Part0 = Main
 WeldConstraint1.Part1 = Head

@@ -55,19 +55,22 @@ Face1.Size = NumberSequence.new{
 			}
 Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, -8, 0),
-				NumberSequenceKeypoint.new(0.015, -8, 0),
-				NumberSequenceKeypoint.new(0.02, -2, 0),
+				NumberSequenceKeypoint.new(0.001, 0.4, 0),
+				NumberSequenceKeypoint.new(0.02, 0.4, 0),
 				NumberSequenceKeypoint.new(0.035, 0.48, 0),
-				NumberSequenceKeypoint.new(0.045, 0.43, 0),
-				NumberSequenceKeypoint.new(0.10, -0.0012, 0),
+				NumberSequenceKeypoint.new(0.045, 0, 0),
+				NumberSequenceKeypoint.new(0.10, 0.4, 0),
 				NumberSequenceKeypoint.new(0.12, 0.48, 0),
-				NumberSequenceKeypoint.new(0.25, -0.58, 0),
-				NumberSequenceKeypoint.new(0.404, -0.7, 0),
+				NumberSequenceKeypoint.new(0.14, -0.05, 0),
+				NumberSequenceKeypoint.new(0.15, 0.45, 0),
+				NumberSequenceKeypoint.new(0.25, 0.4, 0),
+				NumberSequenceKeypoint.new(0.404, 0.45, 0),
 				NumberSequenceKeypoint.new(0.4053, 0.48, 0),
-				NumberSequenceKeypoint.new(0.635, 0.35, 0),
-				NumberSequenceKeypoint.new(0.64, -0.05, 0),
+				NumberSequenceKeypoint.new(0.635, 0.48, 0),
+				NumberSequenceKeypoint.new(0.64, -1, 0),
 				NumberSequenceKeypoint.new(0.665, 0.45, 0),
-				NumberSequenceKeypoint.new(0.85, 0.025, 0),
+				NumberSequenceKeypoint.new(0.674, -0.2, 0),
+				NumberSequenceKeypoint.new(0.85, 0.4, 0),
 				NumberSequenceKeypoint.new(1, 0.45, 0),
 			}
 Face1.ZOffset = 1
@@ -80,7 +83,7 @@ Face1.RotSpeed = NumberRange.new(0)
 Face1.SpreadAngle = Vector2.new(1,1)
 Face1.Brightness = 1
 Face1.Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.1, 0),
+				NumberSequenceKeypoint.new(0, 1, 0),
 				NumberSequenceKeypoint.new(0.10, 0.5, 0),
 				NumberSequenceKeypoint.new(0.20, 0, 0),
 				NumberSequenceKeypoint.new(0.30, 0.5, 0),
@@ -89,11 +92,11 @@ Face1.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(0.6, 0.14, 0),
 				NumberSequenceKeypoint.new(0.7, 0.5, 0),
 				NumberSequenceKeypoint.new(0.80, 0.2, 0),
-				NumberSequenceKeypoint.new(0.85, 0.5, 0),
+				NumberSequenceKeypoint.new(0.85, 0.4, 0),
 				NumberSequenceKeypoint.new(0.87, 0, 0),
 				NumberSequenceKeypoint.new(0.89, 0.5, 0),
 				NumberSequenceKeypoint.new(0.93, 0.1, 0),
-				NumberSequenceKeypoint.new(0.97, 0.5, 0),
+				NumberSequenceKeypoint.new(0.97, 0.8, 0),
 				NumberSequenceKeypoint.new(1, 1, 0),
 			}
 Face1.Drag = 35
@@ -198,8 +201,8 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 0.45, 0),
 			}
 Face1.ZOffset = 1.1
-Face1.Rate = 2
-Face1.Name = "Face2"
+Face1.Rate = 0.05
+Face1.Name = "Face3"
 Face1.Lifetime = NumberRange.new(0.2)
 Face1.Rotation = NumberRange.new(-2,2)
 Face1.Speed = NumberRange.new(15)
@@ -256,8 +259,8 @@ Face1.Squash = NumberSequence.new{
 				NumberSequenceKeypoint.new(1, 0.45, 0),
 			}
 Face1.ZOffset = 1.1
-Face1.Rate = 3
-Face1.Name = "Face2"
+Face1.Rate = 0.15
+Face1.Name = "Face4"
 Face1.Lifetime = NumberRange.new(0.2)
 Face1.Rotation = NumberRange.new(-2,2)
 Face1.Speed = NumberRange.new(15)

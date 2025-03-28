@@ -16,7 +16,7 @@ RushNew.Rotation = Vector3.new(180.000000, -85.390999, 180.000000)
 RushNew.Color = Color3.fromRGB(163, 162, 165)
 -- Unable to serialize CFrame property: CFrame
 RushNew.Anchored = true
-RushNew.Transparency = 0.600000
+RushNew.Transparency = 1
 RushNew.Velocity = Vector3.new(0.000000, 0.000000, 0.000000)
 RushNew.Orientation = Vector3.new(0.000000, -94.609001, 0.000000)
 RushNew.Size = Vector3.new(6.000000, 6.000000, 6.000000)
