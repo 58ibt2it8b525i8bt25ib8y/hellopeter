@@ -67,7 +67,8 @@ Face1.Lifetime = NumberRange.new(0.3)
 Face1.Rotation = NumberRange.new(-4,4)
 Face1.RotSpeed = NumberRange.new(0,0)
 Face1.Brightness = 2.5
-Face1.LightInfluence = 0.5
+Face1.LightInfluence = 1
+Face1.Color = ColorSequence.new(Color3.new(0.7,0.7,0,7))
 
 local Face2 = Particle("rbxassetid://81116462746588", true, 10)
 Face2.Parent = Attachment
@@ -94,7 +95,8 @@ Face2.Lifetime = NumberRange.new(0.05)
 Face2.Rotation = NumberRange.new(-4,4)
 Face2.RotSpeed = NumberRange.new(0,0)
 Face2.Brightness = 2.5
-Face2.LightInfluence = 0.5
+Face2.LightInfluence = 1
+Face1.Color = ColorSequence.new(Color3.new(0.7,0.7,0,7))
 
 local Face1 = Particle("rbxassetid://89956990306946", true, 0)
 Face1.Parent = Attachment
@@ -124,8 +126,9 @@ Face1.RotSpeed = NumberRange.new(0,0)
 Face1.Brightness = 2.5
 Face1.FlipbookMode = "PingPong"
 Face1.FlipbookLayout = "Grid2x2"
+Face1.Color = ColorSequence.new(Color3.new(0.7,0.7,0,7))
 Face1.FlipbookFramerate = NumberRange.new(7,9)
-Face1.LightInfluence = 0.5
+Face1.LightInfluence = 1
 
 -- Particle Emitters
 
