@@ -1,7 +1,6 @@
 
 local Shocker_1 = Instance.new("Model")
 Shocker_1.Name = [[Shocker]]
-Shocker_1.PrimaryPart = RushNew_2
 local RushNew_2 = Instance.new("Part")
 RushNew_2.Parent = Shocker_1
 RushNew_2.Name = [[RushNew]]
@@ -145,4 +144,5 @@ local EchoSoundEffect_18 = Instance.new("EchoSoundEffect")
 EchoSoundEffect_18.Parent = Static_17
 EchoSoundEffect_18.Feedback = 0.41999998688697815
 EchoSoundEffect_18.Delay = 0.7400000095367432
+Shocker_1.PrimaryPart = RushNew_2
 return Shocker_1
