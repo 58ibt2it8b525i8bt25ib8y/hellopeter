@@ -45,7 +45,7 @@ Modl.Name = "NARUTO! YOU LIED!"
 
 			Light1.Brightness = 25
 
-			Light1.Color = Color3.fromRGB(255,0,0)
+			Light1.Color = Color3.fromRGB(0,0,255)
 
 			Light1.Enabled = true
 
@@ -63,7 +63,7 @@ Light1.Name = "LightFar"
 
 			Light2.Brightness = 25
 
-			Light2.Color = Color3.fromRGB(255,0,0)
+			Light2.Color = Color3.fromRGB(0,0,255)
 
 			Light2.Enabled = true
 
@@ -81,7 +81,7 @@ Light2.Name = "LightClose"
 
 			Light2.Brightness = 20
 
-			Light2.Color = Color3.fromRGB(-1,1,0)
+			Light2.Color = Color3.fromRGB(0,255,255)
 
 			Light2.Enabled = true
 
