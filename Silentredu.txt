@@ -1,5 +1,4 @@
  Silencedux_281 = Instance.new("Model")
-Silencedux_281.Parent = EntityFolders_1
 Silencedux_281.Name = [[Silencedux]]
  RushNew_282 = Instance.new("Part")
 RushNew_282.Parent = Silencedux_281

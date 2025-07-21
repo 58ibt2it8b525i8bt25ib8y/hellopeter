@@ -1,6 +1,5 @@
 
  Reboundux_121 = Instance.new("Model")
-Reboundux_121.Parent = EntityFolders_1
 Reboundux_121.Name = [[Reboundux]]
  Ambuscus_122 = Instance.new("Part")
 Ambuscus_122.Parent = Reboundux_121

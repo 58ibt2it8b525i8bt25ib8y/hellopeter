@@ -1,6 +1,5 @@
 
  Dark_321 = Instance.new("Model")
-Dark_321.Parent = EntityFolders_1
 Dark_321.Name = [[Dark]]
  Grinch_322 = Instance.new("Part")
 Grinch_322.Parent = Dark_321

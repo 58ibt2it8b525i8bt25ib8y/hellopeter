@@ -1,5 +1,4 @@
  tactical_391 = Instance.new("Model")
-tactical_391.Parent = EntityFolders_1
 tactical_391.Name = [[tactical]]
  Despawn_392 = Instance.new("Sound")
 Despawn_392.Parent = tactical_391
