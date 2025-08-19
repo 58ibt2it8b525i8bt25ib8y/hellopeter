@@ -157,7 +157,7 @@ Face1.Name = "Face1"
 
 Face1.Lifetime = NumberRange.new(0.1)
 
-Face1.Color = ColorSequence.new(Color3.fromRGB(175,255,255))
+Face1.Color = ColorSequence.new(Color3.fromRGB(0,255,255))
 
 Face1.Rotation = NumberRange.new(-15,15)
 
@@ -468,15 +468,15 @@ trail.LockedToPart = true
 
 trail.Color = ColorSequence.new({
 
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(75,255,255)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0,255,255)),
 
-    ColorSequenceKeypoint.new(0.1, Color3.fromRGB(75,200,200)),
+    ColorSequenceKeypoint.new(0.1, Color3.fromRGB(0,200,200)),
 
-    ColorSequenceKeypoint.new(0.51, Color3.fromRGB(55,165,165)),
+    ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0,165,165)),
 
-    ColorSequenceKeypoint.new(0.6, Color3.fromRGB(45,120,120)),
+    ColorSequenceKeypoint.new(0.6, Color3.fromRGB(0,120,120)),
 
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(35,70,70))
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,70,70))
 
 })
 
@@ -542,15 +542,15 @@ trail.Name = "trail2"
 
 trail.Color = ColorSequence.new({
 
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(75,255,255)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0,255,255)),
 
-    ColorSequenceKeypoint.new(0.1, Color3.fromRGB(75,200,200)),
+    ColorSequenceKeypoint.new(0.1, Color3.fromRGB(0,200,200)),
 
-    ColorSequenceKeypoint.new(0.51, Color3.fromRGB(55,165,165)),
+    ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0,165,165)),
 
-    ColorSequenceKeypoint.new(0.6, Color3.fromRGB(45,120,120)),
+    ColorSequenceKeypoint.new(0.6, Color3.fromRGB(0,120,120)),
 
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(35,70,70))
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,70,70))
 
 })
 
@@ -582,7 +582,7 @@ local emitter = Instance.new("ParticleEmitter", Attachment)
 emitter.Rate = 40
 emitter.Lifetime = NumberRange.new(2)
 emitter.Texture = "rbxassetid://1302869033" 
-emitter.Color = ColorSequence.new(Color3.fromRGB(150,255,255))
+emitter.Color = ColorSequence.new(Color3.fromRGB(0,255,255))
 emitter.Speed = NumberRange.new(15)
 emitter.Drag = -2
 emitter.VelocitySpread = 180
@@ -611,8 +611,8 @@ emitter.Lifetime = NumberRange.new(0.5)
 emitter.Texture = "rbxassetid://269613979" 
 --emitter.Color = ColorSequence.new(Color3.fromRGB(0,55,75))
 emitter.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(75,255,255)),
-    ColorSequenceKeypoint.new(0.35, Color3.fromRGB(75,255,255)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0,255,255)),
+    ColorSequenceKeypoint.new(0.35, Color3.fromRGB(0,255,255)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
 emitter.Speed = NumberRange.new(10)
@@ -640,8 +640,8 @@ emitter.Lifetime = NumberRange.new(0.4)
 emitter.Texture = "rbxassetid://8510586199" 
 --emitter.Color = ColorSequence.new(Color3.fromRGB(0,55,75))
 emitter.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(75,255,255)),
-    ColorSequenceKeypoint.new(0.15, Color3.fromRGB(75,255,255)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0,255,255)),
+    ColorSequenceKeypoint.new(0.15, Color3.fromRGB(0,255,255)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(0,0,0))
 })
 emitter.Speed = NumberRange.new(15)
@@ -675,7 +675,7 @@ ParticleEmitter.Size = NumberSequence.new({
     NumberSequenceKeypoint.new(0, 6),
     NumberSequenceKeypoint.new(1, 6.6)
 })
-ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(11,55,55))
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(0,55,55))
 ParticleEmitter.Transparency = NumberSequence.new{
 				NumberSequenceKeypoint.new(0, 1),
 				NumberSequenceKeypoint.new(0.356, .37),
