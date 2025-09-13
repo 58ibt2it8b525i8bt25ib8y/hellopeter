@@ -1,4 +1,4 @@
-local Modl = Instance.new("Model", workspace)
+local Modl = Instance.new("Model")
 
 Modl.Name = "A-60'"
 
