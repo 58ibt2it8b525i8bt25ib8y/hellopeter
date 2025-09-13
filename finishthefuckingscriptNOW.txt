@@ -1,5 +1,5 @@
-local Singularity_44 = Instance.new("Model")
-Singularity_44.Name = [[Singularity]]
+local Singularity_2 = Instance.new("Model")
+Singularity_2.Name = [[Singularity]]
 local negativephotons_3 = Instance.new("Sound")
 negativephotons_3.Parent = Singularity_2
 negativephotons_3.Name = [[negativephotons]]
